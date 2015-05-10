@@ -18,19 +18,20 @@ color:red;
 margin-top: 2px;
 font-family: Micorsoft YaHei;
 margin-bottom: 0px;
+display:none;
 }
 #pic1
 {
 width: 336px;
 height:600px;
-margin-top: 0px;
+margin-top: 10px;
 margin-left: 38%;
 box-shadow: 0 0 10px #333;
 border-radius: 10px;
 
 }
 </style>
-<body>
+<body onload="init()">
 <h1 id="h1">hi☺</h1>
 <div id="pic">
 	<img src="first.png" alt="" id="pic1" onclick="hide()">
@@ -38,6 +39,10 @@ border-radius: 10px;
 	
 </body>
 <script>
+function init()
+{
+	alert("知道你喜欢simpsons，点击那张截图，截图就会消失。这样你就可以好好的看simpson一家啦，你也可以看一下网页的标题，哈哈☺");
+}
 	function hide()
 	{
 		document.getElementById('pic1').style.display="none";
