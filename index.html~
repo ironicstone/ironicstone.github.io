@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HI,WangYueJie!</title>
+	<title>HI☺</title>
 </head>
 <style>
 body
 {
-background:url(simpsons.jpg) no-repeat center top;
-
+background:url(simpsons.jpg)  center top;
+background-repeat: repeat-y;
 padding:0;
 margin:0;
 }
 h1
 {text-align: center;
+color:red;
+margin-top: 2px;
+font-family: Micorsoft YaHei;
+margin-bottom: 0px;
 }
 #pic1
-{width: 240px;
-height:427px;
+{
+width: 336px;
+height:600px;
+margin-top: 0px;
 margin-left: 38%;
+box-shadow: 0 0 10px #333;
+border-radius: 10px;
 
 }
 </style>
-
 <body>
-<h1>加油☺</h1>
+<h1 id="h1">hi☺</h1>
 <div id="pic">
 	<img src="first.png" alt="" id="pic1" onclick="hide()">
 </div>
@@ -34,6 +41,7 @@ margin-left: 38%;
 	function hide()
 	{
 		document.getElementById('pic1').style.display="none";
+		document.getElementById('h1').style.display="none";
 		
 	}
 
