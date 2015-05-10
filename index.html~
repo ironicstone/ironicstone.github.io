@@ -8,8 +8,7 @@
 body
 {
 background:url(simpsons.jpg)  center top;
-background-repeat: repeat-y;
-background-repeat: repeat-x;
+
 padding:0;
 margin:0;
 }
