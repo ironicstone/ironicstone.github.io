@@ -4,8 +4,38 @@
 	<meta charset="UTF-8">
 	<title>HI,WangYueJie!</title>
 </head>
+<style>
+body
+{
+background:url(simpsons.jpg) no-repeat center top;
+
+padding:0;
+margin:0;
+}
+h1
+{text-align: center;
+}
+#pic1
+{width: 240px;
+height:427px;
+margin-left: 38%;
+
+}
+</style>
+
 <body>
-<p>HI☺</p>
+<h1>加油☺</h1>
+<div id="pic">
+	<img src="first.png" alt="" id="pic1" onclick="hide()">
+</div>
 	
 </body>
+<script>
+	function hide()
+	{
+		document.getElementById('pic1').style.display="none";
+		
+	}
+
+</script>
 </html>

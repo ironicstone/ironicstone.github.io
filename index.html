@@ -6,22 +6,38 @@
 </head>
 <style>
 body
-{background-color: #e3e3e3;}
+{
+background:url(simpsons.jpg) no-repeat center top;
+padding:0;
+margin:0;
+}
 h1
 {text-align: center;
 color:red;
+font-family: Micorsoft YaHei;
 }
 #pic1
 {width: 240px;
 height:427px;
-margin-right: 25%;
+margin-left: 38%;
+box-shadow: 0 0 10px #333;
+border-radius: 10px;
+
 }
 </style>
 <body>
-<h1>HI!</h1>
-<div id="pic1">
-	<img src="first.png" alt="">
+<h1>加油☺</h1>
+<div id="pic">
+	<img src="first.png" alt="" id="pic1" onclick="hide()">
 </div>
 	
 </body>
+<script>
+	function hide()
+	{
+		document.getElementById('pic1').style.display="none";
+		
+	}
+
+</script>
 </html>
