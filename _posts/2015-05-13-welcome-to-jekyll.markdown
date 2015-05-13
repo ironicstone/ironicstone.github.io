@@ -1,25 +1,39 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "哎呀，我要打个滚!"
 date:   2015-05-13 09:37:49
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+##引言
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+{% highlight javascript %}
 
-Jekyll also offers powerful support for code snippets:
+//Javascript实现道歉，重复循环10000次
+for(var count = 0 ; count < 10000 ;  count ++)
+{
+	console.log(“对不起，我错了”);
+}
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+##基本释义
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+>打滚，指躺在地下滚来滚去。语出《西游记》第五六回：“那长老在地下正了性，口中念起紧箍儿咒来，把那 行者 勒得面红耳赤，眼胀头昏，在地下打滚。”
+
+##例证分析
+
+1.躺在地下滚来滚去
+>《西游记》第五六回：“那长老在地下正了性，口中念起紧箍儿咒来，把那 行者 勒得面红耳赤，眼胀头昏，在地下打滚。”《儒林外史》第五回：“﹝ 赵氏 ﹞披头散发，满地打滚，哭的天昏地暗。” 李劼人 《死水微澜》第一部分三：“地板也和家里的一样，洗得黄澄澄地，可以坐，可以打滚。”
+
+2.比喻长期置身某种范围内。
+>曹禺 《北京人》第三幕：“抱着哀痛的心肠和光明的希望，追惜着过去，憧憬未来：这又是属于明日的‘ 北京 人’的事，和在棺木里打滚的人们不相干的。” 柯灵 《香雪海·给人物以生命》：“他的一生就在债务里打滚。”
+
+3.犹翻番。成倍增加。
+
+**4.一种扑克牌游戏，盛行于湖北咸宁地区，玩法比较复杂，一般人很难上手，故而没有全国流行。**
+
+5.表示内心的欢喜。“高兴的打个滚儿……”
+
+##总结
+
+>打滚竟然是你老家的一个扑克牌游戏，那我要打个滚，你去不去啊？

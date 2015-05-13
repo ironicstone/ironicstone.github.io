@@ -1,6 +1,5 @@
 <footer class="site-footer">
 
-<!--
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title }}</h2>
@@ -12,9 +11,8 @@
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
-      
+
       <div class="footer-col  footer-col-2">
-    
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -44,9 +42,8 @@
             </a>
           </li>
           {% endif %}
-        </ul>  
+        </ul>
       </div>
-
 
       <div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
@@ -54,5 +51,5 @@
     </div>
 
   </div>
--->
+
 </footer>

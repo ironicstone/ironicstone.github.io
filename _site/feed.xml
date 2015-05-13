@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stay hungry . Stay foolish .</title>
+    <description>Here is a blog for Wang YuJie , an angle for me , a secret garden for our own.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 May 2015 11:18:39 +0800</pubDate>
+    <lastBuildDate>Wed, 13 May 2015 11:18:39 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>哎呀，我要打个滚!</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;引言&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//Javascript实现道歉，重复循环10000次&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“对不起，我错了”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;基本释义&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;打滚，指躺在地下滚来滚去。语出《西游记》第五六回：“那长老在地下正了性，口中念起紧箍儿咒来，把那 行者 勒得面红耳赤，眼胀头昏，在地下打滚。”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;例证分析&lt;/h2&gt;
+
+&lt;p&gt;1.躺在地下滚来滚去
+&amp;gt;《西游记》第五六回：“那长老在地下正了性，口中念起紧箍儿咒来，把那 行者 勒得面红耳赤，眼胀头昏，在地下打滚。”《儒林外史》第五回：“﹝ 赵氏 ﹞披头散发，满地打滚，哭的天昏地暗。” 李劼人 《死水微澜》第一部分三：“地板也和家里的一样，洗得黄澄澄地，可以坐，可以打滚。”&lt;/p&gt;
+
+&lt;p&gt;2.比喻长期置身某种范围内。
+&amp;gt;曹禺 《北京人》第三幕：“抱着哀痛的心肠和光明的希望，追惜着过去，憧憬未来：这又是属于明日的‘ 北京 人’的事，和在棺木里打滚的人们不相干的。” 柯灵 《香雪海·给人物以生命》：“他的一生就在债务里打滚。”&lt;/p&gt;
+
+&lt;p&gt;3.犹翻番。成倍增加。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.一种扑克牌游戏，盛行于湖北咸宁地区，玩法比较复杂，一般人很难上手，故而没有全国流行。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;5.表示内心的欢喜。“高兴的打个滚儿……”&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;总结&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;打滚竟然是你老家的一个扑克牌游戏，那我要打个滚，你去不去啊？&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 13 May 2015 17:37:49 +0800</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2015/05/13/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/05/13/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
