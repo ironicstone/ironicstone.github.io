@@ -35,6 +35,7 @@ categories: jekyll update
 	- [慕课网](http://www.imooc.com/course/list)
 	- [百度传课](http://www.chuanke.com/?mod=student&act=index)
 	- [Coursera](https://www.coursera.org)
+	
 ##备注
 >以上计划固定执行，先坚持20天，可以有中断，但不能中断太久，合理分配时间。
 
