@@ -5,7 +5,7 @@ date:   2015-05-13 09:37:49
 summary: Say Sorry to WangYuJie
 categories: jekyll update
 ---
-##引言
+###引言
 
 {% highlight javascript %}
 
@@ -17,11 +17,11 @@ for(var count = 0 ; count < 10000 ;  count ++)
 
 {% endhighlight %}
 
-##基本释义
+###基本释义
 
 >打滚，指躺在地下滚来滚去。语出《西游记》第五六回：“那长老在地下正了性，口中念起紧箍儿咒来，把那 行者 勒得面红耳赤，眼胀头昏，在地下打滚。”
 
-##例证分析
+###例证分析
 
 1. 躺在地下滚来滚去<br>
 
@@ -37,6 +37,6 @@ for(var count = 0 ; count < 10000 ;  count ++)
 
 5. 表示内心的欢喜。“高兴的打个滚儿……”
 
-##总结
+###总结
 
 >**打滚竟然是你老家的一个扑克牌游戏，那我要打个滚，你去不去啊？**
