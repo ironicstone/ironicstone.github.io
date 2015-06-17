@@ -5,7 +5,7 @@ email: ironicstone@163.com
 description: > # this means to ignore newlines until "baseurl:"
   Here is a blog for Wang YuJie , an angle for me , a secret garden for our own.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "ironicstone.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # Google analytics
 google_analytics:
@@ -50,6 +50,6 @@ markdown:     redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     8
+paginate:     10
 sass:
   compressed: true
