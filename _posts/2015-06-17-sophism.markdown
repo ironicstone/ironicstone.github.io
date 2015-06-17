@@ -4,5 +4,11 @@ title:  "常见诡辩方法"
 date:   2015-06-17 
 categories: jekyll update
 ---
-
+![1](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/1.jpg)
+![2](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/2.jpg)
+![3](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/3.jpg)
+![4](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/4.jpg)
+![5](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/5.jpg)
+![6](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/6.jpg)
+![7](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/sophism/7.jpg)
 
