@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "常见诡辩方法"
+date:   2015-06-17 
+categories: jekyll update
+---
+
+
