@@ -2,13 +2,14 @@
 layout: post
 title:  "学习计划"
 date:   2015-05-17 
+summary: My Plans
 categories: jekyll update
 ---
-##头等计划
+####头等计划
 
 - 爱我的小公主
 
-##学习计划
+####学习计划
 
 - C++/MFC
 	- STL
@@ -36,6 +37,6 @@ categories: jekyll update
 	- [百度传课](http://www.chuanke.com/?mod=student&act=index)
 	- [Coursera](https://www.coursera.org)
 	
-##备注
+####备注
 >以上计划固定执行，先坚持20天，可以有中断，但不能中断太久，合理分配时间。
 

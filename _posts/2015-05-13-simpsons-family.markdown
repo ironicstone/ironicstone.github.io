@@ -2,6 +2,7 @@
 layout: post
 title:  "辛普森一家"
 date:   2015-05-15 10:34
+summary: 辛普森一家萌萌哒
 categories: jekyll update
 ---
 ##辛普森萌萌哒

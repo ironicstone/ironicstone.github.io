@@ -2,9 +2,10 @@
 layout: post
 title:  "辛普森一家安全画报"
 date:   2015-05-15 
+summary:辛普森一家萌萌哒安全画报
 categories: jekyll update
 ---
-##辛普森一家萌萌哒
+####辛普森一家萌萌哒
 ![1](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/simpsons2/1.jpg)
 ![2](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/simpsons2/2.jpg)
 ![3](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/simpsons2/3.jpg)

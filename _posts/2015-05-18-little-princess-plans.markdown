@@ -2,6 +2,7 @@
 layout: post
 title:  "小公主的学习计划"
 date:   2015-05-18 
+summary : Little Princess's Plans
 categories: jekyll update
 ---
 ##头等计划
