@@ -3,9 +3,10 @@ layout: post
 title:  "目录分析"
 date:   2015-06-18 
 summary: Jekyll目录设置
-categories: jekyll setting
-tags: test jekyll
+categories: jekyll
+tags: test jekyll 配置
 ---
+
 ####测试目录树的配置
 
 {% highlight javascript %}
@@ -55,4 +56,8 @@ console.log("Here I am");
 	- paginator.previous_page_path
 	- paginator.next_page
 	- paginator.next_page_path
+- 测试
+
+
+
 
