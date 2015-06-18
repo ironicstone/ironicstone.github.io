@@ -16,6 +16,7 @@ tags: github mooc
 通过浏览器来操作Github;`commit`出现的频率很高，提交一个新的版本。每个版本会指向前一个版本。
 
 ###第三课 客户端操作
+比较直观
 
 ###第四课 简单的分支操作
 Git的操作对象是一个一个版本，技巧在于`分支操作`。
@@ -29,7 +30,7 @@ Merge/Rebase
 ###第六课 团队协作
 `Pull Request`
 
-###gh-pages
+###第七课 gh-pages
 通过gh-pages建立项目网站，可以通过jekyll模板非常方便的建立网站。
 
 
