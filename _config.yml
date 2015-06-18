@@ -5,7 +5,7 @@ email: ironicstone@163.com
 author: John Otander Ironicstone
 description: "Here is a blog for Wang YuJie , an angle for me , a secret garden for our own."
 baseurl: "" 
-url: "" 
+url: "http://ironicstone.github.io" 
 
 # Google analytics
 google_analytics:
