@@ -3,7 +3,7 @@ layout: page
 tilte: Archive
 permalink: /archive/
 ---
-<ul class="posts">
+<ul class="arc-list">
 	{% for post in site.posts%}
 	{% capture m %}{{post.date | date:"%m"}}{% endcapture %}
 	{% if month != m %}
