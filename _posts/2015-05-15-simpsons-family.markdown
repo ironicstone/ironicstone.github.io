@@ -3,7 +3,7 @@ layout: post
 title:  "辛普森一家"
 date:   2015-05-15 
 summary: 辛普森一家萌萌哒
-categories: jekyll update
+categories: LittlePrincess
 ---
 ####辛普森萌萌哒
 ![1](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/simpsons1/1.jpg)

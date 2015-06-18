@@ -3,7 +3,7 @@ layout: post
 title:  "最近要养成的一些习惯"
 date:   2015-05-28
 summary: Recent Habits
-categories: jekyll update
+categories: Plans
 ---
 
 - 想念一个人

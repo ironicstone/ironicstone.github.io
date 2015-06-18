@@ -3,7 +3,7 @@ layout: post
 title:  "哎呀，我要打个滚!"
 date:   2015-05-13 09:37:49
 summary: Say Sorry to WangYuJie
-categories: jekyll update
+categories: LittlePrincess
 ---
 ###引言
 
