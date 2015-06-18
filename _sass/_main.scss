@@ -401,6 +401,57 @@ z-index: 10;
 }
 
 
+/*tags' css*/
+
+li.listing-item time {
+    color: #999;
+    font-size: 15px;
+}
+
+li.listing-item a{
+    padding-left: 2em;
+}
+
+time {
+    font-family: "Ubuntu", monospace;
+}
+
+li.listing-seperator {
+    font-family: "telexregular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #4C4B4B;
+    padding-bottom: 20px;
+}
+
+li.listing-seperator:before {
+    color: #ccc;
+}
+
+.home .posts li{
+    margin-bottom:1px;
+}
+/*标签*/
+.fa-calendar:before {
+    content: "\f073";
+}
+
+.fa-folder-open:before {
+    content: "\f07c";
+}
+
+.fa-tags:before {
+    content: "\f02c";
+}
+
+.category li.listing-seperator{
+    padding-bottom: 0px;
+}
+
+
+
+
 /*----------------------------------------------*/
 
 
