@@ -56,12 +56,6 @@ sass:
 
 # Navigation
 
-navigations:
-	- title: About
-	  herf: /auout/
-	- title: Categories
-	  herf: /categories
-    - title: Contact
-      herf: /contact/
+
 
 
