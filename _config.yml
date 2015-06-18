@@ -53,3 +53,4 @@ permalink:    pretty
 paginate:     10
 sass:
   compressed: true
+
