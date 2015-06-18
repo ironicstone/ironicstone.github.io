@@ -54,3 +54,14 @@ paginate:     10
 sass:
   compressed: true
 
+# Navigation
+
+navigations:
+	- title: About
+	  herf: /auout/
+	- title: Categories
+	  herf: /categories
+    - title: Contact
+      herf: /contact/
+
+
