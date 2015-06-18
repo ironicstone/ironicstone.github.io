@@ -2,7 +2,7 @@
 layout: post
 title:  "辛普森一家安全画报"
 date:   2015-05-15 
-summary:辛普森一家萌萌哒安全画报
+summary: 辛普森一家萌萌哒安全画报
 categories: jekyll update
 ---
 ####辛普森一家萌萌哒
