@@ -9,7 +9,7 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
-  <p><span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>{% if page.category %} <a href="/categories/#{{page.category}}">{{ page.category }}</a> {% endif %}&nbsp&nbsp&nbsp&nbsp{% for tag in page.tags %}&nbsp<a href="/tags/#{{ tag }}">{{ tag }}</a>{% endfor %} </p><br>
+  <p><span class="post-meta"><i class="fa fa-calendar"></i>{{ page.date | date: "%b %-d, %Y" }}</span><i class="fa fa-folder-open"></i>{% if page.category %} <a href="/categories/#{{page.category}}">{{ page.category }}</a> {% endif %}&nbsp&nbsp&nbsp<i class="fa fa-tags"></i>&nbsp{% for tag in page.tags %}&nbsp<a href="/tags/#{{ tag }}">{{ tag }}</a>{% endfor %} </p><br>
   {% if page.update_date %}
     <span class="post-meta">Updated: {{ page.update_date | date: "%b %-d, %Y" }}</span><br>
   {% endif %}
