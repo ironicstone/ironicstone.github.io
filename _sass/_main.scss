@@ -385,6 +385,36 @@ margin:23px 23px;
     font-size: 17px;
 }
 
+.title p a
+{
+  color:#7c7c7c;
+  font-size: 20px;
+}
+.title p a:hover
+{
+  color:#111111;
+}
+.post-content p a
+{
+  color:#7c7c7c;
+  font-size: 20px;
+}
+.post-content p a:hover
+{
+  color:#111111;
+  font-size: 20px;
+}
+
+.arc-list li a
+{
+  color:#7c7c7c;
+}
+.arc-list li a:hover
+{
+  color:#111111;
+}
+
+
 /*.category .category-number {
 font-size: 20px;
 padding: 0 5px;
@@ -455,7 +485,9 @@ li.listing-seperator:before {
   color:#7c7c7c;
   font-size: 20px;
 }
-
+#tag_cloud a:hover{ 
+  color:#111111;
+}
 
 
 
