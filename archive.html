@@ -8,7 +8,7 @@ permalink: /archive/
 	{% capture m %}{{post.date | date:"%m"}}{% endcapture %}
 	{% if month != m %}
 	{% assign month = m %}
-	<li class="listing-seperator">{{post.date|date:"%Y-%m"}}</li>
+	<i class="icon-circle-arrow-right"></i><li class="listing-seperator">{{post.date|date:"%Y-%m"}}</li>
     {% endif %}
     <li><span class="category-date">{{ post.date | date:"%Y-%m-%d"}}</span>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
