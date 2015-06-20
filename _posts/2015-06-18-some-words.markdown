@@ -68,11 +68,4 @@ tags: love WangYuJie
 > <span class="blue">The world may change my whole life through</span><br/>
 > <span class="blue">But nothing's gonna change my love for you</span><br/>
 
-<blockquote>
-  <p>
-    ###离思五首·其四
-    曾经沧海难为水，除却巫山不是云。
-    取次花丛懒回顾，半缘修道半缘君。
-  </p>
-  <footer><cite title="Yuan">元稹</cite></footer>
-</blockquote>
+
