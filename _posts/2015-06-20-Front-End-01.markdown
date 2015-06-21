@@ -11,6 +11,7 @@ tags: 前端 ps切图 photoshop
 > 代码不能完成的工作，给网页提供图片素材，从设计稿到图片要素
 
 给网页提供素材的两种方式
+
 - HTML:`img`
 {% highlight javascript%}
 	<img src="images/avatar.jpg" alt="头像">
