@@ -10,3 +10,6 @@ categories: Test
 - 操作系统：win8.1
 - 编辑器：sublime text 3
 
+
+<h3 style="text-align:center;color:red;">这是居中测试</h3>
+
