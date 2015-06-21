@@ -11,5 +11,5 @@ categories: Test
 - 编辑器：sublime text 3
 
 
-<h3 style="text-align:center;color:red;">这是居中测试</h3>
+<h3 style="text-align:center;color:red;">这是html标签的居中测试</h3>
 
