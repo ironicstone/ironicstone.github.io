@@ -107,7 +107,7 @@ tags: 前端 ps切图 photoshop
 - PNG8修改颜色模式
 - 图层拆分，选取，剪切，粘贴
 
-2.1.6 图片优化和合并
+2.1.6 图片优化和合并</br>
 <strong>如何使用</strong>
 {% highlight html%}
 	<button class="u-btn">点我</button>
