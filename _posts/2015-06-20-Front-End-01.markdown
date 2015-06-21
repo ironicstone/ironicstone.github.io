@@ -157,12 +157,29 @@ tags: 前端 ps切图 photoshop
 
 常用快捷键
 
-- 查找`CTRL + P`
-	- :
+- 查找`CTRL + P` (Go anything)
+	- : (行号)
 	- @
 	- #
-- 命令面板
-	
+- 命令面板`CTRL+SHIFT+P`
+- 多行选择`CTRL+D,CTRL+SHIFT+L,ALT+F3`
+
+常用插件
+
+- Package Control
+- Emmet
+- DocBlockr （`注释`）
+- SideBarEnhancements
+- Terminal
+
+
+
+
+
+
+
+
+
 
 
 
