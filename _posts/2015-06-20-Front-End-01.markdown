@@ -129,8 +129,17 @@ tags: 前端 ps切图 photoshop
 - 大小和质量
 	- 平衡和取舍
 	- 压缩工具
-		- 无损 Minimage
+		- 无损 [Minimage](https://github.com/NetEaseWD/minimage)（网易前端开发）
 		- 有损 TinyPng
+- 图片之间必须保留一定空隙
+- 图片排列方式
+	- 横向排列
+	- 纵向排列
+
+<strong>浏览器兼容方案</strong>
+
+- IE6不支持PNG24半透明，保存两份（24/8）
+- CSS3&切图（直接不添加IE6的特效）
 
 
 
