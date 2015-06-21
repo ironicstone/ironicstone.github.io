@@ -7,17 +7,17 @@ categories: MOOC PS切图
 tags: 前端 ps切图 photoshop	
 ---
 
-###为什么要切图？
+1. ###为什么要切图？
 > 代码不能完成的工作，给网页提供图片素材，从设计稿到图片要素
 
 给网页提供素材的两种方式
 
-- HTML:`img`
+1. HTML:`img`
 {% highlight javascript%}
 	<img src="images/avatar.jpg" alt="头像">
 {% endhighlight %}
 
-- CSS:`background`
+2. CSS:`background`
 {% highlight css%}
 	.icon{
 	background-img:url(../images/sprite.png);
@@ -25,6 +25,6 @@ tags: 前端 ps切图 photoshop
 	}
 {% endhighlight %}
 
-###如何切图
+2. ###如何切图
 
 * 使用PS工具
