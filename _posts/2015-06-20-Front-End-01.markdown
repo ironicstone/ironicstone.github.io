@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "网易前端微专业学习笔记---PS切图"	
+date:   2015-6-21 16:13:34							
+summary: PS切图学习笔记	
+categories: MOOC PS切图
+tags: 前端 ps切图 photoshop	
+---
+
+###为什么要切图？
+> 代码不能完成的工作，给网页提供图片素材，从设计稿到图片要素
+
+给网页提供素材的两种方式
+- HTML:`img`
+{% highlight javascript%}
+	<img src="images/avatar.jpg" alt="头像">
+{% endhighlight %}
+
+- CSS:`background`
+{% highlight css%}
+	.icon{
+	background-img:url(../images/sprite.png);
+	background-position:0 0;
+	}
+{% endhighlight %}
+
+###如何切图
+
+* 使用PS工具
