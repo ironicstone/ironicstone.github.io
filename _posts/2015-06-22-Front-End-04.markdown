@@ -16,8 +16,33 @@ tags: css
 - color:red;#ff0000;rgb(255,0,0);rgba(255,0,0,1);transparent;
 
 ###CSS-文本-对齐方式
-- text-align:left|right|center;|justify(两端对齐)
+- text-align:left|right|center|justify(两端对齐)
 - vertical-align:baseline|sub(下标)|super(上标)|top|text-top|middle|bottom|text-bottom|<percentage>|<length>
+- text-indent:<length>|<percentage> （2em）
+
+###CSS-文本-格式处理
+- white-space:normal|nowrap|pre|pre-wrap|pre-line
+- word-wrap:normal|break-word
+- word-break:normal|keep-all|break-all
+
+###CSS-文本修饰
+- text-shadow:none|[<length>{2,3}&&<color>?]#
+	- text-shadow:1px 2px 3px #f00; `x轴，y轴，模糊半径，颜色`
+- text-decoration：none|underline|overline
+
+
+###CSS-高级设置
+- text-overlflow:clip|ellipsis
+- cursor:[<url>,]*[|auto|pointer|default|zoom-in|zoom-out|move]
+
+{% highlight CSS%}
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:url(xx.cur),pointer;
+{% endhighlight %}
+
+
 
 
 
