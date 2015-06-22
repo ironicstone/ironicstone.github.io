@@ -42,6 +42,7 @@ tags: HTML
 > <em>HyperText Markup Language</em>, commonly referred to as HTML, is the standard markup language used to create web pages.[1] It is written in the form of HTML elements consisting of tags enclosed in angle brackets (like <html>). HTML tags most commonly come in pairs like <h1> and </h1>, although some represent empty elements and so are unpaired, for example <img>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).  --[Wikipedia](https://en.wikipedia.org/wiki/HTML)
 
 <strong>HTML发展史</strong><br>
+
 - 1991 html
 - 1995 html2
 - 1996 html3.2
@@ -51,6 +52,7 @@ tags: HTML
 - 2014 html5正式发布
 
 <strong>HTML组成部件</strong><br>
+
 - <!DOCTYPE HTML> 
 - HEAD
 	- meta
@@ -86,7 +88,7 @@ tags: HTML
 		 	- strong (字体加粗)
 		 	- em (语义强调)
 		 	- span
-		 - 换行 `\<br\>`
+		 - 换行 <br>
 		 - 引用
 		 	- cite
 		 	- p
@@ -99,15 +101,9 @@ tags: HTML
 		- div
 		- p
 		- 列表
-			- 无序列表 
-				- {% highlight html%}
-					<ul></ul>
-				{% endhighlight %}
+			- 无序列表 				
 			- 有序列表 
-				- {% highlight html%}
-					<ol type="a" start="2"></ol> <!--通过type和start改变样式-->
-			- 自定义列表 <dl><dt>项</dt><dd>向描述</dd></dl>
-				{% endhighlight %}
+			- 自定义列表 				
 		- pre 格式化的内容
 		- blockquote 块级的引用
 	- 表格
@@ -130,6 +126,18 @@ tags: HTML
 			- text
 			- radio
 			- file
+	- 嵌入资源
+		- 图片 img 
+		- 嵌入页面 iframe，云音乐中的播放器
+		- 嵌入外部资源 object,embed	
+		- 视频 video
+		- 音频 audio
+		- 图
+			- canvas
+			- svg
+		- 热点区域
+			- map
+			- area
 
 <strong>表单示例</strong>			
 
@@ -160,19 +168,6 @@ tags: HTML
 		</form>
 	{% endhighlight %}
 
-	- 嵌入资源
-		- 图片 img 
-		- 嵌入页面 iframe，云音乐中的播放器
-		- 嵌入外部资源 object,embed	
-		- 视频 video
-		- 音频 audio
-		- 图
-			- canvas
-			- svg
-		- 热点区域
-			- map
-			- area
-
 <strong>video示例</strong>
 
 		{% highlight html%}
@@ -195,7 +190,7 @@ tags: HTML
 
 <strong>实体字符</strong><br>
 
-- 空格 &nbsp;
+- 空格 &ampnbsp;
 - 引号 &quot
 - >,< &gt,&lt
 - ©, &copy
