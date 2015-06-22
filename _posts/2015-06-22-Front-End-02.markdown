@@ -39,7 +39,7 @@ tags: HTML
 - Terminal
 
 <strong>HTML释义</strong>
-> <em>HyperText Markup Language</em>, commonly referred to as HTML, is the standard markup language used to create web pages.[1] It is written in the form of HTML elements consisting of tags enclosed in angle brackets (like <html>). HTML tags most commonly come in pairs like <h1> and </h1>, although some represent empty elements and so are unpaired, for example <img>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).  --[Wikipedia](https://en.wikipedia.org/wiki/HTML)
+> <em>HyperText Markup Language</em>, commonly referred to as HTML, is the standard markup language used to create web pages. It is written in the form of HTML elements consisting of tags enclosed in angle brackets (like <html>). HTML tags most commonly come in pairs like &lth1&gt and &lt/h1&gt, although some represent empty elements and so are unpaired, for example <img>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).  --[Wikipedia](https://en.wikipedia.org/wiki/HTML)
 
 <strong>HTML发展史</strong><br>
 
@@ -89,14 +89,9 @@ tags: HTML
 		 	- em (语义强调)
 		 	- span
 		 - 换行 <br>
-		 - 引用
-		 	- cite
-		 	- p
-		 - 代码
-		 	- code
-		 - 格式化
-		 	- b (bold)
-		 	- i (斜体)
+		 - 引用 cite  p 		 	
+		 - 代码	 code
+		 - 格式化 b (bold)  i (斜体)		 	
 	- 组合内容
 		- div
 		- p
