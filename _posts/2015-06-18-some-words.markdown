@@ -8,7 +8,7 @@ tags: love WangYuJie
 ---
 
 ## <span class="red">Nothing's gonna change my love for you</span>
-> <embed src="http://www.xiami.com/widget/0_1769193664/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<embed src="http://www.xiami.com/widget/0_1769193664/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent" draggable="true"></embed>
 > <span class="blue">If I had to live my life without you near me</span><br/>
 > <span class="blue">The days would all be empty</span><br/>
 > <span class="blue">The nights would seem so long</span><br/>
