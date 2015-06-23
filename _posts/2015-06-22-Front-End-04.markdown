@@ -64,9 +64,11 @@ tags: css
 - content
 	- width
 	- height
-- padding(<span class="red">TRBL</span>)
+- padding(<span class="red">TRBL顺时针</span>，margin，border也有类似的特性，值缩写)
+- margin（毗邻要素合并，会出现margin合并，父元素与第一个/最后一个子元素合并；可实现水平居中效果）
 - border
-- margin
+
+
 
 
 
