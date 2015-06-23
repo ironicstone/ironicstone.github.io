@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Html5&css3 For The Real World"
+date:   2015-6-22 14:31:01
+summary: 读书笔记
+categories: 读书笔记	
+tags: html css	 
+---
+
+### Introducing HTML5 and CSS3
+
+<strong>CSS最新特性的适配方法</strong>
+
+- [autoprefixer](https://github.com/postcss/autoprefixer)
+- [Grunt](http://gruntjs.com/)
+- [Can I Use](http://caniuse.com/)
+- [Pleeease](http://pleeease.io/play/)
+
+### Chapter 1 Markup
+
+<strong>[解决老版IE无法识别HTML5标签的问题](http://ejohn.org/blog/html5-shiv/)</strong>
+
+{% highlight html %}
+<html>
+<head>
+<style>blah { color: red; }</style>
+<script>document.createElement("blah")</script>
+</head>
+<body>
+<blah>Hello!</blah>
+</body>
+</html>
+{% endhighlight %}
+
+### Chapter 3 More HTML5 Semantics
+
+<strong>Content Types</strong>
+
+- Metadata content
+	- tilte
+	- link
+	- meta
+	- style
+- Flow content
+	- header
+	- footer
+	- ……
+- Sectioning content
+	- article
+	- aside
+	- nav
+	- section
+- Heading content
+	- h1
+	- h2
+	- ……
+- Phrasing content
+	- strong
+	- cite
+- Embedded content
+	- img
+	- object
+	- embed
+	- video
+	- canvas
+- Interactive content
+	- which users can interact with
+
+<strong>details的解决方案</strong>
+
+- [Jquery](http://mathiasbynens.be/notes/html5-details-jquery)
+- [polyfill](https://github.com/chemerisuk/better-details-polyfill)
+
+<span class="red">Web Compnents</span>
+
+- Custom Elements
+- Shadow DOM
+- HTML Imports
+- HTML Templates
+
+
+
+
+
