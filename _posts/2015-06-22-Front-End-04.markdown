@@ -58,6 +58,20 @@ tags: css
 	cursor:url(xx.cur),pointer;
 {% endhighlight %}
 
+###盒模型
+<strong>针对块状要素</strong>
+
+- content
+	- width
+	- height
+- padding(<span class="red">TRBL</span>)
+- border
+- margin
+
+
+
+
+
 
 
 

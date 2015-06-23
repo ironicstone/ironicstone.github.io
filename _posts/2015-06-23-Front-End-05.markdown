@@ -78,7 +78,11 @@ tags: html css
 - HTML Imports
 - HTML Templates
 
-
+### Chapter 4 HTML5 Forms
+>In JavaScript focus event terminology, the focus event will fire on a form element
+when it receives focus, and the blur event will fire when it loses focus.
+In CSS, the :focus pseudo-class can be used to style elements that currently have
+focus.
 
 
 
