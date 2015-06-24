@@ -31,6 +31,34 @@ tags: css
 	- 设置不显示
 	- visiblity：hidden;区别在于是否保留原始区域。
 
+{% highlight CSS %}
+	//居中布局
+	.content{margin:auto;}
+	//居中导航
+	ul {text-align:center;height:30px;line-height:30;}
+	li,a{display:inline-block;width:80px;height:100%;}
+	li{margin: 0 10px;list-sytle:none;}
+{% endhighlight %}
+
+###元素叠加
+- position-设置定位方式 TRBL
+- z-index z轴上的顺序，和父元素的优先级有关
+
+- position:static|relative|absolute|fixed;
+	- position:relative;
+		- 仍在文档流中，不会被占据空间
+		- 参照物为元素本身
+		- 改变顺序
+	- position:absolute;
+		- 默认宽度为内容宽度；
+		- 脱离文档流，其他要素会占据它的位置
+		- 参照物为第一个定位祖先/根元素（HTML）  `配合position:relative;使用，叠加在上面使用`
+	- position:fixed;
+		- 默认宽度为内容宽度
+		- 脱离文档流
+		- 参照物为视窗
+
+
 
 
 
