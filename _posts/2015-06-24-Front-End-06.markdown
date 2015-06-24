@@ -50,13 +50,17 @@ tags: css
 		- 参照物为元素本身
 		- 改变顺序
 	- position:absolute;
-		- 默认宽度为内容宽度；
+		- 默认宽度为内容宽度
 		- 脱离文档流，其他要素会占据它的位置
 		- 参照物为第一个定位祖先/根元素（HTML）  `配合position:relative;使用，叠加在上面使用`
 	- position:fixed;
 		- 默认宽度为内容宽度
 		- 脱离文档流
-		- 参照物为视窗
+		- 参照物为视窗 //固定顶栏
+- float:left|right|none|inherit;
+	- 默认宽度为内容宽度
+	- 脱离文档流
+	- 向指定的方向一直移动
 
 
 
