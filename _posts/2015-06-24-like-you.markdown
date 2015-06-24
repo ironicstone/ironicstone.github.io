@@ -8,7 +8,7 @@ tags: love WangYuJie
 ---
 
 ## <span class="red">喜欢你</span>
-> <embed src="http://www.xiami.com/widget/14666509_1773430479/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+> <embed src="http://www.xiami.com/widget/14666509_1773430479/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed><br>
 > <span class="blue">细雨带风湿透黄昏的街道</span><br>
 > <span class="blue">抹去雨水双眼无故地仰望</span><br>
 > <span class="blue">望向孤单的晚灯 是那伤感的记忆</span><br>
