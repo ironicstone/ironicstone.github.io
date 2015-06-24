@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "网易前端微专业学习笔记---CSS(二)"
-date:   2015-6-22 14:31:01
 summary: CSS学习笔记
 categories: MOOC 页面制作
 tags: css 
@@ -52,7 +51,7 @@ tags: css
 
 
 {% highlight CSS%}
-	text-overflow:ellipsis;
+	text-overflow:ellipsis(省略号);
 	overflow:hidden;
 	white-space:nowrap;
 	cursor:url(xx.cur),pointer;
@@ -67,6 +66,51 @@ tags: css
 - padding(<span class="red">TRBL顺时针</span>，margin，border也有类似的特性，值缩写)
 - margin（毗邻要素合并，会出现margin合并，父元素与第一个/最后一个子元素合并；可实现水平居中效果）
 - border
+	- border-width:{1-4}
+	- border-style:{1-4}
+	- border-color:{1-4}
+	- border-raius:10px;50%(变成一个圆);`圆角矩形,一个角两个属性`
+	- border-top-left-radius:10px;
+
+{% highlight CSS %}
+	border-radius:0 5px 10px 15px/
+	          20px 15px 10px 5px;
+{% endhighlight %}
+
+<strong>文本溢出处理</strong>
+
+- overflow,overflow-x,overflow-y
+	- visible
+	- hidden
+	- scroll
+	- auto
+
+- box-sizing:content-box|border-box|inherit;`自适应和响应式布局`
+
+- box-shadow:inset 4px 0px 0px 0px red;`内阴影 水平平移 垂直平移 模糊半径 阴影大小 阴影颜色` <span class="red">阴影不占空间</span>
+
+- outline `与border类似，不过没有四个方向的选择，四个方向一样`
+	- 不占空间，border外
+	- border-width
+	- border-style
+	- border-color
+
+###背景
+- background-color
+- background-image:url(red.png),url(blue.png); `可以有多个url,可以和color叠加`
+- background-repeat:repeat-x/y;space;round;no-repeat;
+- background-attachment:scroll/local(local会随内容滚动);
+- background-position:center center;(居中)
+
+<strong>sprite图片精灵</strong>
+使用background-position调整位置
+
+- background-image:linear-gradient(to top,red,green);
+- background-image:radial-gradient(closet/circle,red,blue);
+- background-image:repeat-*-gradient();
+- background-origin:padding(默认)/border/content-box;
+- background-clip:padding(默认)/border/content-box;`裁剪`
+- background-size:cover/contain/[length/percentage]{1,4}
 
 
 
