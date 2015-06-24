@@ -60,6 +60,14 @@ console.log("Here I am");
 - 测试2
 - 测试3
 
+<input type="button" value="点我点我" onclick="pop()">
+
+<script>
+	function pop () {
+		alert("测试成功");
+	}
+</script>
+
 
 
 
