@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "网易前端微专业学习笔记---CSS(三)"
+date: 
+summary: CSS学习笔记
+categories: MOOC 页面制作
+tags: css 
+---
+
+<h2 style="text-align:center;">CSS布局</h2>
+<span class="blue">布局</span>: 将元素以正确的大小摆放在正确的位置上
+
+###display
+- display:block;`div,p,h1-h6,form……`
+	- 默认宽度为父元素宽度
+	- 可设置宽高
+	- 换行显示
+	- div,p,h1-h6,form……
+- display:inline; `span,a,label,cite,em,strong,……`
+	- 默认宽度为内容宽度
+	- 不可设置宽高
+	- 同行显示（元素内换行）
+	- span,a,label,cite,em,strong,……
+- display:inline-block;
+	- 默认为内容宽度
+	- 可设置宽高
+	- 同行显示
+	- 整块换行
+	- input,textarea,select,button,……
+- display:none;
+	- 设置不显示
+	- visiblity：hidden;区别在于是否保留原始区域。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
