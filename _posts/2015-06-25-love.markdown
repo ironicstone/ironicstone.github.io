@@ -1,8 +1,8 @@
 ---
 layout: center
-title:  "Love"
+title:  "·——·"
 date:   2015-6-24 11:35:36
-summary: Some words to you
+summary: ·——·
 categories: LittlePrincess
 tags: love WangYuJie
 ---
