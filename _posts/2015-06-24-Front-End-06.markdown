@@ -75,7 +75,14 @@ tags: css
 
 <span class="blue">多行，多列自适应问题</span>
 
-- display:flex;`在文档流中的子元素`
+- display:flex;`在文档流中的<strong>子元素</strong>,非孙元素`
+- justify-content
+- align-content
+- align-items:flex-start|flex-end|center|baseline|stretch;
+- align-self :设置单个flex item在cross-axis方向上的对齐方式
+- align-content
+
+
 
 
 

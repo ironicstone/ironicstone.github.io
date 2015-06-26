@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "网易前端微专业学习笔记---CSS(四)"
+date: 2015-6-24 17:12:31
+summary: CSS学习笔记
+categories: MOOC 页面制作
+tags: css 变形
+---
+
+<h2 style="text-aligh:center;">CSS动画</h2>
+
+- transform:none|<transform-function>+
+	- rotate()
+	- translateX()|translateY()|translate()
+	- scaleX()|scaleY()|scale()
+	- skewX()|skewY()|skew()
