@@ -11,4 +11,4 @@ tags: tools js library
 - <div id="span" class="red"><strong>impress.js</strong></div>
 	- [Github](https://github.com/impress/impress.js)
 	- [Demos](https://github.com/impress/impress.js/wiki/Examples-and-demos)
-	- CDN:<script src="//cdn.bootcss.com/impress.js/0.5.3/impress.js"></script>
+	- CDN:\<script src="//cdn.bootcss.com/impress.js/0.5.3/impress.js"></script>
