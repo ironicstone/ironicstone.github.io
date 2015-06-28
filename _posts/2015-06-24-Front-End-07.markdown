@@ -8,9 +8,12 @@ tags: css 变形
 ---
 
 <h2 style="text-aligh:center;">CSS动画</h2>
+<strong>2D变形</strong>
 
 - transform:none|<transform-function>+
 	- rotate()
 	- translateX()|translateY()|translate()
 	- scaleX()|scaleY()|scale()
 	- skewX()|skewY()|skew()
+- transform-origin:0 0;
+
