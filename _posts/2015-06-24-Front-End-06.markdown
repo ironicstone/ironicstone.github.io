@@ -52,7 +52,7 @@ tags: css
 	- position:absolute;
 		- 默认宽度为内容宽度
 		- 脱离文档流，其他要素会占据它的位置
-		- 参照物为第一个定位祖先/根元素（HTML）  `配合position:relative;使用，叠加在上面使用`
+		- 参照物为第一个定位祖先（带有position属性的元素，`因此相对定位元素通常作为绝对定位元素的父元素来使用`）/根元素（没有定位祖先则为HTML）  `配合position:relative;使用，叠加在上面使用`
 	- position:fixed;
 		- 默认宽度为内容宽度
 		- 脱离文档流
@@ -70,7 +70,7 @@ tags: css
 <strong>清除浮动的方法</strong>
 
 {% highlight CSS%}
-	.clearfix:after{content:'.';display:block;clear;height:0;overflow:hidden;visibility:hidden;}	
+	.clearfix:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}	
 {% endhighlight %}
 
 <span class="blue">多行，多列自适应问题</span>
