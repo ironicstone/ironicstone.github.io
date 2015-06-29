@@ -1,0 +1,19 @@
+---
+layout: center
+title:  "哈哈"
+date:   2015-6-29 19:40:20
+summary: 旋转立方体
+categories: LittlePrincess
+tags: love WangYuJie
+---
+
+<div class="cube-container">
+		<div class="cube-stage">
+			<div class="cube-face front">囧</div>
+			<div class="cube-face back">槑</div>
+			<div class="cube-face right">玊</div>
+			<div class="cube-face left">巭</div>
+			<div class="cube-face top">恏</div>
+			<div class="cube-face bottom">氼</div>
+		</div>
+	</div>

@@ -13,4 +13,9 @@ tags: javascript 内置对象
 - 简易TODO软件
 - Rss阅读器
 
-<strong>Object</strong>
+<strong>Function</strong>
+
+- 用于定义函数或者新对象构造器
+- 自定义对象构造器
+
+

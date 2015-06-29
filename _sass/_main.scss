@@ -755,3 +755,87 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: fadeInDown;
           animation-name: fadeInDown;
 }
+
+
+/*这是CSS3动画，旋转立方体*/
+
+ .cube-container{
+      top:200px;
+          left:200px;
+          width:200px;
+          height: 200px;
+          perspective: 2000px;
+            /*perspective-origin:20% -300px;    */
+
+      }  
+        .cube-stage{
+          
+          position: relative;         
+          width: 200px;
+          height: 200px;
+          top:200px;
+          left:200px;
+          transform-style:preserve-3d; 
+          
+        }
+        .cube-face {
+          position: absolute;
+          background-color: rgba(255,255,255,0.3);
+          width:200px;
+          height:200px;
+          line-height: 200px;
+          font-weight: bold;
+          font-size: 100px;
+          text-align: center;
+          border:1px solid black;
+          transition:all 2s;
+            color:#e3e3e3;
+
+        }
+        .left{
+          transform:rotateY(-90deg) translateZ(100px);          
+        }
+        .right{
+          transform:rotateY(90deg) translateZ(100px);
+        }
+        .top {transform:rotateX(90deg) translateZ(100px);}
+        .bottom{transform:rotateX(-90deg) translateZ(100px);}
+        .front{transform:translateZ(100px);}
+        .back{transform:rotateX(180deg) rotate(180deg) translateZ(100px);}
+        /*.cube-stage{transform:translateZ(-100px);}*/
+           @keyframes row{
+          from{}
+          to{
+            /*transform:rotate3d(1,1,1,360deg) ;*/
+                transform:rotateY(360deg);
+          }
+        }
+        .cube-stage{
+          animation:row 3.5s linear infinite;
+        }
+
+        .cube-stage:hover .front{
+          background-color: rgba(255,0,0,0.6);
+          transform:translateZ(200px);
+        }
+         .cube-stage:hover .back{
+          background-color: rgba(255,255,0,0.6);
+            transform:rotateX(180deg) rotate(180deg) translateZ(200px);
+        } .cube-stage:hover .top{
+          background-color: rgba(0,255,0,0.6);
+          transform:rotateX(90deg) translateZ(200px) ;
+              
+        } .cube-stage:hover .bottom{
+          background-color: rgba(0,0,255,0.6);
+            transform:rotateX(-90deg) translateZ(200px);
+        } 
+        .cube-stage:hover .left{
+          background-color: rgba(0,255,255,0.6);
+            transform:rotateY(-90deg) translateZ(200px); 
+
+        }
+         .cube-stage:hover .right{
+          background-color: rgba(255,255,255,0.6);
+            transform:rotateY(90deg) translateZ(200px);
+        }
+       
