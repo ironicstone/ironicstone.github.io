@@ -34,7 +34,7 @@ transition和animation属性相对比较简单。主要是transform属性里面�
 1、结构层（HTML）
 ![pic](http://img.blog.csdn.net/20150702103654689)
 以上面的画来分析立方体的结构，首先必须有一个画框作为容器来承载，其次，要有一个画布，第三，画本身。因此，对应到立方体里，结构如下：
-```html
+{% highlight javascript %}
 <div class="container">      	<!--画框-->
 		<div class="stage">  	<!--画布-->
 			<div class="face front">Front</div>
@@ -45,11 +45,12 @@ transition和animation属性相对比较简单。主要是transform属性里面�
 			<div class="face bottom">Bottom</div>
 		</div>
 	</div>
-```
+{% endhighlight %}
+
 2、样式层（CSS）
 （1）基本属性
 首先设置画框和画布的属性
-```css
+{% highlight javascript %}
 .container{			
       		width:200px;
       		height: 200px;
@@ -63,9 +64,9 @@ transition和animation属性相对比较简单。主要是transform属性里面�
         	height: 200px;        	
         	transform-style:preserve-3d;        	
         }
-```
+{% endhighlight %}
 接着设置每个面的属性：
-```css
+{% highlight javascript %}
 .face {
         	position: absolute;  /*绝对定位脱离文档流，在一个容器内显示，其参照物为上面的相对定位元素stage*/
         	background-color: rgba(0,0,0,0.3);
@@ -77,23 +78,22 @@ transition和animation属性相对比较简单。主要是transform属性里面�
         	font-size: 20px;        	
         	border:1px solid black;
       }
-```
+{% endhighlight %}
 （2）构造立方体
 到这一步，基本的样式已经完成，接下来主要通过transform属性来构成立方体。每个面必须通过适当的旋转（rotate）和位移（translate）来到达相应的位置。如下：
-```css
+{% highlight javascript %}
 .left   {transform:rotateY(-90deg) translateZ(100px);} /*正面绕Y轴逆时针旋转90度，然后往前100px，下面的面做类似的处理*/
 .right  {transform:rotateY(90deg) translateZ(100px);}
 .top    {transform:rotateX(90deg) translateZ(100px);}
 .bottom {transform:rotateX(-90deg) translateZ(100px);}
 .front  {transform:rotateX(0deg)   translateZ(100px);}
 .back   {transform:rotateX(180deg)  translateZ(100px);}
-
-```
+{% endhighlight %}
 至此，已经得到一个静态的立方体。
 ![cube](http://img.blog.csdn.net/20150702095408473)
 （3）立方体自动拼成
 为了达到自动拼成的效果，需要设置动画animation，通过设置关键帧`@keyframes`为每一个面设置一个动画。上面的CSS可以重写。以左面为例子：
-```css
+{% highlight javascript %}
 @keyframes step1  /*动画名称*/
 {
 from{}
@@ -102,9 +102,9 @@ to{transform:rotateY(-90deg) translateZ(100px);}
 .left{animation-name:step1;
 animation-duration:1s;
 animation-fill-mode:both; } /*step1表示动画名称，1s表示持续时间,both可以使得其动画完成时保存在最后一个属性值，这里也可以设置为forwards，这里也可以用简写:`animation:step1 1s both;`*/
-```
+{% endhighlight %}
 同样，其他几个面也可以设置类似的属性，因为这六个面是依次变化的，所以后面的动画要设置animation-delay。比如第二个动画：
-```css
+{% highlight javascript %}
 @keyframes step2  /*动画名称*/
 {
 from{}
@@ -114,10 +114,10 @@ to{transform:rotateY(90deg) translateZ(100px);}
 animation-duration:1s;
 animation-delay:1s;
 animation-fill-mode:both;} /*step2表示动画名称，1s表示持续时间,因为第一个动画用了1s,所以设置animation-delay也为1s，表示延迟1s后执行*/
-```
+{% endhighlight %}
 （4）让立方体动起来
 整个立方体的旋转要用到rotate3d属性。rotate3d(x,y,z,deg)，里面有4个参数，立体图形旋转的轴就是原点到（x,y,z）的矢量线段。因此，本例中，矢量方向为原点指向(1,1,1)的方向，当然也可以设成（100,100,100），两者的方向是一样的。同样这也是一个动画效果。
-```css
+{% highlight javascript %}
 @keyframes rotateall
 {
 	from{}
@@ -127,19 +127,19 @@ animation-fill-mode:both;} /*step2表示动画名称，1s表示持续时间,因�
 {
 	animation:rotateall 2s linear infinite;/*调用动画rotateall，持续2s，匀速旋转，无限重复下去*/
 }
-```
+{% endhighlight %}
 （5）添加hover属性。
 鼠标hover上去之后会有一个颜色的渐变，同样以左面为例子：
-```CSS
+{% highlight javascript %}
 .stage:hover .left /*CSS选择器，选择stage下的left，因为面与面之间有遮挡，所以直接hover到left上*/
 {
 	background-color:rgba(255,0,0,0.3);
 }
-```
+{% endhighlight %}
 因为颜色是渐变的，所以在.face中加入transition属性。
-```css
+{% highlight javascript %}
 .face{transition:all 3s;}
-```
+{% endhighlight %}
 <hr/>
 ###四、总结
 这个例子把动画的三个属性做了一个综合，其中比较麻烦的是关于坐标系的理解，和通常的不太一样，多做几个例子应该就明白了。
