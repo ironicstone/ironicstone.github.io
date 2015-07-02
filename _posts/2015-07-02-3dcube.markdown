@@ -17,7 +17,7 @@ tags: css3 动画
 > 2. transition（转换）
 > 3. animation（动画）
 
-整个动画效果由三部分组成：
+整个动画效果由三部分组成：<br>
 （1）由平面图自动扩展成立方体，自动拼成立方体用到animation属性，旋转则要用到transform里面的rotate属性<br>
 （2）立方体拼成后的旋转，要用到rotate3d属性<br>
 （3）鼠标hover上去后的一个渐变变色，用到transition属性。<br>
