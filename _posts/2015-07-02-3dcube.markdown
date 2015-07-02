@@ -1,0 +1,153 @@
+---
+layout: post
+title:  "CSS3 立方体"
+date: 2015-6-27 11:02:26
+summary: js学习笔记
+categories: 前端
+tags: css3 动画
+---
+###一、需求
+![立方体动画](http://img.blog.csdn.net/20150701205147890)
+
+[Demo源码下载](http://download.csdn.net/detail/u011037587/8860887)
+<hr/>
+###二、分析
+   以上是通过CSS3实现的3D立方体以及动画效果。通过CSS3的动画属性，可以做出很多非常酷炫的效果。动画属性主要包括3个：
+> 1. transform（变形）
+> 2. transition（转换）
+> 3. animation（动画）
+
+整个动画效果由三部分组成：
+（1）由平面图自动扩展成立方体，自动拼成立方体用到animation属性，旋转则要用到transform里面的rotate属性
+（2）立方体拼成后的旋转，要用到rotate3d属性
+（3）鼠标hover上去后的一个渐变变色，用到transition属性。
+
+transition和animation属性相对比较简单。主要是transform属性里面的内容比较多。尤其是其中涉及3D变形的部分。
+首先，三维坐标系如下所示：
+
+![坐标系](http://img.blog.csdn.net/20150701212045322)
+
+默认坐标的原点在盒模型的中心，y轴的正方向向下。从正对显示屏的角度看，整个显示屏就是X0Y平面，视线方向就是Z轴的方向。
+观察时，眼睛距离显示屏有一段距离，这个距离就是`perspective` 属性。同样，二维平面要有三维效果，那么`transform-style` 必须设置成`preserve-3d` 。通过设置perspective和transform-style就可以得到3D效果。
+<hr/>
+###三、实现
+1、结构层（HTML）
+![pic](http://img.blog.csdn.net/20150702103654689)
+以上面的画来分析立方体的结构，首先必须有一个画框作为容器来承载，其次，要有一个画布，第三，画本身。因此，对应到立方体里，结构如下：
+```html
+<div class="container">      	<!--画框-->
+		<div class="stage">  	<!--画布-->
+			<div class="face front">Front</div>
+			<div class="face back">Bck</div>
+			<div class="face right">Right</div>
+			<div class="face left">Left</div>
+			<div class="face top">Top</div>
+			<div class="face bottom">Bottom</div>
+		</div>
+	</div>
+```
+2、样式层（CSS）
+（1）基本属性
+首先设置画框和画布的属性
+```css
+.container{			
+      		width:200px;
+      		height: 200px;
+        	perspective: 2000px;  /*设置距离为2000来看这幅画*/
+      }  
+.stage{        	
+        	position: relative;   /*作为后面绝对定位元素的父元素*/ 
+        	top:200px;
+        	left:200px;  	
+        	width: 200px;
+        	height: 200px;        	
+        	transform-style:preserve-3d;        	
+        }
+```
+接着设置每个面的属性：
+```css
+.face {
+        	position: absolute;  /*绝对定位脱离文档流，在一个容器内显示，其参照物为上面的相对定位元素stage*/
+        	background-color: rgba(0,0,0,0.3);
+        	width:200px;
+        	height:200px;
+        	line-height: 200px;  /*使得文字居中显示*/
+        	text-align: center;
+        	font-weight: bold;
+        	font-size: 20px;        	
+        	border:1px solid black;
+      }
+```
+（2）构造立方体
+到这一步，基本的样式已经完成，接下来主要通过transform属性来构成立方体。每个面必须通过适当的旋转（rotate）和位移（translate）来到达相应的位置。如下：
+```css
+.left   {transform:rotateY(-90deg) translateZ(100px);} /*正面绕Y轴逆时针旋转90度，然后往前100px，下面的面做类似的处理*/
+.right  {transform:rotateY(90deg) translateZ(100px);}
+.top    {transform:rotateX(90deg) translateZ(100px);}
+.bottom {transform:rotateX(-90deg) translateZ(100px);}
+.front  {transform:rotateX(0deg)   translateZ(100px);}
+.back   {transform:rotateX(180deg)  translateZ(100px);}
+
+```
+至此，已经得到一个静态的立方体。
+![cube](http://img.blog.csdn.net/20150702095408473)
+（3）立方体自动拼成
+为了达到自动拼成的效果，需要设置动画animation，通过设置关键帧`@keyframes`为每一个面设置一个动画。上面的CSS可以重写。以左面为例子：
+```css
+@keyframes step1  /*动画名称*/
+{
+from{}
+to{transform:rotateY(-90deg) translateZ(100px);}
+}
+.left{animation-name:step1;
+animation-duration:1s;
+animation-fill-mode:both; } /*step1表示动画名称，1s表示持续时间,both可以使得其动画完成时保存在最后一个属性值，这里也可以设置为forwards，这里也可以用简写:`animation:step1 1s both;`*/
+```
+同样，其他几个面也可以设置类似的属性，因为这六个面是依次变化的，所以后面的动画要设置animation-delay。比如第二个动画：
+```css
+@keyframes step2  /*动画名称*/
+{
+from{}
+to{transform:rotateY(90deg) translateZ(100px);}
+}
+.left{animation-name:step2;
+animation-duration:1s;
+animation-delay:1s;
+animation-fill-mode:both;} /*step2表示动画名称，1s表示持续时间,因为第一个动画用了1s,所以设置animation-delay也为1s，表示延迟1s后执行*/
+```
+（4）让立方体动起来
+整个立方体的旋转要用到rotate3d属性。rotate3d(x,y,z,deg)，里面有4个参数，立体图形旋转的轴就是原点到（x,y,z）的矢量线段。因此，本例中，矢量方向为原点指向(1,1,1)的方向，当然也可以设成（100,100,100），两者的方向是一样的。同样这也是一个动画效果。
+```css
+@keyframes rotateall
+{
+	from{}
+	to{transform:rotate3d(1,1,1,360deg);}
+}
+.stage
+{
+	animation:rotateall 2s linear infinite;/*调用动画rotateall，持续2s，匀速旋转，无限重复下去*/
+}
+```
+（5）添加hover属性。
+鼠标hover上去之后会有一个颜色的渐变，同样以左面为例子：
+```CSS
+.stage:hover .left /*CSS选择器，选择stage下的left，因为面与面之间有遮挡，所以直接hover到left上*/
+{
+	background-color:rgba(255,0,0,0.3);
+}
+```
+因为颜色是渐变的，所以在.face中加入transition属性。
+```css
+.face{transition:all 3s;}
+```
+<hr/>
+###四、总结
+这个例子把动画的三个属性做了一个综合，其中比较麻烦的是关于坐标系的理解，和通常的不太一样，多做几个例子应该就明白了。
+<hr/>
+###五、参考链接
+
+ - [W3C: CSS Transitions Module Level 3](http://www.w3.org/TR/css3-transitions/)
+ - [W3C: CSS 2D Transforms Module Level 3](http://www.w3.org/TR/css3-2d-transforms/)
+ - [W3C: CSS 3D Transforms Module Level 3](http://www.w3.org/TR/css3-3d-transforms/)
+ - [W3C: CSS Animations Module Level 3](http://www.w3.org/TR/css3-animations/)
+
