@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS3 立方体"
 date: 2015-7-2 11:35:10
-summary: js学习笔记
+summary: CSS3立方体动画
 categories: 前端
 tags: css3 动画
 ---
@@ -18,9 +18,9 @@ tags: css3 动画
 > 3. animation（动画）
 
 整个动画效果由三部分组成：
-（1）由平面图自动扩展成立方体，自动拼成立方体用到animation属性，旋转则要用到transform里面的rotate属性
-（2）立方体拼成后的旋转，要用到rotate3d属性
-（3）鼠标hover上去后的一个渐变变色，用到transition属性。
+（1）由平面图自动扩展成立方体，自动拼成立方体用到animation属性，旋转则要用到transform里面的rotate属性<br>
+（2）立方体拼成后的旋转，要用到rotate3d属性<br>
+（3）鼠标hover上去后的一个渐变变色，用到transition属性。<br>
 
 transition和animation属性相对比较简单。主要是transform属性里面的内容比较多。尤其是其中涉及3D变形的部分。
 首先，三维坐标系如下所示：
@@ -31,8 +31,8 @@ transition和animation属性相对比较简单。主要是transform属性里面�
 观察时，眼睛距离显示屏有一段距离，这个距离就是`perspective` 属性。同样，二维平面要有三维效果，那么`transform-style` 必须设置成`preserve-3d` 。通过设置perspective和transform-style就可以得到3D效果。
 <hr/>
 ###三、实现
-1、结构层（HTML）
-![pic](http://img.blog.csdn.net/20150702103654689)
+1、结构层（HTML）<br>
+![pic](http://img.blog.csdn.net/20150702103654689)<br/>  
 以上面的画来分析立方体的结构，首先必须有一个画框作为容器来承载，其次，要有一个画布，第三，画本身。因此，对应到立方体里，结构如下：
 {% highlight javascript %}
 <div class="container">      	<!--画框-->
@@ -47,9 +47,9 @@ transition和animation属性相对比较简单。主要是transform属性里面�
 	</div>
 {% endhighlight %}
 
-2、样式层（CSS）
-（1）基本属性
-首先设置画框和画布的属性
+2、样式层（CSS）<br>
+（1）基本属性<br>
+首先设置画框和画布的属性<br>
 {% highlight javascript %}
 .container{			
       		width:200px;
@@ -79,7 +79,7 @@ transition和animation属性相对比较简单。主要是transform属性里面�
         	border:1px solid black;
       }
 {% endhighlight %}
-（2）构造立方体
+（2）构造立方体<br>
 到这一步，基本的样式已经完成，接下来主要通过transform属性来构成立方体。每个面必须通过适当的旋转（rotate）和位移（translate）来到达相应的位置。如下：
 {% highlight javascript %}
 .left   {transform:rotateY(-90deg) translateZ(100px);} /*正面绕Y轴逆时针旋转90度，然后往前100px，下面的面做类似的处理*/
@@ -89,9 +89,9 @@ transition和animation属性相对比较简单。主要是transform属性里面�
 .front  {transform:rotateX(0deg)   translateZ(100px);}
 .back   {transform:rotateX(180deg)  translateZ(100px);}
 {% endhighlight %}
-至此，已经得到一个静态的立方体。
-![cube](http://img.blog.csdn.net/20150702095408473)
-（3）立方体自动拼成
+至此，已经得到一个静态的立方体。<br>
+![cube](http://img.blog.csdn.net/20150702095408473)<br/>
+（3）立方体自动拼成<br>
 为了达到自动拼成的效果，需要设置动画animation，通过设置关键帧`@keyframes`为每一个面设置一个动画。上面的CSS可以重写。以左面为例子：
 {% highlight javascript %}
 @keyframes step1  /*动画名称*/
@@ -115,7 +115,7 @@ animation-duration:1s;
 animation-delay:1s;
 animation-fill-mode:both;} /*step2表示动画名称，1s表示持续时间,因为第一个动画用了1s,所以设置animation-delay也为1s，表示延迟1s后执行*/
 {% endhighlight %}
-（4）让立方体动起来
+（4）让立方体动起来<br>
 整个立方体的旋转要用到rotate3d属性。rotate3d(x,y,z,deg)，里面有4个参数，立体图形旋转的轴就是原点到（x,y,z）的矢量线段。因此，本例中，矢量方向为原点指向(1,1,1)的方向，当然也可以设成（100,100,100），两者的方向是一样的。同样这也是一个动画效果。
 {% highlight javascript %}
 @keyframes rotateall
