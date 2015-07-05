@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-#### Here is a site for my little princess.
+#### Here was a site for my little princess.
