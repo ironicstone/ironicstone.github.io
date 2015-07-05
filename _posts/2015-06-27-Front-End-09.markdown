@@ -13,6 +13,7 @@ tags: javascript 内置对象
 - 简易TODO软件
 - Rss阅读器
 
+<<<<<<< HEAD
 <strong>Object</strong>
 
 ###变量作用域
@@ -44,5 +45,11 @@ tags: javascript 内置对象
 	- 函数定义
 	- 变量定义
 
+=======
+<strong>Function</strong>
+
+- 用于定义函数或者新对象构造器
+- 自定义对象构造器
+>>>>>>> 7dca7fc248329dd4ee18b713f9421323b8e576e4
 
 
