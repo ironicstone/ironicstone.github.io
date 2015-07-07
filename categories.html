@@ -13,7 +13,7 @@ permalink: /categories/
 </div>
 <hr>
 {% for category in site.categories %}
-<p><i class="icon-circle-arrow-right"></i><a name="{{category | first }}" href="#{{ category | first }}">{{ category | first }}</a><span  class="category-number">{{ category | last | size }}</span></p>
+<p><i class="icon-circle-arrow-right"></i><a name="{{category | first }}" href="#{{ category | first }}">{{ category | first }}<span  class="category-number">{{ category | last | size }}</span></a></p>
 <ul class="arc-list">
     {% for post in category.last %}
     <li><span class="category-date">{{ post.date | date:"%Y-%m-%d"}}</span>

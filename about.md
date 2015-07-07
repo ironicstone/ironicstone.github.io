@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-#### Here is a site for WangYuJie.
+#### Here was a site for my little princess.
