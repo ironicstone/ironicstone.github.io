@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-#### Here was a site for my little princess.
+#### <span class="red">Hah! Brand New World. LOL
+</span>
+![1](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/2.jpg)
