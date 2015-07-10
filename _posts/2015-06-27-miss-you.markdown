@@ -7,7 +7,7 @@ categories: LittlePrincess
 tags: love WangYuJie
 ---
 ## <span class="red">突然好想你</span>
-> <embed src="http://www.xiami.com/widget/14666509_3381901/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed><br>
+> <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=385781&auto=0&height=66"></iframe><br>
 > <span class="blue">最怕空气突然安静</span><br>
 > <span class="blue">最怕朋友突然的关心</span><br>
 > <span class="blue">最怕回忆突然翻滚</span><br>
