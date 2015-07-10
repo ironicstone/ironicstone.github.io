@@ -1,0 +1,51 @@
+---
+layout: center
+title:  "彩虹"
+date:   2015-7-10 14:31:27
+summary: Blue
+categories: Emotion
+tags: Blue
+---
+
+## <span class="red">彩虹</span>
+> <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=185809&auto=0&height=66"></iframe><br>
+> <span class="blue">哪里有彩虹告诉我</span><br>
+> <span class="blue">能不能把我的愿望还给我</span><br>
+> <span class="blue">为什么天这么安静</span><br>
+> <span class="blue">所有的云都跑到我这里</span><br>
+> <span class="blue">有没有口罩一个给我</span><br>
+> <span class="blue">释怀说了太多就成真不了</span><br>
+> <span class="blue">也许时间是一种解药</span><br>
+> <span class="blue">也是我现在正服下的毒药</span><br>
+> <span class="blue">看不见你的笑 我怎么睡得着</span><br>
+> <span class="blue">你的身影这么近我却抱不到</span><br>
+> <span class="blue">没有地球太阳还是会绕</span><br>
+> <span class="blue">没有理由我也能自己走</span><br>
+> <span class="blue">你要离开 我知道很简单</span><br>
+> <span class="blue">你说依赖 是我们的阻碍</span><br>
+> <span class="blue">就算放开 那能不能别没收我的爱</span><br>
+> <span class="blue">当作我最后才明白</span><br>
+> <span class="blue">有没有口罩一个给我</span><br>
+> <span class="blue">释怀说了太多就成真不了</span><br>
+> <span class="blue">也许时间是一种解药</span><br>
+> <span class="blue">也是我现在正服下的毒药</span><br>
+> <span class="blue">看不见你的笑 我怎么睡得着</span><br>
+> <span class="blue">你的身影这么近我却抱不到</span><br>
+> <span class="blue">没有地球太阳还是会绕</span><br>
+> <span class="blue">没有理由我也能自己走</span><br>
+> <span class="blue">你要离开 我知道很简单</span><br>
+> <span class="blue">你说依赖 是我们的阻碍</span><br>
+> <span class="blue">就算放开 那能不能别没收我的爱</span><br>
+> <span class="blue">当作我最后才明白</span><br>
+> <span class="blue">看不见你的笑</span><br>
+> <span class="blue">要我怎么睡得着</span><br>
+> <span class="blue">你的身影这么近我却抱不到</span><br>
+> <span class="blue">没有地球太阳开始环绕环绕</span><br>
+> <span class="blue">没有理由我也能自己走掉</span><br>
+> <span class="blue">是我说了太多就成真不了</span><br>
+> <span class="blue">也许时间是一种解药解药</span><br>
+> <span class="blue">也是我现在正服下的毒药</span><br>
+> <span class="blue">你要离开 我知道很简单</span><br>
+> <span class="blue">你说依赖 是我们的阻碍</span><br>
+> <span class="blue">就算放开 那能不能别没收我的爱</span><br>
+> <span class="blue">当作我最后才明白</span><br>
