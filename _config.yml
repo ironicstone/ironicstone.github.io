@@ -8,7 +8,7 @@ baseurl: ""
 url: "http://ironicstone.github.io" 
 
 # Google analytics
-google_analytics:
+google_analytics:true
 
 # Optional features
 animated:           false
