@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Html5&css3 For The Real World"
-date:   2015-6-23 21:00:17
+date:   2015-7-11 16:43:39
 summary: 读书笔记
 categories: 读书笔记	
 tags: html css 页面制作
@@ -81,8 +81,10 @@ tags: html css 页面制作
 ### Chapter 4 HTML5 Forms
 >In JavaScript focus event terminology, the focus event will fire on a form element
 when it receives focus, and the blur event will fire when it loses focus.
-In CSS, the :focus pseudo-class can be used to style elements that currently have
-focus.
+In CSS, the :focus pseudo-class(伪类) can be used to style elements that currently have focus. <br>
 
+- Some properties
+	- required
+	- [CSS hack](http://blog.csdn.net/freshlover/article/details/12132801)
 
 
