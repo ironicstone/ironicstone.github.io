@@ -6,5 +6,10 @@ summary: 晚安
 categories: life
 tags: life
 ---
-<img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/bart.jpg" alt="Good Night" style="display:block;border-radius:50%;height:100px;width:100px;margin: 0 auto;">
-<img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/goodnight2.jpeg" alt="Good Night" style="width:500px">
+<img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/bart.jpg" alt="Good Night" style="display:block;border-radius:50%;height:150px;width:150px;margin: 0 auto;" onclick="sayGoodNight()">
+
+<script>
+	function sayGoodNight () {
+		alert("晚安");
+	}
+</script>
