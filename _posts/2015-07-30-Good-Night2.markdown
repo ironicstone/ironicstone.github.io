@@ -10,6 +10,6 @@ tags: life
 
 <script>
 	function sayGoodNight () {
-		alert("晚安");
+		alert("晚安^_^");
 	}
 </script>
