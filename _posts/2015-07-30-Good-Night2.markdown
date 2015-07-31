@@ -11,7 +11,7 @@ tags: life
 <script>
 	function sayGoodNight () {
 		var curDate = new Date();
-		var curHour = curDate.getHours();
+		var curHour = parseInt(curDate.getHours());
 		var str;
 		if (curHour>6&&curHour<9) {
 			str = "早上好^_^";
