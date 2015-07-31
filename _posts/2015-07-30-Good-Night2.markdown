@@ -14,27 +14,26 @@ tags: life
 		var curHour = curDate.getHours();
 		var str;
 		if (curHour>6&&curHour<9) {
-			str = "早上好^_^"
+			str = "早上好^_^";
 		}
 		if (curHour>9&&curHour<11) {
-			str = "上午好^_^"
+			str = "上午好^_^";
 		}
 		if (curHour>11&&curHour<14) {
-			str = "中午好^_^"
+			str = "中午好^_^";
 		}
 		if (curHour>14&&curHour<18) {
-			str = "下午好^_^"
+			str = "下午好^_^";
 		}
 		if (curHour>18&&curHour<12) {
-			str = "晚上好^_^"
+			str = "晚上好^_^";
 		}
 		if (curHour>22&&curHour<24) {
-			str = "晚安^_^"
+			str = "晚安^_^";
 		}
 		if (curHour>0&&curHour<6) {
-			str = "赶紧睡觉^_^"
+			str = "赶紧睡觉^_^";
 		}
-
 		alert(str);
 		
 	}
