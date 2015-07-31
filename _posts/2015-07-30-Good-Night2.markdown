@@ -13,28 +13,27 @@ tags: life
 		var curDate = new Date();
 		var curHour = parseInt(curDate.getHours());
 		var str;
-		if (curHour>6&&curHour<9) {
+		if (curHour>=6&&curHour<9) {
 			str = "早上好^_^";
 		}
-		if (curHour>9&&curHour<11) {
+		if (curHour>=9&&curHour<11) {
 			str = "上午好^_^";
 		}
-		if (curHour>11&&curHour<14) {
+		if (curHour>=11&&curHour<14) {
 			str = "中午好^_^";
 		}
-		if (curHour>14&&curHour<18) {
+		if (curHour>=14&&curHour<18) {
 			str = "下午好^_^";
 		}
-		if (curHour>18&&curHour<12) {
+		if (curHour>=18&&curHour<12) {
 			str = "晚上好^_^";
 		}
-		if (curHour>22&&curHour<24) {
+		if (curHour>=22&&curHour<24) {
 			str = "晚安^_^";
 		}
-		if (curHour>0&&curHour<6) {
+		if (curHour>=0&&curHour<6) {
 			str = "赶紧睡觉^_^";
 		}
 		alert(str);
-		
 	}
 </script>
