@@ -10,7 +10,7 @@ permalink: /tags/
 </div>
 <hr>
     {% for tag in site.tags %}
-    <p class="listing-seperator" id="{{ tag[0] }}"><i class="fa fa-arrow-circle-o-right"></i>&nbsp;&nbsp;{{ tag[0] }}<span  class="category-number">{{ tag[1].size}}</span></p>
+    <p class="listing-seperator" id="{{ tag[0] }}"><i class="fa fa-tags"></i>&nbsp;&nbsp;{{ tag[0] }}<span  class="category-number">{{ tag[1].size}}</span></p>
     <ul class="arc-list">
     {% for post in tag[1] %}
     <li><span class="category-date">{{ post.date | date:"%Y-%m-%d"}}</span>
