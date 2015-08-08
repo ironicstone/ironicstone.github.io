@@ -12,7 +12,6 @@ layout: default
 {% if page.categories[0] !='' %}
 {% assign category == page.categories[0] %}
 {% endif %}
-<hr>
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
   <p><span class="post-meta"><i class="fa fa-calendar"></i>&nbsp;{{ page.date | date: "%b %-d, %Y" }}</span>&nbsp;&nbsp;<i class="fa fa-folder-open"></i>{% if page.categories %} <a href="/categories/#{{page.categories[0]}}">{{ page.categories[0] }}</a> {% endif %}&nbsp&nbsp&nbsp<i class="fa fa-tags"></i>&nbsp{% for tag in page.tags %}&nbsp<a href="/tags/#{{ tag }}">{{ tag }}</a>{% endfor %} </p>
