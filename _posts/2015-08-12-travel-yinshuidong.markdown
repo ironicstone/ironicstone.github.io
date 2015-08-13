@@ -6,14 +6,14 @@ summary:
 categories: life
 tags: travel
 ---
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(1).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(2).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(3).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(4).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(5).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(6).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(7).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(8).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(9).jpg)
-![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1(10).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(1).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(2).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(3).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(4).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(5).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(6).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(7).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(8).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(9).jpg)
+![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(10).jpg)
 
