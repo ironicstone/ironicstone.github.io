@@ -1,0 +1,14 @@
+---
+layout: post
+title:  I'm back
+date:   2015-9-11 00:53:00
+summary:
+categories: life
+tags: life
+---
+<img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/innerpeace.jpg" alt="Inner-peace" >
+终于我又回到了武汉，这个暑期去了蛮多地方，见了蛮多人。想了想，平时还是要多出去走一走，亲自去体验一把。还有两年的时间，希望可以充分利用一下，静下心来好好的拼一把。
+
+- 运动
+- 读书
+- 健康
