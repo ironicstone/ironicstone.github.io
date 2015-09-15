@@ -1,0 +1,52 @@
+---
+layout: post
+title:  关于BFC
+date:   2015-9-15 17:17:08
+summary: 对于BFC的学习和理解
+categories: CSS
+tags: bfc css
+---
+参考链接：
+- [关于Block Formatting Context－－BFC和IE的hasLayout](http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html)
+- [CSS深入理解流体特性和BFC特性下多栏自适应布局](http://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/)
+
+
+# 一、BFC:Block Formatting Context(块级格式化范围)
+
+一个BFC就是一个独立的布局环境，相互之间不会影响。BFC元素特性表现原则就是，内部子元素再怎么翻江倒海，翻云覆雨都不会影响外部的元素。注意下面几点：<br>
+1、在创建了 Block Formatting Context 的元素中，其子元素按文档流一个接一个地放置。垂直方向上他们的起点是一个包含块的顶部，两个相邻的元素之间的垂直距离取决于 ‘margin’ 特性。
+
+    根据 CSS 2.1 8.3.1 Collapsing margins 第一条，两个相邻的普通流中的块框在垂直位置的空白边会发生折叠现象。也就是处于同一个BFC中的两个垂直窗口的margin会重叠。
+
+    根据 CSS 2.1 8.3.1 Collapsing margins 第三条，生成 block formatting context 的元素不会和在流中的子元素发生空白边折叠。所以解决这种问题的办法是要为两个容器添加具有BFC的包裹容器。
+
+2、在 Block Formatting Context 中，每一个元素左外边与包含块的左边相接触（对于从右到左的格式化，右外边接触右边）， 即使存在浮动也是如此（尽管一个元素的内容区域会由于浮动而压缩），除非这个元素也创建了一个新的 Block Formatting Context 。
+
+3、Block Formatting Context就是页面上的一个隔离的独立容器，容器里面的子元素不会在布局上影响到外面的元素，反之也是如此。
+
+4、根据 CSS 2.1 9.5 Floats 中的描述，创建了 Block Formatting Context 的元素不能与浮动元素重叠。
+
+    表格的 border-box、块级的替换元素、或是在普通流中创建了新的 block formatting context（如元素的 'overflow' 特性不为 'visible' 时）的元素不可以与位于相同的 block formatting context 中的浮动元素相重叠。
+
+5 、当容器有足够的剩余空间容纳 BFC 的宽度时，所有浏览器都会将 BFC 放置在浮动元素所在行的剩余空间内。
+
+6、 在 IE6 IE7 IE8 Chrome Opera 中，当 BFC 的宽度介于 "容器剩余宽度" 与 "容器宽度" 之间时，BFC 会显示在浮动元素的下一行；在 Safari 中，BFC 则仍然保持显示在浮动元素所在行，并且 BFC 溢出容器；在 Firefox 中，当容器本身也创建了 BFC 或者容器的 'padding-top'、'border-top-width' 这些特性不都为 0 时表现与 IE8(S)、Chrome 类似，否则表现与 Safari 类似。
+
+# 二、如何产生BFC
+当一个HTML元素满足下面条件的任何一点，都可以产生BFC：<br>
+- float的值不为none;
+- overflow的值不为visible;
+- display的值为table-cell,table-caption,inline-block中的任何一个;
+- position的值不为relative和static.
+
+所以我们可以通过以上方式创建独立的BFC环境。
+
+# 三、BFC能用来做什么？
+- 不和浮动元素重叠（通过设置overflow:hidden来处理，或者display:inline-block）
+- 清除元素内部浮动
+- 解决上下相邻两个元素重叠(比如前面的margin重叠问题)
+
+# 四、什么是IE的hasLayout
+
+hasLayout与BFC有很多相似之处，这是浏览器渲染引擎的一个内部组成部分。只有IE中有，而且在IE8之后已经被抛弃。
+
