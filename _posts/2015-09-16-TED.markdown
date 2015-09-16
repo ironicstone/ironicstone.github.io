@@ -6,5 +6,5 @@ summary: 摘要
 categories: life
 tags: life
 ---
-![TED](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/NowOrNerver.jpg)
+![TED](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/ted.jpg)
 [网易TED链接](http://open.163.com/special/ted10collection/)
