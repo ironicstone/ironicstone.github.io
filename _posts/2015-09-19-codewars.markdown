@@ -133,5 +133,6 @@ function countdown() {
 }
 {% endhighlight %}
 [delete](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)
+
 [delete操作符](http://blog.charlee.li/javascript-variables-and-delete-operator/)
 
