@@ -52,8 +52,5 @@ hasLayout与BFC有很多相似之处，这是浏览器渲染引擎的一个内�
 
 ```
 var a = 0;
-function () {
-    alert(window.a);
-}
 ```
 
