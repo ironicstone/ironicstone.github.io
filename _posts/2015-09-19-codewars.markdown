@@ -98,7 +98,7 @@ function countdown() {
 *My Solution*
 
 {% highlight javascript %}
-这个题不会做
+这个题不会做,这里面涉及到bug fix,函数没问题，出问题的只能是原型里，要学会调试和分析。
 {% endhighlight %}
 
 *Best Practices*
@@ -132,4 +132,6 @@ function countdown() {
   return ret;
 }
 {% endhighlight %}
+[delete](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)
+[delete操作符](http://blog.charlee.li/javascript-variables-and-delete-operator/)
 
