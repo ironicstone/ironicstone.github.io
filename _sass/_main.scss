@@ -272,8 +272,9 @@ pre {
   padding: 1.125em;
   font-size: 1.125rem;
   line-height: 1.11;
-  overflow-x: scroll;
+  /*overflow-x: scroll;*/
   margin-bottom: 0.88em;
+  white-space: pre-wrap;
 }
 
 .highlight .p {
@@ -487,11 +488,11 @@ li.listing-seperator:before {
     padding-bottom: 0px;
 }
 
-#tag_cloud a{ 
+#tag_cloud a{
   color:#7c7c7c;
   font-size: 20px;
 }
-#tag_cloud a:hover{ 
+#tag_cloud a:hover{
   color:#111111;
 }
 
@@ -667,7 +668,7 @@ li.listing-seperator:before {
 }
 
 .share-page {
-  font-size:  0.65em;  
+  font-size:  0.65em;
   padding: 2em 0 0 0;
 }
 
@@ -758,4 +759,4 @@ Copyright (c) 2014 Daniel Eden
 
 
 
-       
+
