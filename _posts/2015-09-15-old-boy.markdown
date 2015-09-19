@@ -3,7 +3,7 @@ layout: center
 title:  老男孩
 date:   2015-9-15 15:22:14
 summary:
-categories: life
+categories: Life
 tags: life
 ---
 

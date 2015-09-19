@@ -3,7 +3,7 @@ layout: post
 title:  Javascrpt 事件
 date: 2015-9-12 09:11:29
 summary: 重新认识js事件
-categories: js
+categories: FrontEnd
 tags: event js
 ---
 

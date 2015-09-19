@@ -3,8 +3,8 @@ layout: post
 title:  "网易前端微专业学习笔记---CSS(三)"
 date: 2015-6-24 10:46:45
 summary: CSS学习笔记
-categories: MOOC 页面制作
-tags: css 
+categories: FrontEnd
+tags: css
 ---
 
 <h2 style="text-align:center;">CSS布局</h2>
@@ -70,7 +70,7 @@ tags: css
 <strong>清除浮动的方法</strong>
 
 {% highlight CSS%}
-	.clearfix:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}	
+	.clearfix:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
 {% endhighlight %}
 
 <span class="blue">多行，多列自适应问题</span>

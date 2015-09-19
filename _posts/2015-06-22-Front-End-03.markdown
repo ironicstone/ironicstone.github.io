@@ -3,8 +3,8 @@ layout: post
 title:  "网易前端微专业学习笔记---CSS(一)"
 date:   2015-6-22 12:26:44
 summary: CSS学习笔记
-categories: MOOC 页面制作
-tags: css 
+categories: FrontEnd
+tags: css
 ---
 
 ##CSS
@@ -61,8 +61,8 @@ CSS: Cascading Style Sheet
 {% highlight html%}
 	<div>
 		<p class="special">段落1</p>
-		<p class="special stress">段落2</p>		
-	</div> 
+		<p class="special stress">段落2</p>
+	</div>
 	<!--CLASS可以有多个-->
 {% endhighlight %}
 

@@ -2,7 +2,7 @@
 layout: post
 title:  关于summary的测试
 date:   2015-8-8 16:14:55
-categories: test
+categories: jekyll
 tags: jekyll test
 ---
 

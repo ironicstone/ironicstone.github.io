@@ -3,12 +3,12 @@ layout: post
 title:  Sublime sinppet scope
 date:   2015-6-18
 summary: 列举了所有Sublime中snippet的文件scope，以作参考用。
-categories: Tools
+categories: tools
 tags: sublime snippet
 ---
 
-####Here is a list of scopes to use in Sublime Text 2 snippets 
- 
+####Here is a list of scopes to use in Sublime Text 2 snippets
+
 - ActionScript: source.actionscript.2
 - AppleScript: source.applescript
 - ASP: source.asp

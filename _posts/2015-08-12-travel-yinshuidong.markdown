@@ -3,7 +3,7 @@ layout: center
 title:  隐水洞
 date:   2015-8-12 15:19:35
 summary:
-categories: life
+categories: Life
 tags: travel
 ---
 ![WYJ](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/travel/1%20(1).jpg)

@@ -3,7 +3,7 @@ layout: post
 title:  "网易前端微专业学习笔记---Javascript(二)"
 date: 2015-6-27 11:02:26
 summary: js学习笔记
-categories: MOOC javascript
+categories: FrontEnd
 tags: javascript 内置对象
 ---
 目标项目

@@ -3,7 +3,7 @@ layout: center
 title:  "晚安"
 date:   2015-7-30 23:36:23
 summary: 晚安
-categories: life
+categories: Life
 tags: life
 ---
 <img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/bart.jpg" alt="Good Night" style="display:block;border-radius:50%;height:150px;width:150px;margin: 0 auto;" onclick="sayGoodNight()">

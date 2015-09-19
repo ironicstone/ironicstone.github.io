@@ -3,7 +3,7 @@ layout: center
 title:  I'm back
 date:   2015-9-11 00:53:00
 summary:
-categories: life
+categories: Life
 tags: life
 ---
 <img src="https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/innerpeace.jpg" alt="Inner-peace" ><br>

@@ -3,7 +3,7 @@ layout: post
 title:  关于BFC
 date:   2015-9-15 17:17:08
 summary: 对于BFC的学习和理解
-categories: CSS
+categories: FrontEnd
 tags: bfc css
 ---
 参考链接：<br>

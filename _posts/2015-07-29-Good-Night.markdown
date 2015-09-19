@@ -3,7 +3,7 @@ layout: center
 title:  "晚安"
 date:   2015-7-29 22:53:52
 summary: 晚安
-categories: life
+categories: Life
 tags: life
 ---
 

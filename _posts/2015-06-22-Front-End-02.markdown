@@ -2,8 +2,8 @@
 layout: post
 title:  "网易前端微专业学习笔记---HTML"
 date:   2015-6-22 09:46:40
-summary: HTML笔记	
-categories: MOOC 页面制作
+summary: HTML笔记
+categories: FrontEnd
 tags: HTML
 ---
 ###开发工具
@@ -52,7 +52,7 @@ tags: HTML
 
 <strong>HTML组成部件</strong><br>
 
-- <!DOCTYPE HTML> 
+- <!DOCTYPE HTML>
 - HEAD
 	- meta
 		- charset 首行
@@ -88,16 +88,16 @@ tags: HTML
 		 	- em (语义强调)
 		 	- span
 		 - 换行 <br>
-		 - 引用 cite  p 		 	
+		 - 引用 cite  p
 		 - 代码	 code
-		 - 格式化 b (bold)  i (斜体)		 	
+		 - 格式化 b (bold)  i (斜体)
 	- 组合内容
 		- div
 		- p
 		- 列表
-			- 无序列表 				
-			- 有序列表 
-			- 自定义列表 				
+			- 无序列表
+			- 有序列表
+			- 自定义列表
 		- pre 格式化的内容
 		- blockquote 块级的引用
 	- 表格
@@ -121,9 +121,9 @@ tags: HTML
 			- radio
 			- file
 	- 嵌入资源
-		- 图片 img 
+		- 图片 img
 		- 嵌入页面 iframe，云音乐中的播放器
-		- 嵌入外部资源 object,embed	
+		- 嵌入外部资源 object,embed
 		- 视频 video
 		- 音频 audio
 		- 图
@@ -133,14 +133,14 @@ tags: HTML
 			- map
 			- area
 
-<strong>表单示例</strong>			
+<strong>表单示例</strong>
 
 	{% highlight html%}
 		<form action="/login/" method="post">
 			<input type="file" name="file">
 			<input type="checkbox" name="size" value="5" checked/disabled> <!--name为提交时的标签，value为其值-->
 			<input type="radio">
-			<input type="text" placeholder="tip"  value="default" readonly> 
+			<input type="text" placeholder="tip"  value="default" readonly>
 			<!--placeholder提供提示性信息，高级浏览器才支持，value为其默认值，用户不可见的值可以设置为readonly，以用来传递隐藏数据-->
 			<div>
 				<lable for="delivery">lable对应的下拉选择框</lable>

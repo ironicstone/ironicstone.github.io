@@ -3,7 +3,7 @@ layout: center
 title:  "彩虹"
 date:   2015-7-10 14:31:27
 summary: Blue
-categories: Emotion
+categories: Life
 tags: Blue
 ---
 
