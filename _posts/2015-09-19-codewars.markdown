@@ -1,0 +1,135 @@
+---
+layout: post
+title:  2015-9-19
+date:   2015-9-19 21:02:08
+summary:
+categories: codewars
+tags: js 算法
+---
+
+## 第一题
+
+*Descirption*
+
+> Your task is to sort a given string. Each word in the String will contain a single number. This number is the position the word should have in the result.
+
+> Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+
+> If the input String is empty, return an empty String. The words in the input String will only contain valid consecutive numbers.
+
+> For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4est"
+
+*My Solution*
+
+{% highlight javascript %}
+function order(words){
+  // ...
+  var arr = words.split(" ");
+  return arr.sort(function(a,b){
+      var num1 = a.match(/[0-9]/g);
+      var num2 = b.match(/[0-9]/g);
+      return num1 - num2;
+      }).join(" ");
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function order(words){
+  return words.split(' ').sort(function(a, b){
+      return a.match(/\d/) - b.match(/\d/);
+   }).join(' ');
+}
+{% endhighlight %}
+
+## 第二题
+
+*Description*
+
+> Order People by age Using Arrow Function
+
+*My Solution*
+
+{% highlight javascript %}
+var OrderPeople = function(people){
+  return people.sort( (a,b) => {return a.age - b.age;} ); //complete this function
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+var OrderPeople = function(people){
+  return people.sort((a,b) => a.age - b.age );
+}
+{% endhighlight %}
+
+## 第三题
+
+*Description*
+
+>Jim, the rocket scientist has finished the code for the board computer of his new Mars rocket. Only one last function is missing, the function for creating the countdown. Because Jim is always nervous when starting a new rocket, he sometimes forgets a number when doing the final countdown from ten to zero, so in order to be sure everything will work perfectly on the great day, he wrote a JavaScript function that does the countdown for him.
+
+> Today is rocket launch day, and Jim has a big problem. The unit test for the countdown suddenly fails! Jim could swear that the unit tests were all green yesterday, and that he didn't change anything in the countdown function. He suspects that his assistant Jeff has introduced a bug somewhere in the rocket board computer startup code, but he cannot understand how that could affect the output of his countdown method in such a strange way. Oh, if Jim and Jeff had only learned a bit more JavaScript working on Codewars katas!
+
+> Jim is desperate because the countdown function has already been burned into a ROM deep inside the board computer that cannot be easily replaced. He has to fix the problem by calling a method in the startup code that is still accessible. Can you help poor Jim?
+
+> Here is Jim's countdown code that he is not able to change any more:
+
+{% highlight javascript %}
+function countdown() {
+  var ret = "";
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (var number in numbers) {
+    if (ret) ret += ", ";
+    if (number < 10)
+      number = 10 - number;
+    else if (number == 10)
+      number = "Zero";
+    ret += number;
+  }
+  ret += "!";
+  return ret;
+}
+{% endhighlight %}
+> Write a function fix_countdown() that contains a fix to make countdown() work again.
+
+*My Solution*
+
+{% highlight javascript %}
+这个题不会做
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function fix_countdown() {
+  delete Array.prototype.Dammit;
+}
+
+// This code will run before the rocket starts
+function fix_countdown() {
+  // Please insert your bug fix here!
+  if (typeof Array.prototype.Dammit !== 'undefined') delete Array.prototype.Dammit;
+}
+
+// Jim's final countdown function;
+// may not be changed any more.
+// (It used to work the day before!)
+function countdown() {
+  var ret = "";
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (var number in numbers) {
+    if (ret) ret += ", ";
+    if (number < 10)
+      number = 10 - number;
+    else if (number == 10)
+      number = "Zero";
+    ret += number;
+  }
+  ret += "!";
+  return ret;
+}
+{% endhighlight %}
+
