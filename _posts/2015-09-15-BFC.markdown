@@ -18,9 +18,9 @@ tags: bfc css
 一个BFC就是一个独立的布局环境，相互之间不会影响。BFC元素特性表现原则就是，内部子元素再怎么翻江倒海，翻云覆雨都不会影响外部的元素。注意下面几点：<br>
 1、在创建了 Block Formatting Context 的元素中，其子元素按文档流一个接一个地放置。垂直方向上他们的起点是一个包含块的顶部，两个相邻的元素之间的垂直距离取决于 ‘margin’ 特性。
 
-    根据 CSS 2.1 8.3.1 Collapsing margins 第一条，两个相邻的普通流中的块框在垂直位置的空白边会发生折叠现象。也就是处于同一个BFC中的两个垂直窗口的margin会重叠。
+>根据 CSS 2.1 8.3.1 Collapsing margins 第一条，两个相邻的普通流中的块框在垂直位置的空白边会发生折叠现象。也就是处于同一个BFC中的两个垂直窗口的margin会重叠。
 
-    根据 CSS 2.1 8.3.1 Collapsing margins 第三条，生成 block formatting context 的元素不会和在流中的子元素发生空白边折叠。所以解决这种问题的办法是要为两个容器添加具有BFC的包裹容器。
+>根据 CSS 2.1 8.3.1 Collapsing margins 第三条，生成 block formatting context 的元素不会和在流中的子元素发生空白边折叠。所以解决这种问题的办法是要为两个容器添加具有BFC的包裹容器。
 
 2、在 Block Formatting Context 中，每一个元素左外边与包含块的左边相接触（对于从右到左的格式化，右外边接触右边）， 即使存在浮动也是如此（尽管一个元素的内容区域会由于浮动而压缩），除非这个元素也创建了一个新的 Block Formatting Context 。
 
@@ -28,7 +28,7 @@ tags: bfc css
 
 4、根据 CSS 2.1 9.5 Floats 中的描述，创建了 Block Formatting Context 的元素不能与浮动元素重叠。
 
-    表格的 border-box、块级的替换元素、或是在普通流中创建了新的 block formatting context（如元素的 'overflow' 特性不为 'visible' 时）的元素不可以与位于相同的 block formatting context 中的浮动元素相重叠。
+>表格的 border-box、块级的替换元素、或是在普通流中创建了新的 block formatting context（如元素的 'overflow' 特性不为 'visible' 时）的元素不可以与位于相同的 block formatting context 中的浮动元素相重叠。
 
 5 、当容器有足够的剩余空间容纳 BFC 的宽度时，所有浏览器都会将 BFC 放置在浮动元素所在行的剩余空间内。
 
@@ -36,6 +36,7 @@ tags: bfc css
 
 # 二、如何产生BFC
 当一个HTML元素满足下面条件的任何一点，都可以产生BFC：<br>
+
 - float的值不为none;
 - overflow的值不为visible;
 - display的值为table-cell,table-caption,inline-block中的任何一个;
@@ -44,6 +45,7 @@ tags: bfc css
 所以我们可以通过以上方式创建独立的BFC环境。
 
 # 三、BFC能用来做什么？
+
 - 不和浮动元素重叠（通过设置overflow:hidden来处理，或者display:inline-block）
 - 清除元素内部浮动
 - 解决上下相邻两个元素重叠(比如前面的margin重叠问题)
