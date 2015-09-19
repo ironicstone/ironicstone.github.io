@@ -54,7 +54,7 @@ paginate:     10
 sass:
   compressed: true
 
-highlighter: pygments
+
 
 # Navigation
 
