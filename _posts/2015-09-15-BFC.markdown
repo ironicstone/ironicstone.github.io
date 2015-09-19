@@ -50,7 +50,10 @@ tags: bfc css
 
 hasLayout与BFC有很多相似之处，这是浏览器渲染引擎的一个内部组成部分。只有IE中有，而且在IE8之后已经被抛弃。
 
-```
-var a = 0;
-```
+{% highlight js %}
+    var a = 0;
+    function () {
+    alert(window.a);
+    }
+{% endhighlight %}
 
