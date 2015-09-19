@@ -66,3 +66,18 @@ hasLayout与BFC有很多相似之处，这是浏览器渲染引擎的一个内�
 }
 {% endhighlight %}
 
+{% highlight js %}
+  var a = b = 0;
+  var obj = {};
+  console.log("测试是否有空格");
+
+        这里
+  function () {
+    var timer = setInterval(function(){
+      var date = new Date();
+      var sec = date.getSeconds();
+      console.log(sec);
+      },30);
+  }
+{% endhighlight %}
+
