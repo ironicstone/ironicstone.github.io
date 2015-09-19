@@ -51,9 +51,16 @@ tags: bfc css
 hasLayout与BFC有很多相似之处，这是浏览器渲染引擎的一个内部组成部分。只有IE中有，而且在IE8之后已经被抛弃。
 
 {% highlight js %}
-    var a = 0;
-    function () {
-    alert(window.a);
+    function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = "aeiou".split(""); // set up the vowels array
+  for(var i = 0;i < str.length;i++){   // iterate the string
+    for(var j = 0;j < vowels.length;j++){
+          if(str.charAt(i) == vowels[j]){ // make comparision
+          vowelsCount++;}
     }
+     }
+  return vowelsCount;
+}
 {% endhighlight %}
 
