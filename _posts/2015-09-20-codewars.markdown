@@ -1,0 +1,219 @@
+---
+layout: post
+title:  2015-9-20
+date:   2015-9-20 15:35:19
+summary:
+categories: codewars
+tags: js 算法
+---
+
+## 第一题
+
+*Description*
+
+{% highlight javascript %}
+titleCase('a clash of KINGS', 'a an the of') // should return: 'A Clash of Kings'
+titleCase('THE WIND IN THE WILLOWS', 'The In') // should return: 'The Wind in the Willows'
+titleCase('the quick brown fox') // should return: 'The Quick Brown Fox'
+{% endhighlight %}
+
+*My Solution*
+
+{% highlight javascript %}
+function titleCase(title, minorWords) {
+  var aTitle = title.toLowerCase().split(" ");
+  if(minorWords)
+  { var aMinor = minorWords.toLowerCase().split(" ") }
+
+  for( var j = 0;j<aTitle.length;j++){
+      if(minorWords)
+  {if(aMinor.indexOf(aTitle[j]) == -1){
+          var temp = toUpper(aTitle[j]);
+            console.log(temp);
+          aTitle[j] = temp;
+      }  }
+     else {
+ var temp = toUpper(aTitle[j]);
+            console.log(""+j+ temp);
+          aTitle[j] = temp;
+}
+
+
+}
+   aTitle[0] = toUpper(aTitle[0]);
+   return aTitle.join(" ");
+
+  function toUpper( word ) {
+    var arr = word.split("");
+    console.log("word: " + word);
+    for ( var i = 0; i < arr.length; i++){
+      if( i == 0)
+           { arr[0]=arr[0].toUpperCase();}
+      }
+console.log(arr.join(""));
+      return arr.join("");
+    }
+
+
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function titleCase(title, minorWords) {
+  var minorWords = typeof minorWords !== "undefined" ? minorWords.toLowerCase().split(' ') : [];
+  return title.toLowerCase().split(' ').map(function(v, i) {
+    if(v != "" && ( (minorWords.indexOf(v) === -1) || i == 0)) {
+      v = v.split('');
+      v[0] = v[0].toUpperCase();
+      v = v.join('');
+    }
+    return v;
+  }).join(' ');
+}
+
+<hr>
+
+String.prototype.getWords = function () {
+  return this.match(/\b\w+/gi) || [];
+};
+String.prototype.ucFirst = function () {
+  return this.charAt(0).toUpperCase() + this.slice(1)
+}
+Array.prototype.toLowerCase = function () {
+  return this.map(function (word) {
+    return word.toLowerCase();
+  });
+};
+
+function titleCase(title, minorWords) {
+  if (typeof title !== 'string') {
+    return '';
+  }
+  if (typeof minorWords !== 'string') {
+    minorWords = '';
+  }
+  var
+    words = title.getWords().toLowerCase(),
+    minorWords = minorWords.getWords().toLowerCase();
+
+  return words.map(function (word, index) {
+    return (minorWords.indexOf(word) >= 0 && index > 0) ? word : word.ucFirst();
+  }).join(' ');
+}
+
+<hr>
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+}
+
+function titleCase(title, minorWords) {
+  var titleAr = title.toLowerCase().split(' '),
+      minorWordsAr = minorWords ? minorWords.toLowerCase().split(' ') : [];
+
+  return titleAr.map(function(e, i){return minorWordsAr.indexOf(e) === -1 || i === 0 ? e.capitalize() : e })
+                .join(' ');
+}
+
+<hr>
+function capitalize(w) {
+  return w.charAt(0).toUpperCase() + w.slice(1);
+}
+
+function titleCase(title, minorWords) {
+  if (title.indexOf(' ') === -1) {
+    return capitalize(title);
+  }
+
+  var titleArr = title.split(' ');
+
+  var minorWordsArr = typeof minorWords === 'undefined' ? [] : minorWords.split(' ').map(function(w) {
+    return w.toLowerCase();
+  });
+
+  return capitalize(titleArr.map(function(w) {
+    w = w.toLowerCase();
+    if (minorWordsArr.indexOf(w) > -1) {
+      return w;
+    }
+
+    return capitalize(w);
+  }).join(' '));
+}
+{% endhighlight %}
+
+## 第二题
+
+*Description*
+
+>Finish the solution so that it takes an input 'n' (integer) and returns a string that is the decimal representation of the number grouped by commas after every 3 digits.
+
+{% highlight javascript %}
+       1  ->           "1"
+      10  ->          "10"
+     100  ->         "100"
+    1000  ->       "1,000"
+   10000  ->      "10,000"
+  100000  ->     "100,000"
+ 1000000  ->   "1,000,000"
+35235235  ->  "35,235,235"
+{% endhighlight %}
+
+*My Solution*
+
+{% highlight javascript %}
+function groupByCommas(n) {
+    var arr = (n + "").split("");
+    if( arr.length < 4){
+        return n+"";
+    }
+    else{
+       var temp = arr.reverse().join("").match(/[0-9]{3}?/g);
+       var tail = (n + "").split("").reverse().join("").substr(temp.length * 3).split("").reverse().join("");
+       console.log(temp + tail);
+       return tail + "," + temp.join(",").split("").reverse().join("");
+    }
+}
+
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function groupByCommas(n) {
+  return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+<hr>
+
+function groupByCommas(n) {
+  var s = n.toString(),
+      r = [];
+
+  // reverse number string so we can easily count up in blocks of 3
+  s = reverse(s);
+
+  for (var i = 0, l = s.length; i < l; i += 3) {
+    r.push(s.substr(i, 3));
+  }
+
+  // combine the groups of 3 numbers into string, then reverse back to original order
+  return reverse(r.join(','));
+}
+
+function reverse(s) {
+  return s.split('').reverse().join('');
+}
+
+<hr>
+
+function groupByCommas(n) {
+  str = (""+n).split("");
+  for(var i = str.length - 3; i > 0 ; i-=3){
+     str.splice(i,0,',');
+  }
+  return str.join('')
+}
+{% endhighlight %}
