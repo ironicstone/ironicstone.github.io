@@ -73,7 +73,7 @@ function titleCase(title, minorWords) {
   }).join(' ');
 }
 
-<hr>
+/////////////////////////////////////////////////////////
 
 String.prototype.getWords = function () {
   return this.match(/\b\w+/gi) || [];
@@ -103,7 +103,7 @@ function titleCase(title, minorWords) {
   }).join(' ');
 }
 
-<hr>
+/////////////////////////////////////////////////////////
 
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
@@ -117,7 +117,8 @@ function titleCase(title, minorWords) {
                 .join(' ');
 }
 
-<hr>
+/////////////////////////////////////////////////////////
+
 function capitalize(w) {
   return w.charAt(0).toUpperCase() + w.slice(1);
 }
@@ -151,6 +152,7 @@ function titleCase(title, minorWords) {
 >Finish the solution so that it takes an input 'n' (integer) and returns a string that is the decimal representation of the number grouped by commas after every 3 digits.
 
 {% highlight javascript %}
+
        1  ->           "1"
       10  ->          "10"
      100  ->         "100"
@@ -186,7 +188,7 @@ function groupByCommas(n) {
   return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-<hr>
+/////////////////////////////////////////////////////////
 
 function groupByCommas(n) {
   var s = n.toString(),
@@ -207,7 +209,7 @@ function reverse(s) {
   return s.split('').reverse().join('');
 }
 
-<hr>
+/////////////////////////////////////////////////////////
 
 function groupByCommas(n) {
   str = (""+n).split("");
