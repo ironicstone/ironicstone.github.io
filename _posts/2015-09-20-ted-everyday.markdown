@@ -25,13 +25,13 @@ tags: ted 习惯
 
 *The Four Types Of Relilience*
 
-> Physical resilience- you are physically resilient if you don’t sit still longer than an hour at a time. You keep moving, especially when you don’t feel like it. I don’t know about you, but as I age, the temptation to sit on the couch or to nurse a pain by not moving is high. A physically resilient person works out the kinks and makes physical activity a priority.
+> - Physical resilience- you are physically resilient if you don’t sit still longer than an hour at a time. You keep moving, especially when you don’t feel like it. I don’t know about you, but as I age, the temptation to sit on the couch or to nurse a pain by not moving is high. A physically resilient person works out the kinks and makes physical activity a priority.
 
-> Mental resilience- you are mentally resilient if you test your brain. Do puzzles. Play board games. Try new hobbies. Read new books. Stay engaged in work. Grow a garden. In short, mentally resilient folks stay challenged.
+> - Mental resilience- you are mentally resilient if you test your brain. Do puzzles. Play board games. Try new hobbies. Read new books. Stay engaged in work. Grow a garden. In short, mentally resilient folks stay challenged.
 
-> Emotional resilience-you are emotionally resilient if you engage in regular reflection on things beautiful, fanciful, visionary. Emotional resilience exercises our capability to imagine, dream, plan and create. It fortifies the soul. Emotional resilience allows us to find positive things even when circumstances stay grim.
+> - Emotional resilience-you are emotionally resilient if you engage in regular reflection on things beautiful, fanciful, visionary. Emotional resilience exercises our capability to imagine, dream, plan and create. It fortifies the soul. Emotional resilience allows us to find positive things even when circumstances stay grim.
 
-> Social resilience. When you stay in touch with others socially, you are being socially resilient. Hugs and handshakes stimulate the brain. Having a friend who you look forward to visiting with and taking the initiative to stay engaged is social resilience.
+> - Social resilience. When you stay in touch with others socially, you are being socially resilient. Hugs and handshakes stimulate the brain. Having a friend who you look forward to visiting with and taking the initiative to stay engaged is social resilience.
 
 更积极的面对每一天。
 
