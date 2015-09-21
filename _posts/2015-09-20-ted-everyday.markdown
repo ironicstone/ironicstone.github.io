@@ -6,7 +6,7 @@ summary:
 categories: ted
 tags: ted 习惯
 ---
-##  <span class="red">Now or Never 系列</span>
+##  <span class="red" style="text-align:center">Now or Never 系列</span>
 
 ### 2015-9-20
 
@@ -40,6 +40,6 @@ tags: ted 习惯
 
 [我无家可归的一年](http://v.163.com/movie/2013/8/J/O/M94IULLG6_M94IV5DJO.html)
 
-> 讲述了一个女记者自己的故事。她原本是个作家，是个新闻记者，因为萌生了在公众视野中小时的想法，选择了住在一辆卡车上。因为她自己对现实的错误估计，日子过的很糟。在恶劣的生活环境下，自己也变的消沉和抑郁，而且还丢了原来的工作。后来一个机会，碰到一位教授：你和其他的无家可归这不同，因为你有希望。Hope allways, allways finds a way. 一年前，她住在沃尔玛的停车场里，一年后她在TED讲台上。So, never lose your hope. We are not where we live, where we sleep, or what life situation is at any given time.
+> 讲述了一个女记者自己的故事。她原本是个作家，新闻记者，因为萌生了在公众视野中消失的想法，选择了住在一辆卡车上。因为她自己对现实的错误估计，日子过的很糟。在恶劣的生活环境下，自己也变的消沉和抑郁，而且还丢了原来的工作。后来一个机会，碰到一位教授：你和其他的无家可归这不同，因为你有希望。Hope allways, allways finds a way. 一年前，她住在沃尔玛的停车场里，一年后她在TED讲台上。So, never lose your hope. We are not where we live, where we sleep, or what life situation is at any given time.
 
 
