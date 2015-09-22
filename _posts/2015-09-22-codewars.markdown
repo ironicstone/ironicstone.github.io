@@ -1,0 +1,67 @@
+---
+layout: post
+title:  2015-9-22
+date:   2015-9-22 14:21:06
+summary:
+categories: codewars
+tags: js
+---
+
+## 第一题
+
+*Description*
+
+>计算水仙花数
+
+*My Solution*
+
+{% highlight javascript %}
+function narcissistic( value ) {
+  // Code me
+  var digits = value.toString().split("").map(Number);
+  var power = digits.length;
+  return  digits.reduce(function(s,c){
+    return s + Math.pow(c,power);
+  },0) === value ? true:false;
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function narcissistic( value ) {
+  return ('' + value).split('').reduce(function(p, c){
+    return p + Math.pow(c, ('' + value).length)
+    }, 0) == value;
+}         // 没有多余的参数
+{% endhighlight %}
+
+## 第二题
+
+*Description*
+
+>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+
+*My Solution*
+
+{% highlight javascript %}
+// 哈哈，这题用了容斥原理来做。
+function solution(number){
+    number = number - 1;
+  var threes = Math.floor(number/3);
+  var fives = Math.floor(number/5);
+  var both = Math.floor(number/15);
+  return getSum(threes)*3 + getSum(fives)*5 - getSum(both)*15;
+
+  function getSum(value){
+    return (value+1)*value/2;
+  }
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+//与我的方法类似，不做引用了
+{% endhighlight %}
