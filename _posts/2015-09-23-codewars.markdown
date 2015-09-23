@@ -1,0 +1,35 @@
+---
+layout: post
+title:  2015-9-23
+date:   2015-9-23 11:34:11
+summary:
+categories: codewars
+tags: js
+---
+
+## 第一题
+
+*Description*
+
+> 缓存函数
+
+*My Solution*
+
+{% highlight javascript %}
+function cache(func) {
+  // do your magic here
+   var wrapper = {};
+   return function() {
+    var params = JSON.stringify(arguments);
+         if (!(params in wrapper))
+      {wrapper[params] = func.apply(null,arguments);}
+      return wrapper[params];
+}
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+同样是闭包的使用，与我的类似，不做引用
+{% endhighlight %}
