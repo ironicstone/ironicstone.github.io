@@ -7,6 +7,8 @@ categories: codewars
 tags: js
 ---
 
+> 后面的更新放到codewars项目下。
+
 ## 第一题
 
 *Description*
@@ -33,3 +35,5 @@ function cache(func) {
 {% highlight javascript %}
 同样是闭包的使用，与我的类似，不做引用
 {% endhighlight %}
+
+
