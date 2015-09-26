@@ -1,0 +1,86 @@
+---
+layout: post
+title:  2015-9-26
+date:   2015-9-26 15:48:25
+summary:
+categories: codewars
+tags: js
+---
+
+> 看到一个非常巧妙的解答
+
+## 第一题
+
+*Description*
+
+> You are in a room with 100 vending machines, each one numbered 0 to 99. Each vending machine has 100 candy bars inside. For 99 of the vending machines, all of their candy bars weigh 100 grams, but one special machine has candy bars that weigh 101 grams.
+
+> Candy bars you vend are put into a pile, but you can only weigh the pile at most 10 times.
+
+> Determine the number of the machine with the heavy candy bars.
+
+
+*Best Practices*
+
+{% highlight javascript %}
+//一次就可以分辨出那个有问题
+function findSpecialIdx(vms) {
+  // Solution requiring only a single weighing
+  for (var i = 0; i < 100 ; i++) {
+    for (var j = 0; j < i; j++) {
+      vms[i].vend();
+    }
+  }
+  return vms.weigh() % 100;
+};
+
+///////////////////////////////////////////////////////////////////
+function findSpecialIdx(vms) {
+  var expectedWeight = 0;
+  var low = 0;
+  var high = 100;
+  while (low+1 < high) {
+    var mid = Math.floor( (low + high) / 2 );
+    for (var i=0; i < mid; ++i) {
+      vms[i].vend();
+      expectedWeight += 100;
+    }
+    var weight = vms.weigh();
+    if (weight == expectedWeight) {
+      low = mid;
+    } else {
+      high = mid;
+      expectedWeight = weight;
+    }
+  }
+  return low;
+};
+
+//////////////////////////////////////////////////////////
+function findSpecialIdx(vms)
+{
+  var previousWeight, currentWeight = 0;
+  var startIdx = 0;
+  var endIdx = 99;
+  while (startIdx != endIdx)
+  {
+    middelIdx = getMiddelIdx(startIdx, endIdx);
+    makePile(vms, startIdx, middelIdx);
+    previousWeight = currentWeight;
+    currentWeight = vms.weigh();
+    (currentWeight - previousWeight) % 100 === 0 ? startIdx = middelIdx + 1 : endIdx = middelIdx;  // %100 的原因是有可能多一罐，这里要注意
+  }
+  return startIdx;
+}
+
+function getMiddelIdx(startIdx, endIdx)
+{
+  return startIdx + Math.floor((endIdx - startIdx) / 2);
+}
+
+function makePile(vms, startIdx, middelIdx)
+{
+  for (var idx = startIdx; idx <= middelIdx; idx++)
+    vms[idx].vend();
+}
+{% endhighlight %}
