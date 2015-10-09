@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  时间
-date:   2015年10月9日 19:35:04
+title: 时间
+date: 2015年10月9日 19:35:04
 summary:
 categories: life
 tags: life
