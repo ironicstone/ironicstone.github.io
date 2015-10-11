@@ -7,9 +7,9 @@ categories: codewars
 tags: js
 ---
 
-# 收集一些巧妙的回答，经常回顾一下，有点意思
+> 收集一些巧妙的回答，经常回顾一下，有点意思
 
-## 11
+- <span class="red">11</span>
 
 *Description*
 
@@ -85,7 +85,7 @@ function makePile(vms, startIdx, middelIdx)
 }
 {% endhighlight %}
 
-## 10
+- <span class="red">10</span>
 
 *Description*
 
@@ -122,7 +122,7 @@ var palindromeChainLength = function (n) {
 
 <!-- 往期回顾 -->
 
-## 9
+- <span class="red">9</span>
 
 *Description*
 
@@ -149,7 +149,7 @@ function cache(func) {
 同样是闭包的使用，与我的类似，不做引用
 {% endhighlight %}
 
-## 8
+- <span class="red">8</span>
 
 *Description*
 
@@ -178,7 +178,7 @@ function narcissistic( value ) {
 }         // 没有多余的参数
 {% endhighlight %}
 
-## 7
+- <span class="red">7</span>
 
 *Description*
 
@@ -208,7 +208,7 @@ function solution(number){
 //与我的方法类似，不做引用了
 {% endhighlight %}
 
-## 6
+- <span class="red">6</span>
 
 *Description*
 
@@ -276,7 +276,7 @@ function validate(n) {
 }
 {% endhighlight %}
 
-## 5
+- <span class="red">5</span>
 
 *Description*
 
@@ -414,7 +414,7 @@ function titleCase(title, minorWords) {
 }
 {% endhighlight %}
 
-## 4
+- <span class="red">4</span>
 
 *Description*
 
@@ -489,7 +489,7 @@ function groupByCommas(n) {
 }
 {% endhighlight %}
 
-## 3
+- <span class="red">3</span>
 
 *Descirption*
 
@@ -525,7 +525,7 @@ function order(words){
 }
 {% endhighlight %}
 
-## 2
+- <span class="red">2</span>
 
 *Description*
 
@@ -547,7 +547,7 @@ var OrderPeople = function(people){
 }
 {% endhighlight %}
 
-## 1
+- <span class="red">1</span>
 
 *Description*
 
