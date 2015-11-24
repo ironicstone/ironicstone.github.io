@@ -9,6 +9,103 @@ tags: js
 
 > 收集一些巧妙的回答，经常回顾一下，有点意思
 
+## 第12题
+
+*Description*
+
+>Example: pickPeaks([3,2,3,6,4,1,2,3,2,1,2,3]) returns {pos:[3,7],peaks:[6,3]}
+
+*My Solution*
+
+{% highlight javascript %}
+function pickPeaks(arr){
+
+  //  return {pos:[],peaks:[]}
+  // 我做的感觉好复杂。。。
+  var result = {
+  pos:[],
+  peaks:[]
+  };
+  var i,j,k;
+
+ for(i=1,j=0; i<arr.length-1; i++)
+ {
+   if(arr[i]>arr[i-1])
+   {
+    if(arr[i]>arr[i+1])
+    {
+     result.pos.push(i);
+     result.peaks.push(arr[i]);
+     }
+     else if(arr[i]<arr[i+1]) continue;
+     else
+     {
+        j = i;
+        while(arr[j]==arr[i]) j++;
+        if(arr[j] < arr[i])
+        {
+         result.pos.push(i);
+         result.peaks.push(arr[i]);
+        }
+     }
+   }
+ }
+ return result;
+}
+{% endhighlight %}
+
+*Best Practices*
+
+{% highlight javascript %}
+function pickPeaks(arr){
+  var result = {pos: [], peaks: []};
+  if(arr.length > 2) {
+    var pos = -1;
+    for(var i=1; i<arr.length;i++){
+      if(arr[i] > arr[i-1]) {
+        pos = i;
+      } else if(arr[i] < arr[i-1] && pos != -1) {
+        result.pos.push(pos);
+        result.peaks.push(arr[pos]);
+        pos = -1;
+      }
+    }
+  }
+  return result;
+}
+
+function pickPeaks(arr){
+
+  var pos = [], peaks = [], lastIncreaseIndex = null;
+  arr.forEach(function(e, index) {
+
+    if(lastIncreaseIndex) {
+
+      if(arr[index - 1] > arr[index]) {
+        pos.push(lastIncreaseIndex);
+        peaks.push(arr[lastIncreaseIndex]);
+        lastIncreaseIndex = null;
+      }
+    }
+    if(index && arr[index] > arr[index - 1]) {
+      lastIncreaseIndex = index;
+    }
+  });
+  return {pos:pos,peaks:peaks};
+}
+
+function pickPeaks(arr){
+  var result = arr.reduce(function (acc, n, i) {
+    if (n > acc[2]) return [acc[0], acc[1], n, i, true];
+    if (n === acc[2]) return [acc[0], acc[1], n, acc[3], acc[4]];
+    else return acc[4]
+      ? [acc[0].concat([acc[3]]), acc[1].concat([acc[2]]), n, i, false]
+      : [acc[0], acc[1], n, i, false];
+  }, [[], [], Number.MAX_VALUE, -1, false]);
+  return { pos: result[0], peaks: result[1] };
+}
+{% endhighlight %}
+
 - <span class="red">11</span>
 
 *Description*
