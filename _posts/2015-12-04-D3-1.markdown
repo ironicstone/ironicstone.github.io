@@ -1,0 +1,103 @@
+---
+layout: post
+title:  D3.format()
+date:   2015-12-4 20:00:42
+summary: D3.format()函数的总结
+categories: D3 可视化
+tags: js format
+---
+### 总结一下format函数的使用
+
+- [Formatting](https://github.com/mbostock/d3/wiki/Formatting)
+
+- [Time Formatting](https://github.com/mbostock/d3/wiki/Time-Formatting)
+
+#### Numbers
+
+d3.format(specifier):Returns a new format function with the given string specifier
+
+>  [​[fill]align][sign][symbol][0][width][,][.precision][type]
+
+1. fill:填充字符，除了'{'和'}'外，其他的都可以使用，通常与后面的align(对齐),width(长度)合用 <span class="blue">d3.format('4<6')(100) =\> '444100' </span>
+
+2. sign:正负号位，可以使plus(+),mins(-),以及space(' '),space 表示正数时不显示，负数时显示符号
+
+3. symbol: 符号位，有("$")和base("#")
+
+4. 0表示用0补齐
+
+5. ','用于数字的以千分位
+
+6. precision,精度
+
+d3.round(x[,n]):Returns the value x rounded to n digits after the decimal point. If n is omitted, it defaults to zero. The result is a number.n表示小数点后保留几位
+
+#### Time
+
+- %a  abbreviated weekday name.
+- %A  full weekday name.
+- %b  abbreviated month name.
+- %B  full month name.
+- %c  date and time, as "%a %b %e %H:%M:%S %Y".
+- %d  zero-padded day of the month as a decimal number [01,31].
+- %e  space-padded day of the month as a decimal number [ 1,31]; equivalent to %_d.
+- %H  hour (24-hour clock) as a decimal number [00,23].
+- %I  hour (12-hour clock) as a decimal number [01,12].
+- %j  day of the year as a decimal number [001,366].
+- %m  month as a decimal number [01,12].
+- %M  minute as a decimal number [00,59].
+- %L  milliseconds as a decimal number [000, 999].
+- %p  either AM or PM.
+- %S  second as a decimal number [00,61].
+- %U  week number of the year (Sunday as the first day of the week) as a decimal number [00,53].
+- %w  weekday as a decimal number [0(Sunday),6].
+- %W  week number of the year (Monday as the first day of the week) as a decimal number [00,53].
+- %x  date, as "%m/%d/%Y".
+- %X  time, as "%H:%M:%S".
+- %y  year without century as a decimal number [00,99].
+- %Y  year with century as a decimal number.
+- %Z  time zone offset, such as "-0700".
+- %%  a literal "%" character.
+
+{% highlight javascript %}
+d3.round(1.23); // 1
+d3.round(1.23, 1); // 1.2
+d3.round(1.25, 1); // 1.3
+d3.round(12.5, 0); // 13
+d3.round(12, -1); // 10
+
+d3.format(",")(1000000);    //"1,000,000"
+d3.format(",")(1010101);    //"1,010,101"
+d3.format(",.4g")(1010101); //"1.010e+6"
+
+d3.format("8")(1);      //"       1"
+d3.format("8,.2f")(1);  //"    1.00"
+d3.format("8g")(1e6);   //" 1000000"
+
+d3.format("8")(1234);          //"    1234"
+d3.format("08")(1234);         //"00001234"
+d3.format("08.2f")(123.456);   //"00123.46"
+d3.format("08.3f")(123.456);   //"0123.456"
+
+d3.format("09,")(123456);      //"0,123,456"
+d3.format("$,")(1250);         //"$1,250"
+d3.format("$,.2f")(1250);      //"$1,250.00"
+
+d3.format("0b")(125);  //"1111101"
+d3.format("0o")(125);  //"175"
+d3.format("0x")(125);  //"7d"
+
+d3.format("+")(125);  //"+125"
+d3.format("+")(-125); //"-125"
+d3.format("-")(125);  //"125"
+d3.format("-")(-125); //"-125"
+d3.format(" ")(125);  //" 125"
+d3.format(" ")(-125); //"-125"
+
+d3.format("4>8")(1); //"44444441"
+d3.format("4^8")(1); //"44441444"
+d3.format("4<8")(1); //"14444444"
+{% endhighlight %}
+
+
+
