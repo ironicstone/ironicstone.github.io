@@ -1,0 +1,21 @@
+---
+layout: post
+title:  《50 Tips & Tricks for Mongodb Developers》读书笔记
+date:   2015-12-8 19:27:47
+summary: MEAN开发中的重要一环---Mongodb
+categories: 数据库
+tags: mongodb mean
+---
+
+### Overview
+There gonna be 5 topic areas. As follows:
+
+- Application <span class="red">Design</span> Tips
+
+- <span class="red">Implementation</span> Tips
+
+- <span class="red">Optimization</span> Tips
+
+- Data <span class="red">Safty</span> Tips
+
+- <span class="red">Administration</span> Tips
