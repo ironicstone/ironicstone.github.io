@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "收集的一些好玩的工具"
-date:   2015-6-28 15:43:41
+date:   2015-12-9 15:22:48
 summary: 一些前端可视化的小js库，玩玩还是蛮有意思的。
 categories: tools
 tags: tools js library
@@ -12,3 +12,7 @@ tags: tools js library
 	- [Github](https://github.com/impress/impress.js)
 	- [Demos](https://github.com/impress/impress.js/wiki/Examples-and-demos)
 	- CDN:&nbsp;&nbsp;&nbsp; \<script src="//cdn.bootcss.com/impress.js/0.5.3/impress.js"></script>
+
+- <span class="red"><strong>Animation.css</strong></span>
+    - [Github](http://daneden.github.io/animate.css/)
+    - Animation实现css动画，内置的例子比较多，可以配合angular使用，SPA下效果比较赞。
