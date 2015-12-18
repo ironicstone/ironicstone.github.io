@@ -66,10 +66,10 @@ numbers.splice(0,0,0,1) // insert values to the array, set the number of element
 
 __Mutator Functions__
 
-Adding Elements to an Array--> push(),unshift() <br>
-Removing Elements from an Array --> pop(),shift() <br>
-Adding and Removing Elements from the Middle of an Array --> splice([],[],newElements) <br>
-Putting Array Elements in Order --> reverse(),sort(func())
+- Adding Elements to an Array--> push(),unshift()
+- Removing Elements from an Array --> pop(),shift()
+- Adding and Removing Elements from the Middle of an Array --> splice([],[],newElements)
+- Putting Array Elements in Order --> reverse(),sort(func())
 
 __Iterator Functions__
 
@@ -91,9 +91,9 @@ __Two-Dimensional and Multidimensional Array__
 {% highlight javascript %}
 Array.matrix = function(numrows, numcols, initial) {
     var arr = [];
-    for(var i=0; i<numrows; i++) {
+    for(var i=0; i < numrows; i++) {
     var columns = [];
-    for(var j=0; j<numcols; j++) {
+    for(var j=0; j < numcols; j++) {
         columns[j] = initial;
     }
     arr[i] = columns;
@@ -101,5 +101,48 @@ Array.matrix = function(numrows, numcols, initial) {
     return arr;
 }
 {% endhighlight %}
+
+Javascript can handle jagged array.
+
+__Exercises__
+
+{% highlight javascript %}
+// 第一题
+function grades() {
+    this.data = [];
+    this.add = add;
+    this.average = average;
+}
+
+function add(num) {
+    this.data.push(num);
+}
+
+function average() {
+    var sum = 0;
+    for(var i=0; i < this.data.length; i++) {
+        sum += this.data[i];
+}
+    return sum/this.data.length;
+}
+
+//第四题
+function letters() {
+    this.data = [];
+    this.add = add;
+    this.toWord = toWord;
+    function add(letter) {
+    this.data.push(letter);
+}
+    function toWord() {
+    return this.data.join('');
+}
+}
+
+{% endhighlight %}
+
+---
+
+第三章 Lists
 
 
