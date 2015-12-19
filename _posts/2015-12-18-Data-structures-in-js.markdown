@@ -252,5 +252,211 @@ function isPalindrome(word) {
 return word===word.split('').reverse().join('');
 {% endhighlight %}
 
+---
+
+第五章 队列
+
+队列是一种列表，不同的是队列只能在<span class="red">队尾插入元素，在队首删除元素</span>。与生活中排队类似，先进先出。（FIFO,first-in-first-out）
+
+__对队列的操作__
+
+{% highlight javascript %}
+function Queue() {
+    this.dataStore = [];
+    this.enqueue = enqueue;
+    this.dequeue = dequeue;
+    this.front = front;
+    this.back = back;
+    this.toString = toString;
+    this.empty = empty;
+}
+
+function enqueue(element) {
+    this.dataStore.push(elememt);
+}
+
+function dequeue() {
+    this.dataStore.shift();
+}
+
+function front() {
+    return this.dataStore[0];
+}
+
+function back() {
+    return this.dataStore[this.dataStore.length - 1];
+}
+
+function toString() {
+    var str = '';
+    for(var i=0; i < this.dataStore.length; i++) {
+    str += this.dataStore[i] + '/n';
+}
+    return str;
+}
+
+function empty() {
+    if(this.dataStore.length===0) {
+    return true;
+} else {
+    return false;
+}
+}
+{% endhighlight %}
+
+__使用队列__
+
+基数排序（radix sort）时间复杂度 nlog(r)m,r为基数，m为堆数。
+
+分为两类LSD(least significant digit，最低位)和MSD(most significant digit, 最高位)
+
+[计数排序、桶排序和基数排序](http://blog.csdn.net/quietwave/article/details/8008572)
+
+{% highlight javascript %}
+// digit 表示位数
+function distribute(nums,queues,n,digit) {
+    for(var i=0; i < n; i++) {
+    if(digit===1) {
+    queues[nums[i]%10].enqueue(nums[i]);
+} else {
+    queues[nums[i]/10].enqueue(nums[i]);
+}
+}
+}
+
+function collect(queues,nums) {
+    var i=0;
+    for(var digit = 0; digit < 10; digit++) {
+    while(!queues[digit].empty()) {
+    num[i++] = queues[digit].dequeue();
+}
+}
+}
+{% endhighlight %}
+
+<span class="blue">基于C语言的基数排序</span>
+
+{% highlight c %}
+#include<math.h>
+testBS()
+{
+    inta[] = {2, 343, 342, 1, 123, 43, 4343, 433, 687, 654, 3};
+    int *a_p = a;
+    //计算数组长度
+    intsize = sizeof(a) / sizeof(int);
+    //基数排序
+    bucketSort3(a_p, size);
+    //打印排序后结果
+    inti;
+    for(i = 0; i < size; i++)
+    {
+        printf("%d\n", a[i]);
+    }
+    intt;
+    scanf("%d", t);
+}
+//基数排序
+voidbucketSort3(int *p, intn)
+{
+    //获取数组中的最大数
+    intmaxNum = findMaxNum(p, n);
+    //获取最大数的位数，次数也是再分配的次数。
+    intloopTimes = getLoopTimes(maxNum);
+    inti;
+    //对每一位进行桶分配
+    for(i = 1; i <= loopTimes; i++)
+    {
+        sort2(p, n, i);
+    }
+}
+//获取数字的位数
+intgetLoopTimes(intnum)
+{
+    intcount = 1;
+    inttemp = num / 10;
+    while(temp != 0)
+    {
+        count++;
+        temp = temp / 10;
+    }
+    returncount;
+}
+//查询数组中的最大数
+intfindMaxNum(int *p, intn)
+{
+    inti;
+    intmax = 0;
+    for(i = 0; i < n; i++)
+    {
+        if(*(p + i) > max)
+        {
+            max = *(p + i);
+        }
+    }
+    returnmax;
+}
+//将数字分配到各自的桶中，然后按照桶的顺序输出排序结果
+voidsort2(int *p, intn, intloop)
+{
+    //建立一组桶此处的20是预设的根据实际数情况修改
+    intbuckets[10][20] = {};
+    //求桶的index的除数
+    //如798个位桶index=(798/1)%10=8
+    //十位桶index=(798/10)%10=9
+    //百位桶index=(798/100)%10=7
+    //tempNum为上式中的1、10、100
+    inttempNum = (int)pow(10, loop - 1);
+    inti, j;
+    for(i = 0; i < n; i++)
+    {
+        introw_index = (*(p + i) / tempNum) % 10;
+        for(j = 0; j < 20; j++)
+        {
+            if(buckets[row_index][j] == NULL)
+            {
+                buckets[row_index][j] = *(p + i);
+                break;
+            }
+        }
+    }
+    //将桶中的数，倒回到原有数组中
+    intk = 0;
+    for(i = 0; i < 10; i++)
+    {
+        for(j = 0; j < 20; j++)
+        {
+            if(buckets[i][j] != NULL)
+            {
+                *(p + k) = buckets[i][j];
+                buckets[i][j] = NULL;
+                k++;
+            }
+        }
+    }
+}
+{% endhighlight %}
+
+优先队列
+
+当优先队列删除元素时，需要考虑优先权的限制。因此在存储对象时，可以定义一个优先码。重写dequeue函数。
+
+{% highlight javascript %}
+function dequeue() {
+    var priority = this.dataStore[0].code;
+    for(var i=0; i < this.dataStore.length; i++) {
+    if(this.dataStore[i].code < priority) {
+    priority = i;
+}
+}
+return this.dataStore.splice(priority,1);
+}
+{% endhighlight %}
+
+---
+
+### 第六章 链表
+
+
+
 
 
