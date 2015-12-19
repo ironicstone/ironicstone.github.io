@@ -143,6 +143,114 @@ function letters() {
 
 ---
 
-第三章 Lists
+### 第三章 Lists
+
+列表是一种最自然的数据组织形式，如果数据存储的顺序不重要，也不必对数据进行查找，那么列表就是一种再好不过的数据结构。
+
+---
+
+### 第四章 栈
+
+后进先出（LIFO，last-in-first-out）
+
+__对栈的操作__
+
+- push()
+- pop()
+- peek()
+
+{% highlight javascript %}
+// 定义一个栈的类
+function Stack() {
+    // 属性
+    this.dataStore = [];
+    this.top = 0;
+    // 方法
+    this.push = push;
+    this.pop = pop;
+    this.peek = peek;
+    this.clear = clear;
+    this.length = length;
+}
+
+function push(element) {
+    this.dataStore[this.top++] = element;
+}
+
+// 弹出并返回栈顶的值
+function pop() {
+    return this.dataStore[--this.top];
+}
+
+function length() {
+    return this.top;
+}
+
+function peek() {
+    return this.dataStore[this.top-1];
+}
+
+function clear() {
+    this.top = 0;
+}
+
+{% endhighlight %}
+
+——使用stack类——
+
+几个典型的应用场景
+
+①数制间的互相转换
+
+将数字n转化为以b为基数的数字，步骤如下:
+
+1. 最高位为n%b,并压栈
+2. 使用n/b代替n
+3. 重复步骤1和2，直到n等于0，且没有余数。
+4. 持续将栈内元素弹出，直到栈空，依次将这些元素排列，就可以得到最终结果。
+
+{% highlight javascript %}
+function mulBase(num,base) {
+    var s = new Stack();
+    do {
+    s.push(num%base);
+    num = Math.floor(num /= base);
+}while(num>)
+while(s.length()>0) {
+    converted += s.pop();
+}
+return converted;
+}
+
+var converted = parseInt(num,base);  // 快速计算
+var converted = num.toString(base);  // 快速转换
+{% endhighlight %}
+
+②回文
+
+思路：将每个字符按顺序压栈，当字符入栈之后弹出，就得到一个反转后的字符串，接下来与原字符串比较即可。
+
+{% highlight javascript %}
+function isPalindrome(word) {
+    var s = new Stack();
+    for(var i = 0; i < word.length; i++) {
+    s.push(word.getCharAt(i));
+    }
+    var rword = '';
+    while(s.length() > 0) {
+    rword ++ s.pop();
+    }
+
+    if(word===rword) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// 语法糖部分
+return word===word.split('').reverse().join('');
+{% endhighlight %}
+
 
 
