@@ -456,6 +456,230 @@ return this.dataStore.splice(priority,1);
 
 ### 第六章 链表
 
+数组不总是组织数据的最佳数据结构，因为很多编程语言中，数组的长度是固定的，而且添加和删除数据也很麻烦，因为需要将数组的其他元素向前或者向后平移。然后js中不存在这种问题，因为它们被实现成了对象，与其他语言的数组相比，效率很低。
+
+{% highlight javascript %}
+// 双向链表
+function Node(element) {
+    this.element = element;
+    this.previous = null;
+    this.next = null;
+}
+
+function LList() {
+    this.head = new Node('head');
+    this.find = find;
+    this.insert = insert;
+    this.display = display;
+    this.remove = remove;
+    this.findLast = findLast;
+    this.dispReverse = dispReverse;
+}
+
+function find(item) {
+    var currNode = this.head;
+    while (currNode.element!=item) {
+        currNode = currNode.next;
+    }
+    return currNode;
+}
+
+function insert(element,item) {
+    var newNode = new Node(element);
+    var currNode = this.find(item);
+    newNode.next = currNode.next;
+    newNode.previous = currNode;
+    currNode.next = newNode;
+}
+
+function display() {
+    var currNode = this.head;
+    while(currNode.next!=null) {
+        console.log(currNode.element);
+        currNode = currNode.next;
+    }
+}
+
+function findLast() {
+    var currNode = this.head;
+    while(currNode.next!=null) {
+        currNode = currNode.next;
+    }
+    return currNode;
+}
+
+function dispReverse() {
+    var currNode = this.findLast();
+    while(currNode.previous!=null) {
+        console.log(currNode.element);
+        currNode = currNode.previous;
+    }
+}
+
+function remove(item) {
+    var currNode = this.find(item);
+    if(currNode.next!=null) {
+        currNode.previous.next = currNode.next;
+        currNode.next.previous = currNode.previous;
+        currNode.next = null;
+        currNode.previous = null;
+    }
+}
+
+{% endhighlight %}
+
+---
+
+第十章 树
+
+定义：树由一组以边连接的节点组成，常见的组织结构图就是一种树的结构
+
+常见术语：一棵树最上面的节点称为根节点，如果一个节点下面链接多个节点，那么该节点称为父节点，它下面的节点称为子节点。没有任何子节点的称为叶子节点。树可以分为几个层次，根节点是第0层，它的子节点是第一层，以此类推。规定空树的深度为-1，则深度为K的二叉树最大的节点数为2^(k+1)-1,同样可以计算得到，具有n个节点的完全二叉树的深度为[lg2(n+1)] - 1
+
+左节点，右节点
+
+__实现二叉查找树__
+
+{% highlight javascript %}
+function Node(data,left,right) {
+    this.data = data;
+    this.left = left;  // 左节点
+    this.right = right;  // 右节点
+    this.show = show;
+}
+
+function show() {
+    return this.data;
+}
+
+// 二叉查找树 BST
+function BST() { // Initialize
+    this.root = null;
+    this.insert = insert;
+    this.inOrder = inOrder;
+}
+
+function insert(data) { // Insertion
+    var n = new Node(data, null, null);
+    if (!this.root) {
+        this.root = n;
+    } else {
+        var current = this.root;
+        var parent;
+        while (true) {
+            parent = current;
+            if (data < current.data) {
+                current = current.left;
+                if (current == null) {
+                    parent.left = n;
+                    break;
+                } else {
+                    current = current.right;
+                    if (current == null) {
+                        parent.right = n;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 中序遍历
+function inOrder(node) {
+    if(!(node===null)) {
+        inOrder(node.left);
+        console.log(node.show() + ' ');
+        inOrder(node.right);
+    }
+}
+
+// 前序遍历
+function preOrder(node) {
+    if(!node) {
+        console.log(node.show() + ' ');
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+}
+
+// 后序遍历
+function postOrder(node) {
+    if(!node) {
+        postOrder(node.left);
+        postOrder(node.right);
+        console.log(node.show() + ' ');
+    }
+}
+
+// 查找最大值和最小值
+function getMin(node) {
+    var current = node;
+    while(!(current.left==null)) {
+        current = current.left;
+    }
+    return current.data;
+}
+
+function getMax(node) {
+    var current = node;
+    while(!current.right) {
+        current = current.right;
+    }
+    return current.data;
+}
+
+// 查找节点
+function find(data) {
+    var current = this.root;
+    while(!current) {
+        if (current.data == data) {
+            return current;
+        } else if (data < current.data) {
+            current = current.left;
+        } else {
+            current = current.right;
+        }
+    }
+}
+
+// 删除节点
+function remove(data) {
+    root = removeNode(this.root,data);
+}
+
+// 分为三种情况，叶子节点直接删除，有一个子节点直接替换，
+// 有两个子节点，本文的方法是用右子树中的最小节点替换当前节点。
+
+function removeNode(node,data) {
+    if (node == null) {
+        return null;
+    }
+    if (data == node.data) {
+        if (node.left==null&&node.right==null) {
+            return null;
+        }
+
+        if (node.left == null) {
+            return node.right;
+        }
+
+        if (node.right == null) {
+            return node.left;
+        }
+
+        var tempNode = getMin(node.right);
+        node.data = tempNode.data;
+        node.right = removeNode(node.right,tempNode.data);
+        return node;
+    }
+}
+
+
+
+
+
+{% endhighlight %}
 
 
 
