@@ -691,7 +691,97 @@ function removeNode(node,data) {
 
 ### 第十二章 排序算法
 
+__基本排序算法__
 
+- 冒泡排序
+- 选择排序
+- 插入排序
+
+{% highlight javascript %}
+Array.prototype.bubble = function() {
+    var len = this.length;
+    for (var i=len-1; i>=1; i--) {
+        for (var j=0; j<i; j++) {
+            if (this[j]>this[j+1]) {
+                var t = this[j];
+                this[j]=this[j+1];
+                this[j+1]=t;
+            }
+        }
+    }
+    return this;
+}
+
+// 区别在于交换次数，每次交换和只交换一次。
+Array.prototype.selection = function() {
+    var len = this.length;
+    var min;
+    for (var i=0; i<len-1; i++) {
+        var min = i;
+        for (var j=i+1; j<len; j++) {
+            if(this[j]<this[min]) {
+                min = j;
+            }
+        }
+
+        var t = this[i];
+        this[i] = this[min];
+        this[min] = t;
+    }
+    return this;
+}
+
+
+
+Array.prototype.insertion = function() {
+    var len = this.length;
+    var t;
+    for(var i=1; i<len; i++) {
+        for(var j=i; j>0; j--) {
+            if(this[j]<this[j-1]) {
+                t = this[j-1];
+                this[j-1] = this[j];
+                this[j] = t;
+            }
+        }
+    }
+    return this;
+}
+{% endhighlight %}
+
+__基本排序算法的时间复杂度__
+
+选择排序和插入排序要比冒泡排序快，插入排序是这三种中最快的。这主要取决于两个方面：
+
+1. 比较开销选择排序的比较开销是固定的n(n-1)/2,而插入排序平均下来是n(n-1)/4.
+2. 交换开销选择排序最多只需要执行2*(n-1)次交换，而插入排序平均的交换开销也是n(n-1)/4.这就取决于单次比较和交换的开销之比。如果是一个量级的，则插入排序优于选择排序，如果交换开销远大于插入开销，则插入排序可能比选择排序慢。
+
+__高级排序算法__
+
+希尔排序：其核心理念与插入排序不同，它会首先比较距离较远的元素，而非相邻的元素，和简单的比较相邻元素相比，使用这种方案可以使距离正确位置很远的元素更快的回到合适的位置。
+
+工作原理：通过定义一个间隔序列来表示排序过程中进行比较元素之间有多远的间隔，我们可以动态的定义间隔序列。
+
+{% highlight javascript %}
+Array.prototype.shellsort() = function () {
+    var len = this.length;
+    var h = 1;
+    while (h < len/3) {  // 动态计算间隔
+        h = 3*h + 1;
+    }
+
+    while (h >= 1) {
+        for (var i=h; i<len; i++) {
+            for (var j=i; j>=h&&this[j]<this[j-h]; j-=h) {
+                var t = this[j-h];
+                this[j-h] = this[j];
+                this[j] = t;
+            }
+        }
+        h = (h-1)/3;
+    }
+}
+{% endhighlight %}
 
 
 
