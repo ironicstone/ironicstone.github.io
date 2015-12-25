@@ -783,5 +783,42 @@ Array.prototype.shellsort() = function () {
 }
 {% endhighlight %}
 
+归并排序：先递<span class='red'>归</span>分解数列，再合<span class='red'>并</span>数列就完成了<span class='red'>归并</span>排序。
+
+归并排序的实现主要有两种策略:
+
+- 自顶向下的归并排序，使用递归来实现，对于js来说这种方式不太可行，这个算法递归深度对它来说太深了。
+- 自底向上的归并排序，首先将数据集分解为一组只有一个元素的数组，然后通过创建一组左右数组将它们慢慢合并起来。
+
+{% highlight javascript %}
+// 合并两个已经排序的数组，动态指针
+function merge(left,right) {
+    var leftLen = left.length;
+    var rightLen = right.length;
+    var i = j = 0;
+    var result = [];
+
+    while(i<leftLen&&j<rightLen) {
+        if(left[i] < right[j]) {
+            result.push(left[i]);
+            i++;
+        } else {
+            result.push(right[j]);
+            j++;
+        }
+    }
+
+    while (i<leftLen) {
+        result.push(left[i]);
+        i++;
+    }
+
+    while (i<rightLen) {
+        result.push(right[j]);
+        j++;
+    }
+}
+{% endhighlight %}
+
 
 
