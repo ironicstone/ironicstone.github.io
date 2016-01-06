@@ -820,5 +820,173 @@ function merge(left,right) {
 }
 {% endhighlight %}
 
+Javascript实现的自底向上归并排序算法
+
+{% highlight javascript %}
+function mergeSort(arr) {
+    if(arr.length < 2) {
+        return arr;
+    }
+
+    var step = 1;
+    var left,right;
+    while (step < arr.length) {
+        left = 0;
+        right = step;
+        while(right+step<=arr.length) {
+            mergeArrays(arr,left,left+step,right,right+step);
+            left = right + step;
+            right = left +step;
+        }
+
+        if(right < arr.length) {
+            mergeArrays(arr,left,left+step,right,arr.length);
+        }
+
+        step *= 2;
+    }
+}
+
+function mergeArrays(arr,startLeft,stopLeft,startRight,stopRight) {
+    var rightArr = new Array(stopRight - startRight + 1);
+    var leftArr = new Array(stopLeft - startRight + 1);
+    k = startRight;
+    for (var i=0; i<(rightArr.length-1); i++) {
+        rightArr[i] = arr[k];
+        k++;
+    }
+
+    k = startLeft;
+    for (var i=0; i<(leftArr.length-1); i++) {
+        leftArr[i] = arr[k];
+        k++
+    }
+
+    rightArr[rightArr.length-1] = Infinity;
+    leftArr[leftArr.length-1] = Infinity;
+
+    var m=0;
+    var n=0;
+    for (var k=startLeft; k<stopRight; k++) {
+        if (leftArr[m]<=rightArr[n]) {
+            arr[k] = leftArr[m];
+            m++;
+        } else {
+            arr[k] = rightArr[n];
+            n++;
+        }
+    }
+}
+
+//////////////////////////////////////递归形式实现
+Array.prototype.merge_sort = function() {
+    // 这段merge的代码写的不错
+    var merge = function(left,right) {
+        var final = [];
+        while(left.length&&right.length) {
+            final.push(left[0]<=right[0]?left.shift():right.shift());
+        }
+        return final.concat(left.concate(right));
+    }
+
+    var len = this.length;
+    if(len<2) return this;  // 递归必备，终止条件
+    var mid = len / 2;
+    return merge(this.slice(0,parseInt(mid)).merge_sort(),this.slice(parseInt(mid)).merge_sort());
+}
+{% endhighlight %}
+
+---
+
+### 第十四章 高级算法
+
+__动态规划__
+
+{% highlight javascript %}
+// 使用动态规划实现斐波那契数列
+
+// 递归形式
+function fib(n) {
+    if(n<2) {
+        return n;
+    }
+
+    var pre = 0;
+    var cur = 1;
+    var result = 0;
+
+    for(int i=0; i<n; i++) {
+        result = pre + cur;
+        pre = cur;
+        cur = result;
+    }
+
+    return result;
+}
+
+function fib(n) {
+    var val = [];
+    for(var i=0; i<=n; i++) {
+        val[i] = 0;
+    }
+
+    if(n==1||n==2) {
+        return 1;
+    } else {
+        val[1] = 1;
+        val[2] = 2;
+        for(var i=3; i<=n; i++) {
+            val[i] = val[i-1] + val[i-2];
+        }
+
+        return val[n-1];
+    }
+}
+
+// 动态规划实现最长公共子串函数 -->二维数组保存结果
+
+function lcs(word1,word2) {
+    var max = 0;
+    var index = 0;
+    var lcsarr = new Array(word1.length + 1);
+    for(var i=0; i <= word1.length+1; i++) {
+        lcsarr[i] = new Array(word2.length+1);
+
+        for(var j=0; j<=word2.length+1; j++) {
+            lcsarr[i][j] = 0;
+        }
+    }
+
+    for(var i=0; i<=word1.length+1; i++) {
+        for(var j=0; j<=word2.length+1; j++) {
+            if(i==0||j==0) {
+            lcsarr[i][j] = 0;
+        } else {
+            if(word1[i-1]==word2[j-1]) {
+                lcsarr[i][j] = lcsarr[i-1][j-1] + 1;
+            } else {
+                lcsarr[i][j] = 0;
+            }
+        }
+        }
+        if(max < lcsarr[i][j]) {
+            max = lcsarr[i][j];
+            index = i;
+        }
+    }
+
+    var str = '';
+    if(max==0) {
+        return '';
+    } else {
+        for (var i=index - max; i<=max; i++) {
+            str + word2[i];
+        }
+
+    return str;
+    }
+}
+
+{% endhighlight %}
 
 
