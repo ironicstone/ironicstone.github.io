@@ -19,8 +19,8 @@ npm init
 
 2. 安装依赖包，根据具体项目而定
 {% highlight sh %}
-// 常用的安装包有express,morgan,mongoose,PassportJS,body-parser
-npm install express --save // 保存到package.json中
+# 常用的安装包有express,morgan,mongoose,PassportJS,body-parser
+npm install express --save # 保存到package.json中
 {% endhighlight %}
 
 3. 开启服务
@@ -61,10 +61,10 @@ __Bower__
 使用方法：
 
 {% highlight sh %}
-//install
+#install
 npm install -g bower
 
-//initialize in your workspace
+#initialize in your workspace
 bower init
 
 
