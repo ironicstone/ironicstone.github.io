@@ -7,15 +7,18 @@ categories: js
 tags: 流程 工具
 ---
 
-学习MEAN开发过程中，一般的路程总结如下（从零到一）：
+学习MEAN开发过程中，一般的流程总结如下（从零到一）：
+
+---
+### 流程篇
 
 1. 初始化一个项目 
-{% highlight bash %}
+{% highlight sh %}
 npm init
 {% endhighlight %}
 
 2. 安装依赖包，根据具体项目而定
-{% highlight bash %}
+{% highlight sh %}
 // 常用的安装包有express,morgan,mongoose,PassportJS,body-parser
 npm install express --save // 保存到package.json中
 {% endhighlight %}
@@ -39,4 +42,32 @@ app.listen(port);
 console.log('打开localhost：'+port+'来访问');
 {% endhighlight %}
 
-4. 前端模块化---通过
+4. 前端模块化---通过AngularJS来构建
+{% highlight javascript %}
+module and route
+ng-app
+ng-view
+ng-controller
+ngRoute
+{% endhighlight %}
+
+---
+### 工具篇
+
+__Bower__
+
+<span class='red'>Bower</span>:前端包管理软件,可以用来下载CSS/JS库文件，例如常用的Bootstrap，Angular,jQuery,Animate.css等。工作机理和使用方法与与npm类似，npm使用package.json来配置，bower则用bower.json来配置。
+
+使用方法：
+
+{% highlight sh %}
+//install
+npm install -g bower
+
+//initialize in your workspace
+bower init
+
+
+{% endhighlight %}
+
+
