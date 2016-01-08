@@ -29,3 +29,9 @@ git config --global credential.helper store
     helper = store
 {% endhighlight %}
 重新开启git bash会发现git push时不用再输入用户名和密码
+
+使用credential.helper进行配置
+{% highlight sh %}
+$ git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+{% endhighlight %}
