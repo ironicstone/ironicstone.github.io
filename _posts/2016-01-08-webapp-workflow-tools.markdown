@@ -56,7 +56,7 @@ ngRoute
 
 __Bower__
 
-<span class='red'>Bower</span>:前端包管理软件,可以用来下载CSS/JS库文件，例如常用的Bootstrap，Angular,jQuery,Animate.css等。工作机理和使用方法与与npm类似，npm使用package.json来配置，bower则用bower.json来配置。
+[Bower](http://bower.io):前端包管理软件,可以用来下载CSS/JS库文件，例如常用的Bootstrap，Angular,jQuery,Animate.css等。工作机理和使用方法与与npm类似，npm使用package.json来配置，bower则用bower.json来配置。
 
 使用方法：
 
