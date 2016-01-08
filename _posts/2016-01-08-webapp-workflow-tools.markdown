@@ -128,7 +128,7 @@ npm install gulp-git --save-dev // 关于git操作
 // 类似的还有imagemin和clean
 
 
-// 在项目根目录创建gulpfil.js
+// 在项目根目录创建gulpfile.js
 
 var gulp = require('gulp');
 var less = require('gulp-less');
