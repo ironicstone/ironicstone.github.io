@@ -61,11 +61,30 @@ __Bower__
 使用方法：
 
 {% highlight sh %}
-#install
+# 安装bower
 npm install -g bower
 
-#initialize in your workspace
+# 初始化
 bower init
+
+# 安装一个包，默认情况下会在当前目录生成一个bower_components的文件夹
+bower install <package_name> --save
+
+bower install bootstrap
+
+# 通过github URL也可以安装
+bower intall <github-url>
+
+# 搜索一个包
+bower search <package_name>
+
+# 指定特定的目录放置包文件，而非默认的bower_components，编辑.bowerrc文件
+{
+    'directory':'public/assets/libs' # path to your directory
+}
+
+# 使用一个包
+正常使用即可
 
 
 {% endhighlight %}
