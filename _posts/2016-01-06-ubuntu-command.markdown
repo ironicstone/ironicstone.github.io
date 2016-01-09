@@ -7,7 +7,7 @@ categories: tools
 tags: ubuntu
 ---
 
-### 1-1 课程介绍
+### 课程介绍
 应用场景：编辑器+控制台（Terminal）
 
 现代开发者
@@ -63,17 +63,16 @@ Linux支持长文件名，所以在文件名有空格的时候你应该用引号
 - cat 输出一个文件，查看一个文件时可以使用，参数-n显示行号，-b显示非空行号，-E在每行结束时显示$字符   cat -n hello.c
 - head/tail 依次显示文件的头十行，tail显示后十行。参数-c显示多少character，参数-n显示多少行。   head -n 3 hello.c 显示前三行
 - mv [参数][源文件][目的位置+文件名（文件名可省略）] -f强行移动，-b如果目标文件存在就创造一个备份
-- cp [参数][源文件] 
-
-
-
-
-
-
-
-
-
-
-
-
-
+- cp [参数][源文件]
+- rm [参数][文件名/目录名] -i -r
+- find
+    - -name 查找文件名，含通配符×和？的文件名要用引号括起来
+    - -perm 000 文件属性，用3位数字显示
+    - -atime n n天之前访问过的文件
+    - -mtime n n天之前修改过的文件
+    - -ctime n n天前之间修改过
+    - -newer filename 文件的最后修改日期较filename新则为真
+    - -a and运算符
+    - -o or运算符
+    - ！ not运算符
+    -exex command 执行command，command必须以“\;”记号结尾,{}表示前面处理过程中过滤出来的文件。 find . -name hello.c -exec cat {}\; 寻找当前目录及其子目录下是否存在hello.c，如果有的话，用cat输出
