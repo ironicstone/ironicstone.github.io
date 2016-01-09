@@ -210,6 +210,10 @@ alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 {% endhighlight %}
 8. 现在可以直接在命令行中敲wego啦，同时它可以接受两个参数，比如wego beijing 5,显示北京未来5天的天气。
 
+上一张效果图：
+
+![wego效果图]({{site.baseurl}}/image/test/wego.png)
+
 
 
 
