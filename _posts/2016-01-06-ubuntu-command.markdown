@@ -126,6 +126,53 @@ shell增强命令
 
 ### 管理命令
 
+- sudo
+- useradd
+- userdel
+- chmod
+- mount
+    - mount /dev/hdc /cdrom -o loop
+    - mount /dev/hda3 /media/hda3 
+- unmount
+- fsck 检查文件系统
+- df diskfree 显示磁盘剩余空间 df -h -T
+- cfdisk
+- mkfs
+- shutdown [参数][时间（now）]-r 重启 -h 关机 -n 快速关机 
+
+### Ubuntu包管理系统
+
+apt：advanced package tools
+
+apt-get [参数][包的名称]
+
+- install
+- remove
+- autoremove 删除系统没有用到的软件包
+- clean 删除缓存里的旧包
+- update
+
+aptitude
+
+### 系统核心配置文件
+
+源地址的配置 /etc/apt/source.list
+
+[推荐源参考](http://wiki.ubuntu.org.cn/%E6%BA%90%E5%88%97%E8%A1%A8)
+
+备注：注意不同版本之间关键词的替换
+
+### GNU编译环境
+
+g++
+
+### 命令行下的Internet
+
+- ping
+- wget 下载
+- w3m
+
+
 
 
 
