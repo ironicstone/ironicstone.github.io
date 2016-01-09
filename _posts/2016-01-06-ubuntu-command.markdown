@@ -181,8 +181,8 @@ __[wego](https://github.com/schachmat/wego)运行在命令行中的天气app__
 
 初步摸索了一下，大致步骤如下：
 
-1. 安装go环境，sudo apt-get install golang
-2. 配置GOPATH和GOROOT
+- 安装go环境，sudo apt-get install golang
+- 配置GOPATH和GOROOT
 {% highlight sh %}
 # 打开 vim ～/.bashrc,加入下面配置，具体目录可以自己定义
 export GOROOT=/usr/lib/go
@@ -190,10 +190,10 @@ export GOPATH=$HOME/go
 
 # 添加完毕以后，保存并退出，运行go env查看go的环境配置，可以看到GOPATH和GOROOT配置成功。
 {% endhighlight %}
-3. 以上完成以后，安装wego，运行 go get github.com/schachmat/wego
-4. GOPATH目录下就有源文件了，我的是$HOME/go/src/github.com/schachmat/wego,这里面有个we.go文件，运行一次，go run we.go,会报错同时在$HOME目录下生成.wegorc配置文件，并且提示你缺少天气网站的API key。
-5. 到[worldweatheronline](https://developer.worldweatheronline.com/auth/register)去申请你的key，可以链接github或者重新注册一个账户。登陆之后，可以获得API KEY
-6. 将你获得的key填入到.wegorc中，并设置默认的城市和语言。我的配置如下：
+- 以上完成以后，安装wego，运行 go get github.com/schachmat/wego
+- GOPATH目录下就有源文件了，我的是$HOME/go/src/github.com/schachmat/wego,这里面有个we.go文件，运行一次，go run we.go,会报错同时在$HOME目录下生成.wegorc配置文件，并且提示你缺少天气网站的API key。
+- 到[worldweatheronline](https://developer.worldweatheronline.com/auth/register)去申请你的key，可以链接github或者重新注册一个账户。登陆之后，可以获得API KEY
+- 将你获得的key填入到.wegorc中，并设置默认的城市和语言。我的配置如下：
 {% highlight sh %}
 {
     "APIKey": "Your API key",
@@ -203,12 +203,12 @@ export GOPATH=$HOME/go
     "Lang": "zh" # 中文显示
 }
 {% endhighlight %}
-7. 到此为止，再次运行 go run we.go即可成功显示天气，因为指令较长，使用alias简化命令。
+- 到此为止，再次运行 go run we.go即可成功显示天气，因为指令较长，使用alias简化命令。
 {% highlight sh %}
 # 函数可以接受参数，$@表示输入的参数
 alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 {% endhighlight %}
-8. 现在可以直接在命令行中敲wego啦，同时它可以接受两个参数，比如wego beijing 5,显示北京未来5天的天气。
+- 现在可以直接在命令行中敲wego啦，同时它可以接受两个参数，比如wego beijing 5,显示北京未来5天的天气。
 
 上一张效果图：
 
