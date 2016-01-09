@@ -76,3 +76,64 @@ Linux支持长文件名，所以在文件名有空格的时候你应该用引号
     - -o or运算符
     - ！ not运算符
     -exex command 执行command，command必须以“\;”记号结尾,{}表示前面处理过程中过滤出来的文件。 find . -name hello.c -exec cat {}\; 寻找当前目录及其子目录下是否存在hello.c，如果有的话，用cat输出
+
+压缩解压
+
+- gzip/gunzip [参数][文件名]
+- bzip2/bunzip2
+- tar [参数][文件名] 常用 tar -cjvf -xjvf -czvf -xzvf
+    - -A 将文件增加到tar包里面
+    - -c 新建tar包
+    - -d 比较tar包和文件系统里面对应的文件
+    - -delete 删除tar包中的内容
+    - -t 列举tar包中的内容
+    - -r 在包的末尾添加文件
+    - -x 将文件从tar包中解压
+    - -f 指定操作的tar文件名称
+    - -h 不包含链接文件，而是加入他们指向的真实文件
+    - -j 使用bzip2压缩之后再加入tar包
+    - -z 使用zip/unzip处理tar文件
+- zip/unzip
+- rar/unrar
+- 7z
+
+文件比较
+
+- cmp
+- comm
+- diff
+
+管道符号|之后的常用命令
+
+- command|more 页
+- command|less
+- command|grep
+
+shell增强命令
+
+- history 显示你输入的历史
+- whereis 搜索系统命令
+- which
+
+程序运行控制
+
+- &符号，表示这个程序在后台运行
+- CTRL-C 终端当前程序，回到shell
+- CTRL-Z 暂停当前程序，回到shell
+- ps -eo pid,comm,%cpu,%mem
+- kill pid
+- nice 调整优先级（-20-20之间，越小优先级越高） nice -10 eva
+
+### 管理命令
+
+
+
+
+
+
+
+
+
+
+
+
