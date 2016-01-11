@@ -2,7 +2,7 @@
 layout: post
 title: 前端开发过程中的一般流程及常用工具
 date: 2016-01-08 15:22:29
-summary: 读书笔记
+summary:
 categories: js
 tags: 流程 工具
 ---
@@ -12,7 +12,7 @@ tags: 流程 工具
 ---
 ### 流程篇
 
-1. 初始化一个项目 
+1. 初始化一个项目
 {% highlight sh %}
 npm init
 {% endhighlight %}
