@@ -1,0 +1,74 @@
+---
+layout: post
+title:  《The little world of Liz Climo》摘选
+date:   2016-1-11 22:38:01
+summary: 选取了一些我比较有意思画面，在此做一个备份
+categories: life
+tags: life fun
+---
+
+###《The little world of Liz Climo》
+中译名：[《你今天真好看》](http://book.douban.com/subject/26602392/)
+
+内容简介：这是一本漫画集，里面收录了艺术家Liz Climo的100多幅漫画，漫画的主角是一些可爱的小动物，比如恐龙，大熊猫，蜥蜴，马，兔子等等。全书主要分为四个主题，分别是
+
+- love and friendship
+- holidays and celebartions
+- family
+- daily life
+
+在这本书里你将看到小动物之间忍俊不禁的一面。长颈鹿的圣诞理想是21条围巾，两只狐狸将自己的身体涂成五十度灰，大象带着小狐狸的耳机声称耳机坏了，恐高的小恐龙等等。下面选出几幅我觉得比较有意思的做个备份。
+
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (15).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (16).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (17).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (18).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (19).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (2).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (20).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (21).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (22).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (23).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (24).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (25).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (26).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (27).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (28).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (29).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (3).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (30).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (31).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (32).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (33).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (34).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (35).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (36).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (37).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (38).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (39).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (4).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (40).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (41).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (42).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (43).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (44).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (45).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (46).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (47).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (48).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (49).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (5).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (50).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (51).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (52).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (53).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (54).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (55).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (56).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (57).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (58).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (59).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (6).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (7).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (8).png})
+[Have fun]({{site.baseurl}}/image/lizclimo/1 (9).png})
