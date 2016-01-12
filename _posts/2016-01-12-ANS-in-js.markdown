@@ -22,7 +22,9 @@ tags: js semicolons
 
 单独一个分号（;）也是一条合理的js语句，比如
 {% highlight javascript %}
-if(x); <---> if(x) {}
+if(x); 
+// 相当于
+if(x) {}
 
 foo();
 [1,2,3].forEach(bar);
