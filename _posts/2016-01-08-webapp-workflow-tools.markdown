@@ -80,7 +80,9 @@ bower search <package_name>
 
 # 指定特定的目录放置包文件，而非默认的bower_components，编辑.bowerrc文件
 {
-    'directory':'public/assets/libs' # path to your directory
+    'directory':'public/assets/libs' # 这样子会报错，为什么？因为你TMD的用了单引号！！怪我喽
+
+    "directory":"public/components/libs" # 运行成功
 }
 
 # 自定义
