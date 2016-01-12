@@ -1,0 +1,40 @@
+---
+layout: post
+title:  JS中分号的使用规则（如何判断一个语句）
+date:   2016-01-12 10:13:44
+summary: 
+categories: js
+tags: js semicolons
+---
+
+关于JS的书写中是否应该加分号已经有了很多争论，有人说最好都加上分号以防万一，有人说给每个语句加上分号容易保持语言的连贯性（C,JAVA等语言语句结尾都有分号），还有一些是听项目老大或别人说加上分号更加安全。
+
+之前写js过程中，我总是会给每个语句都加上分号，以防万一。进一步说，我其实没有意识到不加分号会有那些不妥的地方，这属于一个知识点上的漏洞，即:JS如何判断一个表达式结束，什么是一个完整的声明。花了一点时间整理了一下。
+
+---
+
+通常来说，回车之后（换行）一条语句就结束了，除了以下几种情况：
+
+- 表达式中含有未闭合的括号，数组，对象以及一些非正常语句结束符号，比如.号，,号等。
+- 行开头为--或者++,这种情况下会对接下来的变量进行自增操作。注：带有副作用的操作符：--，++，=
+- for(),while(),do,if()语句
+- 下一行开头为[,(,+,-,*,/,,,.,以及其他一些位操作符!,^,~等。[和（会被当做属性读取和函数调用，因此可以在前面加上分号来避免。
+
+单独一个分号（;）也是一条合理的js语句，比如
+{% highlight javascript %}
+if(x); <---> if(x) {}
+
+foo();
+[1,2,3].forEach(bar);
+
+//可以这么来改写
+foo()
+;[1,2,3].forEach(bar)
+{% endhighlight %}
+
+参考链接：
+
+- [JSHINT ASI(Automatic Semicolon Insertion)](http://jshint.com/docs/options/#asi)
+- [An Open Letter to JavaScript Leaders Regarding Semicolons ](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding)
+- [JavaScript Semicolon Insertion Everything you need to know](http://inimino.org/~inimino/blog/javascript_semicolons)
+- [(推荐测试一下)ASI Scanning Test Grounds](http://asi.qfox.nl/)
