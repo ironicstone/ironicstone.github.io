@@ -71,6 +71,8 @@ sftp 使用方式与ftp类似,见参考链接
 - [How To Configure vsftpd to Use SSL/TLS on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-configure-vsftpd-to-use-ssl-tls-on-an-ubuntu-vps)
 - [How To Use SFTP to Securely Transfer Files with a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
+---
+
 ### 课程介绍
 应用场景：编辑器+控制台（Terminal）
 
@@ -236,7 +238,55 @@ g++
 - wget 下载
 - w3m
 
-### 有意思的命令行工具
+---
+---
+---
+
+### ubuntu系统安装相关
+
+制作U盘启动盘
+
+分区方案：
+
+将home目录作为一个单独的挂载点，home就是默认的工作目录，也是用户所在的地方。重装系统或者升级系统，/home分区的数据都可以得到保留，最大程度避免了软件安装和重新配置的耗时工作。备份时只备份home分区，避免全盘备份。
+
+所以一般来说一个 Ubuntu 的系统在安装之初应该有三个分区，他们分别是挂载于根目录： /, home目录： /home 的两个分区以及 swap 分区。swap分区是指虚拟内存的交换区，一般设置为实际内存容量的两倍大小即可。
+
+假设你有一台500G硬盘，2G内存的PC，那么比较好的分区分配方案是：根目录所在分区分配50G左右， swap分区分配4G，剩余空间全部留给 /home 所在分区即可。
+
+### 打造Ubuntu系统的基础设施
+
+- 高速下载软件，选择合适的源。可以选择国内的官方源比如阿里云的（编辑/etc/source.list,或者选择最佳服务器），163的，教育网的用户务必选择高校提供的源，速度十分给力。下载特定软件时会用到第三方源，需要时再添加。Canonical合作伙伴的源也尽量选中，方便后面的安装。
+- 安装显卡驱动[Nvidia](http://www.nvidia.com/object/unix.html)
+- 同步系统的建立
+    - 在云端保存基于单一文本的linux知识库，随时记录新的指示点，尽可能简洁，KISS原则，Keep it simple, stupid!
+    - 在云端保存一个软件安装的脚本
+    - 在云端备份home目录下重要的配置文件，例如.vim .vimrc 保存了gvim的配置信息，.bashrc保存了shell的配置信息
+- 借助代理服务器，跨域高墙
+
+{% highlight sh %}
+# GUI程序可以直接配置，命令行程序按如下步骤配置
+
+# 情况一：已有代理服务器的ip和端口号
+sudo apt-get install proxychains -y
+sudo vi /etc/proxychains.conf
+注释掉文件中最后一行：socks4 127.0.0.1 9050
+幷在文件最后追加一行：socks5 proxy_ip_address port
+
+# 情况二 设置本地计算机为代理服务器，这种情况下你有一台装有ssh server的国外主机
+ssh username@machine_d_ip_address -D 127.0.0.1:7070 # 建立 ssh channel，并且不要关闭这个终端或者退出 ssh
+
+# 更改上述文件，ip和端口号为127.0.0.1,7070
+{% endhighlight %}
+
+### Ubuntu系统备份恢复升级策略
+
+---
+---
+---
+
+
+### 番外篇：有意思的命令行工具
 
 - [来自知乎-如何善加利用Terminal](https://www.zhihu.com/question/29442452)
 - [Github-Awesome CLI](https://github.com/Voyga/awesome-cli)
