@@ -71,8 +71,6 @@ sftp 使用方式与ftp类似,见参考链接
 - [How To Configure vsftpd to Use SSL/TLS on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-configure-vsftpd-to-use-ssl-tls-on-an-ubuntu-vps)
 - [How To Use SFTP to Securely Transfer Files with a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
-
-
 ### 课程介绍
 应用场景：编辑器+控制台（Terminal）
 
@@ -198,13 +196,13 @@ shell增强命令
 - chmod
 - mount
     - mount /dev/hdc /cdrom -o loop
-    - mount /dev/hda3 /media/hda3 
+    - mount /dev/hda3 /media/hda3
 - unmount
 - fsck 检查文件系统
 - df diskfree 显示磁盘剩余空间 df -h -T
 - cfdisk
 - mkfs
-- shutdown [参数][时间（now）]-r 重启 -h 关机 -n 快速关机 
+- shutdown [参数][时间（now）]-r 重启 -h 关机 -n 快速关机
 
 ### Ubuntu包管理系统
 
@@ -279,15 +277,3 @@ alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 上一张效果图：
 
 ![wego效果图]({{site.baseurl}}/image/test/wego.png)
-
-
-
-
-
-
-
-
-
-
-
-
