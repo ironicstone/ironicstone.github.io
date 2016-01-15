@@ -7,6 +7,72 @@ categories: tools
 tags: ubuntu
 ---
 
+### 更新
+
+### ftp操作
+
+__常用FTP工具__
+
+- VSFTPD
+- ProFTPD
+
+__服务器端__
+
+{% highlight sh %}
+
+# 安装
+sudo apt-get install vsftpd
+
+# 配置
+sudo vim /etc/vsftpd.conf
+anonymous_enable=NO # 确保身份验证
+local_enable=YES
+write_enable=YES
+chroot_local_user=YES # 确保只能访问指定目录
+
+# 创建ftp目录
+mkdir $HOME/files
+chown root:root $HOME
+# 在files目录进行相应操作
+
+# 开启ftp服务
+sudo service vsftpd restart
+{% endhighlight %}
+
+__客户端__
+
+两种访问方式：
+
+- 浏览器访问    ftp://example.com
+- 命令行访问    ftp example.com
+
+__ftp命令__
+
+- put： 上传本地文件到服务器
+- mput： 上传多个文件到服务器（可以上传前打包）
+- get: 下载到本地
+- mget: 同上
+- ls
+- cd
+- help： 列出所有有用的指令
+- pwd: print workspace directory of the remote
+- delete: 服务器端删除一个文件
+- mdelete
+- eixt: 退出
+
+__更加安全的文件传输方式__
+
+sftp 使用方式与ftp类似,见参考链接
+
+参考链接：
+
+- [What is FTP and How Is It Used?](https://www.digitalocean.com/community/tutorials/what-is-ftp-and-how-is-it-used)
+- [How To Set Up vsftpd on Ubuntu ](https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-on-ubuntu-12-04)
+- [How To Configure vsftpd to Use SSL/TLS on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-configure-vsftpd-to-use-ssl-tls-on-an-ubuntu-vps)
+- [How To Use SFTP to Securely Transfer Files with a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
+
+
+
 ### 课程介绍
 应用场景：编辑器+控制台（Terminal）
 
