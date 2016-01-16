@@ -321,3 +321,27 @@ alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 上一张效果图：
 
 ![wego效果图]({{site.baseurl}}/image/test/wego.png)
+
+---
+
+### 常用命令技巧
+
+1. sdcv（startdict的命令行版本）
+
+{% highlight sh %}
+#安装方法
+
+#1
+sudo apt-get install sdcv
+#2安装字典
+到http://abloz.com/huzheng/stardict-dic/zh_CN/ 下载需要的词库
+然后sudo tar -xjvf stardict-kdic-computer-gb-2.4.2.tar.bz2
+接着sudo mv stardict-kdic-computer-gb-2.4.2 /usr/share/stardict/dic/
+#3放心食用
+{% endhighlight %}
+
+2. zsh+pure+code highlight
+
+
+
+
