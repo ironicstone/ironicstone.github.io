@@ -370,16 +370,14 @@ sudo apt-get update && sudo apt-get install plank
 
 {% highlight sh %}
 sudo add-apt-repository ppa:quiterss/quiterss
-sudo apt-get update
-sudo apt-get install quiterss
+sudo apt-get update && sudo apt-get install quiterss
 {% endhighlight %}
 
 5. 截图工具shutter
 
 {% highlight sh %}
 sudo add-apt-repository ppa:shutter/ppa
-sudo apt-get update
-sudo apt-get install shutter
+sudo apt-get update && sudo apt-get install shutter
 {% endhighlight %}
 
 
