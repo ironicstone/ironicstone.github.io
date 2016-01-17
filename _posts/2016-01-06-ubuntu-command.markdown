@@ -324,7 +324,7 @@ alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 
 ---
 
-### 常用命令技巧
+### 常用软件命令技巧
 
 1. sdcv（startdict的命令行版本）
 
@@ -341,6 +341,46 @@ sudo apt-get install sdcv
 {% endhighlight %}
 
 2. zsh+pure+code highlight
+
+3. 主题,图标和docker栏
+
+参考链接 
+
+- [Numix(推荐)](https://numixproject.org/)
+- [Paper](http://samuelhewitt.com/paper/download)
+- [简书推荐](http://www.jianshu.com/p/617e4388d814)
+{% highlight sh %}
+# 安装Unity Tweak Tool
+sudo apt-get install unity-tweak-tool
+
+#安装主题和图标
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update && sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+
+# paper主题
+sudo add-apt-repository ppa:snwh/pulp
+sudo apt-get update && sudo apt-get install paper-icon-theme paper-gtk-theme
+
+# Plank Docker
+sudo add-apt-repository ppa:ricotz/docky
+sudo apt-get update && sudo apt-get install plank
+{% endhighlight %}
+
+4. RSS阅读器
+
+{% highlight sh %}
+sudo add-apt-repository ppa:quiterss/quiterss
+sudo apt-get update
+sudo apt-get install quiterss
+{% endhighlight %}
+
+5. 截图工具shutter
+
+{% highlight sh %}
+sudo add-apt-repository ppa:shutter/ppa
+sudo apt-get update
+sudo apt-get install shutter
+{% endhighlight %}
 
 
 
