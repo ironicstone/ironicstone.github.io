@@ -342,6 +342,31 @@ sudo apt-get install sdcv
 
 2. zsh+pure+code highlight
 
+参考链接
+
+- [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [pure](https://github.com/sindresorhus/pure)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+{% highlight sh %}
+# zsh v4.3.9以上，zsh --version检查
+sudo apt-get install zsh
+# 设置zsh为默认shell
+chsh -s $(which zsh)
+# 注销后重新登陆，并且检查zsh是否为默认shell
+echo $SHELL
+# 安装oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# 安装主题pure
+npm install --global pure-prompt
+# 安装语法高亮插件
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+plugins=( [plugins...] zsh-syntax-highlighting)
+
+source ~/.zshrc
+{% endhighlight %}
+
 3. 主题,图标和docker栏
 
 参考链接 
