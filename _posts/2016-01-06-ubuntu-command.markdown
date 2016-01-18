@@ -326,7 +326,7 @@ alias wego='_(){ go run $HOME/go/src/github.com/schachmat/wego/we.go "$@";}; _'
 
 ### 常用软件命令技巧
 
-1. sdcv（startdict的命令行版本）
+1 sdcv（startdict的命令行版本）
 
 {% highlight sh %}
 #安装方法
@@ -340,7 +340,7 @@ sudo apt-get install sdcv
 #3放心食用
 {% endhighlight %}
 
-2. zsh+pure+code highlight
+2 zsh+pure+code highlight
 
 参考链接
 
@@ -367,7 +367,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 source ~/.zshrc
 {% endhighlight %}
 
-3. 主题,图标和docker栏
+3 主题,图标和docker栏
 
 参考链接 
 
@@ -391,18 +391,24 @@ sudo add-apt-repository ppa:ricotz/docky
 sudo apt-get update && sudo apt-get install plank
 {% endhighlight %}
 
-4. RSS阅读器
+4 RSS阅读器
 
 {% highlight sh %}
 sudo add-apt-repository ppa:quiterss/quiterss
 sudo apt-get update && sudo apt-get install quiterss
 {% endhighlight %}
 
-5. 截图工具shutter
+5 截图工具shutter
 
 {% highlight sh %}
 sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update && sudo apt-get install shutter
+{% endhighlight %}
+
+6 安装文泉驿字体
+
+{% highlight sh %}
+sudo apt-get install -y ttf-wqy-zenhei
 {% endhighlight %}
 
 
