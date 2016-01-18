@@ -293,8 +293,8 @@ __[wego](https://github.com/schachmat/wego)运行在命令行中的天气app__
 - 配置GOPATH和GOROOT
 {% highlight sh %}
 # 打开 vim ～/.bashrc,加入下面配置，具体目录可以自己定义
-export GOROOT=/usr/lib/go
-export GOPATH=$HOME/go
+export GOROOT=/usr/lib/go # go 的安装目录
+export GOPATH=$HOME/go # go 项目的目录
 
 # 添加完毕以后，保存并退出，运行go env查看go的环境配置，可以看到GOPATH和GOROOT配置成功。
 {% endhighlight %}
