@@ -411,6 +411,18 @@ sudo apt-get update && sudo apt-get install shutter
 sudo apt-get install -y ttf-wqy-zenhei
 {% endhighlight %}
 
+7 视频播放器和音频播放器
+
+Ubuntu中的视频播放器选择VLC，音频播放器有两个选择，都是基于命令行的。
+
+- [cmus](https://github.com/cmus/cmus)
+- [musicbox](https://github.com/darknessomi/musicbox)
+
+界面示例
+
+![cmus]({{site.baseurl}}/image/201601/cmus.png)
+![musicbox]({{site.baseurl}}/image/201601/musicbox.png)
+
 
 
 
