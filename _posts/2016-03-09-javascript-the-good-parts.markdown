@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  《JS: The good parts》读书笔记
-date:   2015-3-9 11:27:16
+date:   2016-3-9 11:27:16
 summary:
 categories: javascript
 tags: 读书笔记 js
