@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Vue.js 笔记
-date:   2016-3-12 16:42:07
+title:  vuejs 笔记
+date:   2016-03-11 16:21:27
 summary:
 categories: javascript
-tags: vue js
+tags: js
 ---
 
 ## Vue.js学习笔记
