@@ -34,7 +34,7 @@ var myComponentInstance = new MyComponent()
 
 每一个Vue实例都会代理data对象的所有属性，除了这些数据属性，Vue实例暴露了一些有用的实例属性和方法，这些属性和方法都有前缀$，一遍和代理数据属性区分，例如vm.$data,vm.$el,vm.$watch等与生命周期相关的有vm.$mount(el),vm.$destroy()。
 
-!['lifecircle']()
+!['lifecircle']({{site.baseurl}}/image/201603/lifecycle.png)
 
 
 ### 数据绑定语法
