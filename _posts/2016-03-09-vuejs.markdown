@@ -1,0 +1,236 @@
+---
+layout: post
+title:  Vue.js 笔记
+date:   2016-3-12 16:42:07
+summary:
+categories: javascript
+tags: vue js
+---
+
+## Vue.js学习笔记
+
+### 概述
+
+Vue的两大特性
+
+- 响应的数据绑定（双向），与angular类似
+- 自定义的组件系统（组件化开发的趋势）
+
+### Vue实例
+
+实例化Vue,需要传入一个选项对象，包含数据、模板、方法、挂载元素、生命周期等。可以通过扩展Vue构造器，从而用预定义选项创建可复用的组件构造器。
+
+{% highlight javascript %}
+
+var MyComponent = Vue.extend({
+    data:,
+    methods:,
+    // options
+})
+
+var myComponentInstance = new MyComponent()
+
+{% endhighlight %}
+
+每一个Vue实例都会代理data对象的所有属性，除了这些数据属性，Vue实例暴露了一些有用的实例属性和方法，这些属性和方法都有前缀$，一遍和代理数据属性区分，例如vm.$data,vm.$el,vm.$watch等与生命周期相关的有vm.$mount(el),vm.$destroy()。
+
+!['lifecircle']()
+
+
+### 数据绑定语法
+
+Vue.js模板都是可解析的有效的HTML，且通过一些特殊特性做了增强。
+
+Mustache 标签也可以用在 HTML 特性 (Attributes) 内,上 Vue.js 在数据绑定内支持全功能的 JavaScript 表达式。一个限制是每个绑定只能包含单个表达式。
+
+{% highlight javascript %}
+
+<div id="item-{{ id }}"></div>
+
+{{ number + 1 }}
+
+{{ ok ? 'YES' : 'NO' }}
+
+{{ message.split('').reverse().join('') }}
+
+<!-- 这是一个语句，不是一个表达式： -->
+{{ var a = 1 }}
+
+<!-- 流程控制也不可以，可改用三元表达式 -->
+{{ if (ok) { return message } }}
+
+{{ message | filterA | filterB }}
+
+{{ message | filterA 'arg1' arg2 }}
+
+{% endhighlight %}
+
+Vue.js 允许在表达式后添加可选的“过滤器 (Filter) ”，以“管道符”（|）指示，与linux平台下的命令类似，不过这不是JS语法，因此不能再表达式内使用，只能添加到表达式后面，同时过滤器可以串联，也可以接受参数。
+
+> v- 前缀是一种标识模板中特定的 Vue 特性的视觉暗示。当你需要在一些现有的 HTML 代码中添加动态行为时，这些前缀可以起到很好的区分效果。但你在使用一些常用指令的时候，你会感觉一直这么写实在是啰嗦。而且在构建单页应用时，Vue.js 会管理所有的模板，此时 v- 前缀也没那么重要了。因此Vue.js 为两个最常用的指令 v-bind 和 v-on 提供特别的缩写，v-bind:href='url'>:href='url', v-on:click>@click
+
+
+### 计算属性
+
+cmoputed比起.$watch更加方便
+
+{% highlight javascript %}
+
+// ...
+computed: {
+  fullName: {
+    // getter
+    get: function () {
+      return this.firstName + ' ' + this.lastName
+    },
+    // setter
+    set: function (newValue) {
+      var names = newValue.split(' ')
+      this.firstName = names[0]
+      this.lastName = names[names.length - 1]
+    }
+  }
+}
+// ...
+
+{% endhighlight %}
+
+### Class与Style绑定
+
+针对操作元素的class列表和它的内联样式，Vue增强了v-bind用于class和style的功能，表达式的结果类型除了字符串之外，还可以是对象和数组。
+
+-v-bind:sytle
+    - CSS属性名可以用驼峰式或者短横分隔命名。
+    - 使用需要产商前缀的CSS属性，Vue.js会自动侦测并添加相应的前缀
+
+### 条件渲染
+
+- v-if
+    - 添加到一个元素上，可以和v-else连用
+    - 对于多个要素，可以把一个<template>元素当作包装元素，并在上面使用v-if
+- v-show
+    - 用法与v-if大致相同，也可以与v-else连用
+    - v-show的元素会始终渲染并保持在DOM中，v-show是简单的切换要素的CSS属性的display
+
+v-if是真实的条件渲染，一般来说v-if有更高的切换消耗（有一个局部编译/卸载的过程），v-show有更高的初始渲染消耗。所以，如果需要频繁切换v-show较好，如果条件不大可能改变v-if较好。
+
+### 列表渲染
+
+形式为 item in items，items 是数据数组，item 是当前数组元素的别名
+
+数组变动检测
+
+- 变异方法,修改了原始数组(push,pop,shift,unshift,splice,sort,reverse)
+- 替换数组，返回了一个新数组（filter,concat,slice）
+- track-by：复用已有实例
+- 对象v-for： v-for = "(key,val) in items"  // key-value对
+- 值域v-for：<span v-for="n in 10"></span>
+
+### 方法与事件处理器
+
+v-on指令监听DOM事件
+
+有时也需要在内联语句处理器中访问原生 DOM 事件。可以用特殊变量 $event 把它传入方法
+
+Vue.js 为 v-on 提供事件修饰符：.prevent 与 .stop，新加了.capture和.self。同时修饰符可以串联，v-on:click.stop.prevent
+
+按键修饰符，同时提供了常用按键别名，当然你也可以自定义
+
+### 表单控件绑定
+
+用 v-model 指令在表单控件元素上创建双向数据绑定。根据控件类型它自动选取正确的方法更新元素
+
+### 过渡
+
+为了应用过渡效果，需要在目标元素上使用 transition 特性
+
+可以与下面资源一起用：
+
+    - v-if
+    - v-show
+    - v-for
+    - 动态组件
+    - 在组件的根节点上，并且被Vue实例DOM方法（如vm.$appendTo(el)）触发
+
+可以为.v-transition,.v-enter,.v-leave添加CSS规则（也可以自定义过渡类名），也可以提供JS钩子。
+
+CSS动画的使用方法与上面一致。
+
+{% highlight javascript %}
+Vue.transition('expand', {
+
+  beforeEnter: function (el) {
+    el.textContent = 'beforeEnter'
+  },
+  enter: function (el) {
+    el.textContent = 'enter'
+  },
+  afterEnter: function (el) {
+    el.textContent = 'afterEnter'
+  },
+  enterCancelled: function (el) {
+    // handle cancellation
+  },
+
+  beforeLeave: function (el) {
+    el.textContent = 'beforeLeave'
+  },
+  leave: function (el) {
+    el.textContent = 'leave'
+  },
+  afterLeave: function (el) {
+    el.textContent = 'afterLeave'
+  },
+  leaveCancelled: function (el) {
+    // handle cancellation
+  }
+})
+
+{% endhighlight %}
+
+### 组件
+
+组件可以扩展HTML元素，封装可重用的代码，组件式自定义元素，Vue.js的编译器为它添加特殊功能。
+
+组件选项问题：传入Vue构造器的多数选项也可以用在Vue.extend()中，不过有两个特例：data和el,如果这样，所有实例都将共享一个data对象或el元素，因此，我们应当使用一个函数作为data或者el选项，函数放回一个新对象。
+
+- is特性
+
+一些 HTML 元素，如 <table>，限制什么元素可以放在它里面。自定义元素不在白名单上，将被放在元素的外面，因而渲染不正确。这时应当使用 is 特性
+
+- Props
+
+组件实例的作用域是孤立的，可以使用props把数据传给子组件。
+
+props默认是单向绑定，不过可以使用.sync或者.once绑定修饰符显式地强制双向或单次绑定
+
+子组件索引
+
+为了在Javascirpt中直接访问子组件，可以使用v-ref为子组件指定一个索引ID
+
+
+- 使用Slot分发内容
+
+> slot:an allotted place in an arrangement or plan such as a broadcasting schedule.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
