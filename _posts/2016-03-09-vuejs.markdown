@@ -214,6 +214,34 @@ props默认是单向绑定，不过可以使用.sync或者.once绑定修饰符�
 > slot:an allotted place in an arrangement or plan such as a broadcasting schedule.
 
 
+### 深入响应式原理
+
+变化检测问题
+
+Vue.js通过ES5的Object.defineProperty()将属性转换为getter/setter，所以属性必须在data对象上才能让vue转换它，才能让它是响应的。
+
+在实例创建后添加响应式属性的方法：
+
+- 对于Vue实例，使用$set(key,value)实例方法
+- 对于普通数据，使用全局方法Vue.set(object,key,value)
+- 给已有对象添加属性，使用Object.assign()或者_.extend()时，可以创建一个新的对象，包含原对象的属性和新的属性。
+
+
+### 自定义指令
+
+### 自定义过滤器
+
+### 混合
+
+### 插件
+
+### 构建大型应用
+
+- 模块化
+- 单文件组件
+- 路由
+
+
 
 
 
