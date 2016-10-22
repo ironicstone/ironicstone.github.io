@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post 
+show:true
 title: Codewars集合贴
 date:  2015-10-11 19:07:27
 summary:

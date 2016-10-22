@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post show:true
 title: 前端开发过程中的一般流程及常用工具
 date: 2016-01-08 15:22:29
 summary:

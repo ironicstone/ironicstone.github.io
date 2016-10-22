@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post 
+show:true
 title:  算法笔记
 date:   2016-3-4 10:06:37
 summary:

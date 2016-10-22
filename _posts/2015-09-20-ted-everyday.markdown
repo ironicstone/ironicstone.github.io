@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post 
+show:true
 title:  TED Everyday
 date:   2015-9-23 23:34:45
 summary:

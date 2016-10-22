@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post 
+show:true
 title:  "收集的一些好玩的工具"
 date:   2015-12-9 15:22:48
 summary: 一些前端可视化的小js库，玩玩还是蛮有意思的。

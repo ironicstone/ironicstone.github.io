@@ -5,6 +5,7 @@ date:   2015-9-16 09:24:53
 summary: 摘要
 categories: Ted
 tags: life
+show: true
 ---
 [网易TED链接](http://open.163.com/special/ted10collection/)
 ![TED](https://github.com/ironicstone/ironicstone.github.io/raw/master/image/life/ted.jpg)

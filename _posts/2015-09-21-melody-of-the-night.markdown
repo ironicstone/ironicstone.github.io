@@ -5,6 +5,7 @@ date:   2015-9-21 11:32:02
 summary:
 categories: music
 tags: 钢琴曲 石进
+show: true
 ---
 
 ## <div id="span" class="red">夜的钢琴曲（五）</div>
