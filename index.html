@@ -6,6 +6,7 @@ layout: default
 
   <div class="posts">
     {% for post in paginator.posts %}
+      {% if !post.hide %}
       <div class="post">
         <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h5 class="h2 post-title">{{ post.title }}</h5></a>
@@ -15,6 +16,7 @@ layout: default
           {% endif %}
         </p>
       </div>
+      {% endif %}
     {% endfor %}
   </div>
 

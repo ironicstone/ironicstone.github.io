@@ -4,6 +4,7 @@ title:  vuejs 笔记
 date:   2016-03-11 16:21:27
 summary:
 categories: javascript
+hide: true
 tags: js
 ---
 

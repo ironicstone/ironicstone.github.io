@@ -1,1 +1,1 @@
-Here's a site for no one!
+Here's a site for myself!
