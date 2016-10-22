@@ -418,6 +418,40 @@ Ubuntu中的视频播放器选择VLC，音频播放器有两个选择，都是�
 - [cmus](https://github.com/cmus/cmus)
 - [musicbox](https://github.com/darknessomi/musicbox)
 
+Ubuntu中Chrome浏览器安装Flash Player
+
+{% highlight sh %}
+sudo apt install  adobe-flashplugin
+{% endhighlight %}
+
+8 配置ShadowSocks
+
+{% highlight sh %}
+# 安装shadowsocks客户端，没有pip现状在pip
+sudo apt-get update
+sudo apt-get install python-pip
+sudo apt-get install python-setuptools m2crypto
+
+# 使用pip安装或者直接apt install
+pip install shadowsocks
+sudo apt install shadowsocks
+
+# shadowsocks配置（json）格式
+{
+"server":"11.22.33.44",
+"server_port":50003,
+"local_port":1080,
+"password":"123456",
+"timeout":600,
+"method":"aes-256-cfb"
+}
+
+# 添加到开机启动，添加到/etc/rc.local即可
+sslocal -c ~/.config/shadowsocks/shadowsocks.js -d start
+
+{% endhighlight %}
+
+
 界面示例
 
 ![cmus]({{site.baseurl}}/image/201601/cmus.png)
