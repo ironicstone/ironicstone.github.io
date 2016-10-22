@@ -418,6 +418,11 @@ Ubuntu中的视频播放器选择VLC，音频播放器有两个选择，都是�
 - [cmus](https://github.com/cmus/cmus)
 - [musicbox](https://github.com/darknessomi/musicbox)
 
+界面示例
+
+![cmus]({{site.baseurl}}/image/201601/cmus.png)
+![musicbox]({{site.baseurl}}/image/201601/musicbox.png)
+
 Ubuntu中Chrome浏览器安装Flash Player
 
 {% highlight sh %}
@@ -451,11 +456,6 @@ sslocal -c ~/.config/shadowsocks/shadowsocks.js -d start
 
 {% endhighlight %}
 
-
-界面示例
-
-![cmus]({{site.baseurl}}/image/201601/cmus.png)
-![musicbox]({{site.baseurl}}/image/201601/musicbox.png)
 
 
 
