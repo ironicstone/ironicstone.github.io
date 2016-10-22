@@ -1,6 +1,6 @@
 ---
 layout: post 
-show:true
+  
 title:  关于BFC
 date:   2015-9-15 17:17:08
 summary: 对于BFC的学习和理解

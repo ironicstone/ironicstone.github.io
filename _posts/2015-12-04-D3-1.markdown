@@ -1,6 +1,6 @@
 ---
 layout: post 
-show:true
+  
 title:  D3.format()
 date:   2015-12-4 20:00:42
 summary: D3.format()函数的总结

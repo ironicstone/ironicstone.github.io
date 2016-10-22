@@ -5,7 +5,7 @@ date:   2015-6-20 20:15:00
 summary: 在使用git push往github上上传代码是避免输入账号和密码的方法
 categories: tools
 tags: github git
-show: true
+ 
 ---
 
 ###1 创建文件存储GIT用户名和密码

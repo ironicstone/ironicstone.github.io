@@ -1,6 +1,6 @@
 ---
 layout: post 
-show:true
+  
 title:  Github学习笔记
 date:   2015-6-18 22:14:06
 summary: 慕课网github学习笔记，整理了视频内容

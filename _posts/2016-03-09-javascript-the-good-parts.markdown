@@ -1,5 +1,5 @@
 ---
-layout: post show:true
+layout: post   
 title:  小笔记
 date:   2016-1-4 10:06:37
 summary:

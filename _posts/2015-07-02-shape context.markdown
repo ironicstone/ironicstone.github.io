@@ -1,6 +1,6 @@
 ---
 layout: post 
-show:true
+  
 title:  Shape Context
 date:   2015-7-2 15:34:01
 summary: 新论文收集

@@ -1,6 +1,6 @@
 ---
 layout: post
- show:true
+   
 title:  《Data Structures and Algorithm with Javascript》读书笔记
 date:   2015-12-18 21:34:02
 summary: 读书笔记
