@@ -427,7 +427,7 @@ sudo apt install  adobe-flashplugin
 8 配置ShadowSocks
 
 {% highlight sh %}
-# 安装shadowsocks客户端，没有pip现状在pip
+# 安装shadowsocks客户端，没有pip就先安装pip
 sudo apt-get update
 sudo apt-get install python-pip
 sudo apt-get install python-setuptools m2crypto
