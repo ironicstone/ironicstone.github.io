@@ -1,6 +1,5 @@
 ---
-layout: post 
-  
+layout: post  
 title:  Sublime sinppet scope
 date:   2015-6-18
 summary: 列举了所有Sublime中snippet的文件scope，以作参考用。

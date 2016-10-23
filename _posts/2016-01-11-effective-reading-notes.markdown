@@ -1,6 +1,5 @@
 ---
 layout: post 
-  
 title:  《高效阅读术》笔记
 date:   2016-1-11 23:37:01
 summary:

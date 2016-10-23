@@ -1,6 +1,5 @@
 ---
 layout: post 
-  
 title:  字符编码问题
 date:   2015-12-11 16:46:38
 summary: python爬取数据时所遇到的字符编码问题

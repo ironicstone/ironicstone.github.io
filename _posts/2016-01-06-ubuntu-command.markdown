@@ -1,6 +1,5 @@
 ---
 layout: post 
-  
 title:  Ubunt常用命令总结
 date:   2016-01-15 16:21:27
 summary:

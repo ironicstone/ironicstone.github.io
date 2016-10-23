@@ -5,7 +5,6 @@ date:   2015-06-18
 summary: Jekyll目录设置
 categories: jekyll
 tags: jekyll
- 
 ---
 
 ####测试目录树的配置

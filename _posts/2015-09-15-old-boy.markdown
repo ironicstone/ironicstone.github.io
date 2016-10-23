@@ -5,7 +5,6 @@ date:   2015-9-15 15:22:14
 summary:
 categories: Life
 tags: life
- 
 ---
 
 # <span class="red">老男孩</span>

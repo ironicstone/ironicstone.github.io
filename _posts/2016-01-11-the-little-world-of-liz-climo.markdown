@@ -1,6 +1,5 @@
 ---
 layout: post 
-  
 title:  《The little world of Liz Climo》摘选
 date:   2016-1-11 22:38:01
 summary: 选取了一些我比较有意思画面，在此做一个备份

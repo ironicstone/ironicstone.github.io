@@ -1,6 +1,5 @@
 ---
 layout: post 
-  
 title:  Book List
 date:   2015-7-7 18:53:20
 summary: Here are some books ready to read.
