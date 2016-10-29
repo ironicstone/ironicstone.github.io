@@ -10,7 +10,6 @@ tags: ubuntu
 ### 1-1 课程介绍
 应用场景：编辑器+控制台（Terminal）
 
-现代开发者
 ### 1-2 你好，命令行
 
 Root Directory --->根目录
