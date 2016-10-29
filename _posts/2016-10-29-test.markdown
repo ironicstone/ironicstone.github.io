@@ -11,4 +11,14 @@ tags: test
 - 结构
 - 内容
 - 交互
+
 > Cited by ironicstone
+
+```js
+(_=>{
+  let str = '123'
+  let arr = str.split('').map(Number).map(value=>value*2)
+  let print = console.log.bind(console)
+  print(arr)
+})();
+```
