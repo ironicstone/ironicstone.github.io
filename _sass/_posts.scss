@@ -20,6 +20,12 @@
   color: #21759b;
 }
 
+.post-header {
+  h1 {
+    font-weight: normal;
+  }
+}
+
 .post-footer {
   @extend .italic;
 
