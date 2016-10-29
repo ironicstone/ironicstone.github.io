@@ -9,3 +9,5 @@ secret_post
 # Ignore vscode configuration folder
 .vscode
 
+.jekyll-metadata
+Gemfile.lock
