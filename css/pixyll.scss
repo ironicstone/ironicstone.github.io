@@ -1,6 +1,4 @@
 
-@charset "UTF-8";
-@import "main";
 /*!
 * Pixyll - A simple, beautiful Jekyll theme that's mobile first.
 * @author John Otander <johnotander@gmail.com> (http://johnotander.com/)
@@ -8,6 +6,8 @@
 * @license MIT
 */
 
+@charset "UTF-8";
+// @import "main";
 @import 'variables';
 
 @import 'basscss';
