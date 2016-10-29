@@ -451,7 +451,7 @@ sudo apt install shadowsocks
 "method":"aes-256-cfb"
 }
 
-# 添加到开机启动，添加到/etc/rc.local即可，注意这里必须使用绝对路径，而非相对路径
+# 添加到开机启动，添加到/etc/rc.local即可，注意这里必须使用`绝对路径`，而非相对路径
 which sslocal
 
 /usr/local/bin/sslocal -c /home/ironicstone/.config/shadowsocks/shadowsocks.js -d start
