@@ -9,7 +9,8 @@ permalink: /tags/
     {% endfor %}
 </div>
 <hr>
-    {% for tag in site.tags %}
+<div id="tag-list">
+   {% for tag in site.tags %}
     <p class="listing-seperator" id="{{ tag[0] }}"><i class="fa fa-tags"></i>&nbsp;&nbsp;{{ tag[0] }}<span  class="category-number">{{ tag[1].size}}</span></p>
     <ul class="arc-list">
     {% for post in tag[1] %}
@@ -19,5 +20,6 @@ permalink: /tags/
     {% endfor %}
     </ul>
     {% endfor %}
+</div>
 
 
