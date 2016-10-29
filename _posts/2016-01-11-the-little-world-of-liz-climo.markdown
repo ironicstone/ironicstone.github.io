@@ -26,7 +26,6 @@ tags: life fun
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(19).png)
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(2).png)
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(20).png)
-![Have fun]({{site.baseurl}}/image/lizclimo/1%20(21).png)
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(22).png)
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(23).png)
 ![Have fun]({{site.baseurl}}/image/lizclimo/1%20(24).png)
