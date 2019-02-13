@@ -112,8 +112,10 @@ text:
   og_locale: 'en_US'
 
 # Build settings
-markdown:     kramdown
-permalink:    pretty
+markdown: kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink: pretty
 
 # Navigation
 paginate:     10
